@@ -74,7 +74,7 @@
   
   
   
-  <div class="col-md-4">
+  <div class="col-md-3">
     <div class="card shadow-sm h-100 border-primary">
       <div class="card-body text-center py-3">
         <div class="mb-2">
@@ -94,19 +94,19 @@
   </div>
   
   
-  <div class="col-md-4">
+  <div class="col-md-3">
     <div class="card shadow-sm h-100 border-success">
       <div class="card-body text-center py-3">
         <div class="mb-2">
           <i class="bi bi-person-plus-fill fs-2 text-success"></i>
         </div>
-        <div class="fs-5 fw-bold text-success mb-1">Pickup King</div>
+        <div class="fs-5 fw-bold text-success mb-1">Waiver King</div>
         
         <div class="fs-3 fw-bold">
-          👑 James
+          👑 Mark
         </div>
         <div class="text-muted small mt-1">
-          83.4 avg &middot; 10 players
+          86.5 avg &middot; 11 players
         </div>
         
       </div>
@@ -114,7 +114,27 @@
   </div>
   
   
-  <div class="col-md-4">
+  <div class="col-md-3">
+    <div class="card shadow-sm h-100 border-info">
+      <div class="card-body text-center py-3">
+        <div class="mb-2">
+          <i class="bi bi-person-check-fill fs-2 text-info"></i>
+        </div>
+        <div class="fs-5 fw-bold text-info mb-1">FA King</div>
+        
+        <div class="fs-3 fw-bold">
+          👑 Simon
+        </div>
+        <div class="text-muted small mt-1">
+          81.7 avg &middot; 7 players
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="col-md-3">
     <div class="card shadow-sm h-100 border-warning">
       <div class="card-body text-center py-3">
         <div class="mb-2">
@@ -147,7 +167,9 @@
             
             <th class="text-center" style="min-width:130px">Draft</th>
             
-            <th class="text-center" style="min-width:130px">Pickup</th>
+            <th class="text-center" style="min-width:130px">Waiver</th>
+            
+            <th class="text-center" style="min-width:130px">FA</th>
             
             <th class="text-center" style="min-width:130px">Trade</th>
             
@@ -174,11 +196,22 @@
             
             
             <td class="text-center fw-semibold"
-                style="background-color:rgb(142,188,106); color:#000; cursor:pointer; padding:6px 10px;"
+                style="background-color:rgb(0,104,0); color:#fff; cursor:pointer; padding:6px 10px;"
                 data-bs-toggle="modal"
-                data-bs-target="#modal-Mark-Pickup">
-              77.8
-              <div style="font-size:0.75rem; font-weight:normal; opacity:0.85;">21 players</div>
+                data-bs-target="#modal-Mark-Waiver">
+              👑 86.5
+              <div style="font-size:0.75rem; font-weight:normal; opacity:0.85;">11 players</div>
+            </td>
+            
+            
+            
+            
+            <td class="text-center fw-semibold"
+                style="background-color:rgb(235,153,19); color:#000; cursor:pointer; padding:6px 10px;"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-Mark-FA">
+              64.8
+              <div style="font-size:0.75rem; font-weight:normal; opacity:0.85;">10 players</div>
             </td>
             
             
@@ -208,11 +241,22 @@
             
             
             <td class="text-center fw-semibold"
-                style="background-color:rgb(237,244,177); color:#000; cursor:pointer; padding:6px 10px;"
+                style="background-color:rgb(229,121,25); color:#000; cursor:pointer; padding:6px 10px;"
                 data-bs-toggle="modal"
-                data-bs-target="#modal-Simon-Pickup">
-              74.1
-              <div style="font-size:0.75rem; font-weight:normal; opacity:0.85;">18 players</div>
+                data-bs-target="#modal-Simon-Waiver">
+              69.3
+              <div style="font-size:0.75rem; font-weight:normal; opacity:0.85;">11 players</div>
+            </td>
+            
+            
+            
+            
+            <td class="text-center fw-semibold"
+                style="background-color:rgb(0,104,0); color:#fff; cursor:pointer; padding:6px 10px;"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-Simon-FA">
+              👑 81.7
+              <div style="font-size:0.75rem; font-weight:normal; opacity:0.85;">7 players</div>
             </td>
             
             
@@ -248,11 +292,22 @@
             
             
             <td class="text-center fw-semibold"
-                style="background-color:rgb(224,236,168); color:#000; cursor:pointer; padding:6px 10px;"
+                style="background-color:rgb(212,229,159); color:#000; cursor:pointer; padding:6px 10px;"
                 data-bs-toggle="modal"
-                data-bs-target="#modal-Luke-Pickup">
-              74.6
-              <div style="font-size:0.75rem; font-weight:normal; opacity:0.85;">22 players</div>
+                data-bs-target="#modal-Luke-Waiver">
+              77.8
+              <div style="font-size:0.75rem; font-weight:normal; opacity:0.85;">14 players</div>
+            </td>
+            
+            
+            
+            
+            <td class="text-center fw-semibold"
+                style="background-color:rgb(252,239,2); color:#000; cursor:pointer; padding:6px 10px;"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-Luke-FA">
+              69.5
+              <div style="font-size:0.75rem; font-weight:normal; opacity:0.85;">8 players</div>
             </td>
             
             
@@ -282,11 +337,22 @@
             
             
             <td class="text-center fw-semibold"
-                style="background-color:rgb(245,203,9); color:#000; cursor:pointer; padding:6px 10px;"
+                style="background-color:rgb(226,105,28); color:#fff; cursor:pointer; padding:6px 10px;"
                 data-bs-toggle="modal"
-                data-bs-target="#modal-Lester-Pickup">
-              70.9
-              <div style="font-size:0.75rem; font-weight:normal; opacity:0.85;">15 players</div>
+                data-bs-target="#modal-Lester-Waiver">
+              68.5
+              <div style="font-size:0.75rem; font-weight:normal; opacity:0.85;">8 players</div>
+            </td>
+            
+            
+            
+            
+            <td class="text-center fw-semibold"
+                style="background-color:rgb(166,202,124); color:#000; cursor:pointer; padding:6px 10px;"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-Lester-FA">
+              74.3
+              <div style="font-size:0.75rem; font-weight:normal; opacity:0.85;">7 players</div>
             </td>
             
             
@@ -322,11 +388,22 @@
             
             
             <td class="text-center fw-semibold"
-                style="background-color:rgb(127,179,95); color:#000; cursor:pointer; padding:6px 10px;"
+                style="background-color:rgb(61,140,45); color:#fff; cursor:pointer; padding:6px 10px;"
                 data-bs-toggle="modal"
-                data-bs-target="#modal-Paul-Pickup">
-              78.4
-              <div style="font-size:0.75rem; font-weight:normal; opacity:0.85;">20 players</div>
+                data-bs-target="#modal-Paul-Waiver">
+              84.0
+              <div style="font-size:0.75rem; font-weight:normal; opacity:0.85;">13 players</div>
+            </td>
+            
+            
+            
+            
+            <td class="text-center fw-semibold"
+                style="background-color:rgb(244,201,10); color:#000; cursor:pointer; padding:6px 10px;"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-Paul-FA">
+              67.4
+              <div style="font-size:0.75rem; font-weight:normal; opacity:0.85;">7 players</div>
             </td>
             
             
@@ -356,11 +433,22 @@
             
             
             <td class="text-center fw-semibold"
-                style="background-color:rgb(135,184,101); color:#000; cursor:pointer; padding:6px 10px;"
+                style="background-color:rgb(73,147,54); color:#fff; cursor:pointer; padding:6px 10px;"
                 data-bs-toggle="modal"
-                data-bs-target="#modal-Jordan-Pickup">
-              78.1
-              <div style="font-size:0.75rem; font-weight:normal; opacity:0.85;">14 players</div>
+                data-bs-target="#modal-Jordan-Waiver">
+              83.5
+              <div style="font-size:0.75rem; font-weight:normal; opacity:0.85;">6 players</div>
+            </td>
+            
+            
+            
+            
+            <td class="text-center fw-semibold"
+                style="background-color:rgb(229,239,171); color:#000; cursor:pointer; padding:6px 10px;"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-Jordan-FA">
+              71.5
+              <div style="font-size:0.75rem; font-weight:normal; opacity:0.85;">8 players</div>
             </td>
             
             
@@ -392,9 +480,20 @@
             <td class="text-center fw-semibold"
                 style="background-color:rgb(215,48,39); color:#fff; cursor:pointer; padding:6px 10px;"
                 data-bs-toggle="modal"
-                data-bs-target="#modal-Anthony-Pickup">
-              63.4
-              <div style="font-size:0.75rem; font-weight:normal; opacity:0.85;">7 players</div>
+                data-bs-target="#modal-Anthony-Waiver">
+              65.6
+              <div style="font-size:0.75rem; font-weight:normal; opacity:0.85;">4 players</div>
+            </td>
+            
+            
+            
+            
+            <td class="text-center fw-semibold"
+                style="background-color:rgb(215,48,39); color:#fff; cursor:pointer; padding:6px 10px;"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-Anthony-FA">
+              59.0
+              <div style="font-size:0.75rem; font-weight:normal; opacity:0.85;">3 players</div>
             </td>
             
             
@@ -430,11 +529,22 @@
             
             
             <td class="text-center fw-semibold"
-                style="background-color:rgb(0,104,0); color:#fff; cursor:pointer; padding:6px 10px;"
+                style="background-color:rgb(39,127,29); color:#fff; cursor:pointer; padding:6px 10px;"
                 data-bs-toggle="modal"
-                data-bs-target="#modal-James-Pickup">
-              👑 83.4
-              <div style="font-size:0.75rem; font-weight:normal; opacity:0.85;">10 players</div>
+                data-bs-target="#modal-James-Waiver">
+              84.9
+              <div style="font-size:0.75rem; font-weight:normal; opacity:0.85;">6 players</div>
+            </td>
+            
+            
+            
+            
+            <td class="text-center fw-semibold"
+                style="background-color:rgb(15,113,11); color:#fff; cursor:pointer; padding:6px 10px;"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-James-FA">
+              81.0
+              <div style="font-size:0.75rem; font-weight:normal; opacity:0.85;">4 players</div>
             </td>
             
             
@@ -708,13 +818,13 @@
   
   
   
-  <div class="modal fade" id="modal-Mark-Pickup" tabindex="-1" aria-hidden="true">
+  <div class="modal fade" id="modal-Mark-Waiver" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title">
-            Mark — Pickup
-            <span class="text-muted fs-6 ms-2">(77.8 avg)</span>
+            👑 Mark — Waiver
+            <span class="text-muted fs-6 ms-2">(86.5 avg)</span>
           </h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
         </div>
@@ -751,17 +861,6 @@
                 <td class="text-end">103.3</td>
                 <td class="text-end">
                   Rd 5
-                </td>
-              </tr>
-              
-              <tr>
-                <td>Shannon Neale</td>
-                <td class="text-center">FWD</td>
-                <td class="text-center">GEE</td>
-                <td class="text-end">522</td>
-                <td class="text-end">87.0</td>
-                <td class="text-end">
-                  Rd 3
                 </td>
               </tr>
               
@@ -810,6 +909,106 @@
               </tr>
               
               <tr>
+                <td>Trent Rivers</td>
+                <td class="text-center">DEF</td>
+                <td class="text-center">MEL</td>
+                <td class="text-end">—</td>
+                <td class="text-end">—</td>
+                <td class="text-end">
+                  Rd 3
+                </td>
+              </tr>
+              
+              <tr>
+                <td>Shaun Mannagh</td>
+                <td class="text-center">FWD</td>
+                <td class="text-center">GEE</td>
+                <td class="text-end">—</td>
+                <td class="text-end">—</td>
+                <td class="text-end">
+                  Rd 7
+                </td>
+              </tr>
+              
+              <tr>
+                <td>Aaron Naughton</td>
+                <td class="text-center">FWD</td>
+                <td class="text-center">WBD</td>
+                <td class="text-end">—</td>
+                <td class="text-end">—</td>
+                <td class="text-end">
+                  Rd 7
+                </td>
+              </tr>
+              
+              <tr>
+                <td>Josh Weddle</td>
+                <td class="text-center">DEF</td>
+                <td class="text-center">HAW</td>
+                <td class="text-end">—</td>
+                <td class="text-end">—</td>
+                <td class="text-end">
+                  Rd 8
+                </td>
+              </tr>
+              
+              <tr>
+                <td>Paul Curtis</td>
+                <td class="text-center">FWD</td>
+                <td class="text-center">NTH</td>
+                <td class="text-end">—</td>
+                <td class="text-end">—</td>
+                <td class="text-end">
+                  Rd 8
+                </td>
+              </tr>
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  <div class="modal fade" id="modal-Mark-FA" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">
+            Mark — FA
+            <span class="text-muted fs-6 ms-2">(64.8 avg)</span>
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-0">
+          <table class="table table-sm table-hover mb-0" style="font-size:0.85rem;">
+            <thead class="table-light">
+              <tr>
+                <th>Player</th>
+                <th class="text-center">Pos</th>
+                <th class="text-center">Team</th>
+                <th class="text-end">Total Pts Received</th>
+                <th class="text-end">Avg</th>
+                <th class="text-end">Acquired</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+              <tr>
+                <td>Shannon Neale</td>
+                <td class="text-center">FWD</td>
+                <td class="text-center">GEE</td>
+                <td class="text-end">522</td>
+                <td class="text-end">87.0</td>
+                <td class="text-end">
+                  Rd 3
+                </td>
+              </tr>
+              
+              <tr>
                 <td>Nick Vlastuin</td>
                 <td class="text-center">DEF</td>
                 <td class="text-center">RIC</td>
@@ -850,17 +1049,6 @@
                 <td class="text-end">—</td>
                 <td class="text-end">
                   Rd 1
-                </td>
-              </tr>
-              
-              <tr>
-                <td>Trent Rivers</td>
-                <td class="text-center">DEF</td>
-                <td class="text-center">MEL</td>
-                <td class="text-end">—</td>
-                <td class="text-end">—</td>
-                <td class="text-end">
-                  Rd 3
                 </td>
               </tr>
               
@@ -916,50 +1104,6 @@
                 <td class="text-end">—</td>
                 <td class="text-end">
                   Rd 6
-                </td>
-              </tr>
-              
-              <tr>
-                <td>Shaun Mannagh</td>
-                <td class="text-center">FWD</td>
-                <td class="text-center">GEE</td>
-                <td class="text-end">—</td>
-                <td class="text-end">—</td>
-                <td class="text-end">
-                  Rd 7
-                </td>
-              </tr>
-              
-              <tr>
-                <td>Aaron Naughton</td>
-                <td class="text-center">FWD</td>
-                <td class="text-center">WBD</td>
-                <td class="text-end">—</td>
-                <td class="text-end">—</td>
-                <td class="text-end">
-                  Rd 7
-                </td>
-              </tr>
-              
-              <tr>
-                <td>Josh Weddle</td>
-                <td class="text-center">DEF</td>
-                <td class="text-center">HAW</td>
-                <td class="text-end">—</td>
-                <td class="text-end">—</td>
-                <td class="text-end">
-                  Rd 8
-                </td>
-              </tr>
-              
-              <tr>
-                <td>Paul Curtis</td>
-                <td class="text-center">FWD</td>
-                <td class="text-center">NTH</td>
-                <td class="text-end">—</td>
-                <td class="text-end">—</td>
-                <td class="text-end">
-                  Rd 8
                 </td>
               </tr>
               
@@ -1177,13 +1321,13 @@
   
   
   
-  <div class="modal fade" id="modal-Simon-Pickup" tabindex="-1" aria-hidden="true">
+  <div class="modal fade" id="modal-Simon-Waiver" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title">
-            Simon — Pickup
-            <span class="text-muted fs-6 ms-2">(74.1 avg)</span>
+            Simon — Waiver
+            <span class="text-muted fs-6 ms-2">(69.3 avg)</span>
           </h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
         </div>
@@ -1209,50 +1353,6 @@
                 <td class="text-end">105.0</td>
                 <td class="text-end">
                   Rd 8
-                </td>
-              </tr>
-              
-              <tr>
-                <td>Wayne Milera</td>
-                <td class="text-center">DEF</td>
-                <td class="text-center">ADE</td>
-                <td class="text-end">805</td>
-                <td class="text-end">100.6</td>
-                <td class="text-end">
-                  Rd 1
-                </td>
-              </tr>
-              
-              <tr>
-                <td>Jack Ginnivan</td>
-                <td class="text-center">FWD</td>
-                <td class="text-center">HAW</td>
-                <td class="text-end">464</td>
-                <td class="text-end">92.8</td>
-                <td class="text-end">
-                  Rd 4
-                </td>
-              </tr>
-              
-              <tr>
-                <td>Ned Long</td>
-                <td class="text-center">MID</td>
-                <td class="text-center">COL</td>
-                <td class="text-end">92</td>
-                <td class="text-end">92.0</td>
-                <td class="text-end">
-                  Rd 8
-                </td>
-              </tr>
-              
-              <tr>
-                <td>Willem Duursma</td>
-                <td class="text-center">MID</td>
-                <td class="text-center">WCE</td>
-                <td class="text-end">624</td>
-                <td class="text-end">89.1</td>
-                <td class="text-end">
-                  Rd 2
                 </td>
               </tr>
               
@@ -1312,28 +1412,6 @@
               </tr>
               
               <tr>
-                <td>Lawson Humphries</td>
-                <td class="text-center">DEF</td>
-                <td class="text-center">GEE</td>
-                <td class="text-end">297</td>
-                <td class="text-end">74.2</td>
-                <td class="text-end">
-                  Rd 8
-                </td>
-              </tr>
-              
-              <tr>
-                <td>Patrick Lipinski</td>
-                <td class="text-center">FWD</td>
-                <td class="text-center">COL</td>
-                <td class="text-end">73</td>
-                <td class="text-end">73.0</td>
-                <td class="text-end">
-                  Rd 7
-                </td>
-              </tr>
-              
-              <tr>
                 <td>Dylan Stephens</td>
                 <td class="text-center">MID</td>
                 <td class="text-center">NTH</td>
@@ -1367,17 +1445,6 @@
               </tr>
               
               <tr>
-                <td>Dante Visentini</td>
-                <td class="text-center">RUC</td>
-                <td class="text-center">PTA</td>
-                <td class="text-end">50</td>
-                <td class="text-end">50.0</td>
-                <td class="text-end">
-                  Rd 6
-                </td>
-              </tr>
-              
-              <tr>
                 <td>Joe Richards</td>
                 <td class="text-center">FWD</td>
                 <td class="text-center">PTA</td>
@@ -1396,6 +1463,117 @@
                 <td class="text-end">21.0</td>
                 <td class="text-end">
                   Rd 5
+                </td>
+              </tr>
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  <div class="modal fade" id="modal-Simon-FA" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">
+            👑 Simon — FA
+            <span class="text-muted fs-6 ms-2">(81.7 avg)</span>
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-0">
+          <table class="table table-sm table-hover mb-0" style="font-size:0.85rem;">
+            <thead class="table-light">
+              <tr>
+                <th>Player</th>
+                <th class="text-center">Pos</th>
+                <th class="text-center">Team</th>
+                <th class="text-end">Total Pts Received</th>
+                <th class="text-end">Avg</th>
+                <th class="text-end">Acquired</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+              <tr>
+                <td>Wayne Milera</td>
+                <td class="text-center">DEF</td>
+                <td class="text-center">ADE</td>
+                <td class="text-end">805</td>
+                <td class="text-end">100.6</td>
+                <td class="text-end">
+                  Rd 1
+                </td>
+              </tr>
+              
+              <tr>
+                <td>Jack Ginnivan</td>
+                <td class="text-center">FWD</td>
+                <td class="text-center">HAW</td>
+                <td class="text-end">464</td>
+                <td class="text-end">92.8</td>
+                <td class="text-end">
+                  Rd 4
+                </td>
+              </tr>
+              
+              <tr>
+                <td>Ned Long</td>
+                <td class="text-center">MID</td>
+                <td class="text-center">COL</td>
+                <td class="text-end">92</td>
+                <td class="text-end">92.0</td>
+                <td class="text-end">
+                  Rd 8
+                </td>
+              </tr>
+              
+              <tr>
+                <td>Willem Duursma</td>
+                <td class="text-center">MID</td>
+                <td class="text-center">WCE</td>
+                <td class="text-end">624</td>
+                <td class="text-end">89.1</td>
+                <td class="text-end">
+                  Rd 2
+                </td>
+              </tr>
+              
+              <tr>
+                <td>Lawson Humphries</td>
+                <td class="text-center">DEF</td>
+                <td class="text-center">GEE</td>
+                <td class="text-end">297</td>
+                <td class="text-end">74.2</td>
+                <td class="text-end">
+                  Rd 8
+                </td>
+              </tr>
+              
+              <tr>
+                <td>Patrick Lipinski</td>
+                <td class="text-center">FWD</td>
+                <td class="text-center">COL</td>
+                <td class="text-end">73</td>
+                <td class="text-end">73.0</td>
+                <td class="text-end">
+                  Rd 7
+                </td>
+              </tr>
+              
+              <tr>
+                <td>Dante Visentini</td>
+                <td class="text-center">RUC</td>
+                <td class="text-center">PTA</td>
+                <td class="text-end">50</td>
+                <td class="text-end">50.0</td>
+                <td class="text-end">
+                  Rd 6
                 </td>
               </tr>
               
@@ -1633,13 +1811,13 @@
   
   
   
-  <div class="modal fade" id="modal-Luke-Pickup" tabindex="-1" aria-hidden="true">
+  <div class="modal fade" id="modal-Luke-Waiver" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title">
-            Luke — Pickup
-            <span class="text-muted fs-6 ms-2">(74.6 avg)</span>
+            Luke — Waiver
+            <span class="text-muted fs-6 ms-2">(77.8 avg)</span>
           </h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
         </div>
@@ -1691,39 +1869,6 @@
               </tr>
               
               <tr>
-                <td>Tom Papley</td>
-                <td class="text-center">FWD</td>
-                <td class="text-center">SYD</td>
-                <td class="text-end">87</td>
-                <td class="text-end">87.0</td>
-                <td class="text-end">
-                  Rd 8
-                </td>
-              </tr>
-              
-              <tr>
-                <td>Tom Powell</td>
-                <td class="text-center">FWD</td>
-                <td class="text-center">NTH</td>
-                <td class="text-end">85</td>
-                <td class="text-end">85.0</td>
-                <td class="text-end">
-                  Rd 6
-                </td>
-              </tr>
-              
-              <tr>
-                <td>Jake Soligo</td>
-                <td class="text-center">MID</td>
-                <td class="text-center">ADE</td>
-                <td class="text-end">82</td>
-                <td class="text-end">82.0</td>
-                <td class="text-end">
-                  Rd 8
-                </td>
-              </tr>
-              
-              <tr>
                 <td>Todd Marshall</td>
                 <td class="text-center">FWD</td>
                 <td class="text-center">PTA</td>
@@ -1768,17 +1913,6 @@
               </tr>
               
               <tr>
-                <td>Ned Moyle</td>
-                <td class="text-center">RUC</td>
-                <td class="text-center">GCS</td>
-                <td class="text-end">72</td>
-                <td class="text-end">72.0</td>
-                <td class="text-end">
-                  Rd 8
-                </td>
-              </tr>
-              
-              <tr>
                 <td>Mark Blicavs</td>
                 <td class="text-center">RUC</td>
                 <td class="text-center">GEE</td>
@@ -1786,28 +1920,6 @@
                 <td class="text-end">68.8</td>
                 <td class="text-end">
                   Rd 2
-                </td>
-              </tr>
-              
-              <tr>
-                <td>Will Brodie</td>
-                <td class="text-center">MID</td>
-                <td class="text-center">PTA</td>
-                <td class="text-end">67</td>
-                <td class="text-end">67.0</td>
-                <td class="text-end">
-                  Rd 3
-                </td>
-              </tr>
-              
-              <tr>
-                <td>Lachie Jaques</td>
-                <td class="text-center">DEF</td>
-                <td class="text-center">WBD</td>
-                <td class="text-end">67</td>
-                <td class="text-end">67.0</td>
-                <td class="text-end">
-                  Rd 4
                 </td>
               </tr>
               
@@ -1845,28 +1957,6 @@
               </tr>
               
               <tr>
-                <td>Kieren Briggs</td>
-                <td class="text-center">RUC</td>
-                <td class="text-center">GWS</td>
-                <td class="text-end">53</td>
-                <td class="text-end">26.5</td>
-                <td class="text-end">
-                  Rd 8
-                </td>
-              </tr>
-              
-              <tr>
-                <td>Charlie Curnow</td>
-                <td class="text-center">FWD</td>
-                <td class="text-center">SYD</td>
-                <td class="text-end">—</td>
-                <td class="text-end">—</td>
-                <td class="text-end">
-                  Rd 8
-                </td>
-              </tr>
-              
-              <tr>
                 <td>Brayden Cook</td>
                 <td class="text-center">FWD</td>
                 <td class="text-center">ADE</td>
@@ -1896,6 +1986,128 @@
                 <td class="text-end">—</td>
                 <td class="text-end">
                   Rd 7
+                </td>
+              </tr>
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  <div class="modal fade" id="modal-Luke-FA" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">
+            Luke — FA
+            <span class="text-muted fs-6 ms-2">(69.5 avg)</span>
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-0">
+          <table class="table table-sm table-hover mb-0" style="font-size:0.85rem;">
+            <thead class="table-light">
+              <tr>
+                <th>Player</th>
+                <th class="text-center">Pos</th>
+                <th class="text-center">Team</th>
+                <th class="text-end">Total Pts Received</th>
+                <th class="text-end">Avg</th>
+                <th class="text-end">Acquired</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+              <tr>
+                <td>Tom Papley</td>
+                <td class="text-center">FWD</td>
+                <td class="text-center">SYD</td>
+                <td class="text-end">87</td>
+                <td class="text-end">87.0</td>
+                <td class="text-end">
+                  Rd 8
+                </td>
+              </tr>
+              
+              <tr>
+                <td>Tom Powell</td>
+                <td class="text-center">FWD</td>
+                <td class="text-center">NTH</td>
+                <td class="text-end">85</td>
+                <td class="text-end">85.0</td>
+                <td class="text-end">
+                  Rd 6
+                </td>
+              </tr>
+              
+              <tr>
+                <td>Jake Soligo</td>
+                <td class="text-center">MID</td>
+                <td class="text-center">ADE</td>
+                <td class="text-end">82</td>
+                <td class="text-end">82.0</td>
+                <td class="text-end">
+                  Rd 8
+                </td>
+              </tr>
+              
+              <tr>
+                <td>Ned Moyle</td>
+                <td class="text-center">RUC</td>
+                <td class="text-center">GCS</td>
+                <td class="text-end">72</td>
+                <td class="text-end">72.0</td>
+                <td class="text-end">
+                  Rd 8
+                </td>
+              </tr>
+              
+              <tr>
+                <td>Will Brodie</td>
+                <td class="text-center">MID</td>
+                <td class="text-center">PTA</td>
+                <td class="text-end">67</td>
+                <td class="text-end">67.0</td>
+                <td class="text-end">
+                  Rd 3
+                </td>
+              </tr>
+              
+              <tr>
+                <td>Lachie Jaques</td>
+                <td class="text-center">DEF</td>
+                <td class="text-center">WBD</td>
+                <td class="text-end">67</td>
+                <td class="text-end">67.0</td>
+                <td class="text-end">
+                  Rd 4
+                </td>
+              </tr>
+              
+              <tr>
+                <td>Kieren Briggs</td>
+                <td class="text-center">RUC</td>
+                <td class="text-center">GWS</td>
+                <td class="text-end">53</td>
+                <td class="text-end">26.5</td>
+                <td class="text-end">
+                  Rd 8
+                </td>
+              </tr>
+              
+              <tr>
+                <td>Charlie Curnow</td>
+                <td class="text-center">FWD</td>
+                <td class="text-center">SYD</td>
+                <td class="text-end">—</td>
+                <td class="text-end">—</td>
+                <td class="text-end">
+                  Rd 8
                 </td>
               </tr>
               
@@ -2124,13 +2336,135 @@
   
   
   
-  <div class="modal fade" id="modal-Lester-Pickup" tabindex="-1" aria-hidden="true">
+  <div class="modal fade" id="modal-Lester-Waiver" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title">
-            Lester — Pickup
-            <span class="text-muted fs-6 ms-2">(70.9 avg)</span>
+            Lester — Waiver
+            <span class="text-muted fs-6 ms-2">(68.5 avg)</span>
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-0">
+          <table class="table table-sm table-hover mb-0" style="font-size:0.85rem;">
+            <thead class="table-light">
+              <tr>
+                <th>Player</th>
+                <th class="text-center">Pos</th>
+                <th class="text-center">Team</th>
+                <th class="text-end">Total Pts Received</th>
+                <th class="text-end">Avg</th>
+                <th class="text-end">Acquired</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+              <tr>
+                <td>Kyle Langford</td>
+                <td class="text-center">FWD</td>
+                <td class="text-center">ESS</td>
+                <td class="text-end">89</td>
+                <td class="text-end">89.0</td>
+                <td class="text-end">
+                  Rd 7
+                </td>
+              </tr>
+              
+              <tr>
+                <td>Darcy Byrne-Jones</td>
+                <td class="text-center">FWD</td>
+                <td class="text-center">PTA</td>
+                <td class="text-end">316</td>
+                <td class="text-end">79.0</td>
+                <td class="text-end">
+                  Rd 5
+                </td>
+              </tr>
+              
+              <tr>
+                <td>Levi Ashcroft</td>
+                <td class="text-center">MID</td>
+                <td class="text-center">BRL</td>
+                <td class="text-end">149</td>
+                <td class="text-end">74.5</td>
+                <td class="text-end">
+                  Rd 6
+                </td>
+              </tr>
+              
+              <tr>
+                <td>Elijah Hollands</td>
+                <td class="text-center">FWD</td>
+                <td class="text-center">CAR</td>
+                <td class="text-end">71</td>
+                <td class="text-end">71.0</td>
+                <td class="text-end">
+                  Rd 4
+                </td>
+              </tr>
+              
+              <tr>
+                <td>Jacob Farrow</td>
+                <td class="text-center">MID</td>
+                <td class="text-center">ESS</td>
+                <td class="text-end">68</td>
+                <td class="text-end">68.0</td>
+                <td class="text-end">
+                  Rd 7
+                </td>
+              </tr>
+              
+              <tr>
+                <td>Nick Larkey</td>
+                <td class="text-center">FWD</td>
+                <td class="text-center">NTH</td>
+                <td class="text-end">53</td>
+                <td class="text-end">53.0</td>
+                <td class="text-end">
+                  Rd 6
+                </td>
+              </tr>
+              
+              <tr>
+                <td>Lincoln McCarthy</td>
+                <td class="text-center">FWD</td>
+                <td class="text-center">BRL</td>
+                <td class="text-end">45</td>
+                <td class="text-end">45.0</td>
+                <td class="text-end">
+                  Rd 8
+                </td>
+              </tr>
+              
+              <tr>
+                <td>Koltyn Tholstrup</td>
+                <td class="text-center">FWD</td>
+                <td class="text-center">MEL</td>
+                <td class="text-end">—</td>
+                <td class="text-end">—</td>
+                <td class="text-end">
+                  Rd 7
+                </td>
+              </tr>
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  <div class="modal fade" id="modal-Lester-FA" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">
+            Lester — FA
+            <span class="text-muted fs-6 ms-2">(74.3 avg)</span>
           </h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
         </div>
@@ -2160,17 +2494,6 @@
               </tr>
               
               <tr>
-                <td>Kyle Langford</td>
-                <td class="text-center">FWD</td>
-                <td class="text-center">ESS</td>
-                <td class="text-end">89</td>
-                <td class="text-end">89.0</td>
-                <td class="text-end">
-                  Rd 7
-                </td>
-              </tr>
-              
-              <tr>
                 <td>Josh Ward</td>
                 <td class="text-center">MID</td>
                 <td class="text-center">HAW</td>
@@ -2182,55 +2505,11 @@
               </tr>
               
               <tr>
-                <td>Darcy Byrne-Jones</td>
-                <td class="text-center">FWD</td>
-                <td class="text-center">PTA</td>
-                <td class="text-end">316</td>
-                <td class="text-end">79.0</td>
-                <td class="text-end">
-                  Rd 5
-                </td>
-              </tr>
-              
-              <tr>
-                <td>Levi Ashcroft</td>
-                <td class="text-center">MID</td>
-                <td class="text-center">BRL</td>
-                <td class="text-end">149</td>
-                <td class="text-end">74.5</td>
-                <td class="text-end">
-                  Rd 6
-                </td>
-              </tr>
-              
-              <tr>
                 <td>Finn O&#39;Sullivan</td>
                 <td class="text-center">MID</td>
                 <td class="text-center">NTH</td>
                 <td class="text-end">146</td>
                 <td class="text-end">73.0</td>
-                <td class="text-end">
-                  Rd 7
-                </td>
-              </tr>
-              
-              <tr>
-                <td>Elijah Hollands</td>
-                <td class="text-center">FWD</td>
-                <td class="text-center">CAR</td>
-                <td class="text-end">71</td>
-                <td class="text-end">71.0</td>
-                <td class="text-end">
-                  Rd 4
-                </td>
-              </tr>
-              
-              <tr>
-                <td>Jacob Farrow</td>
-                <td class="text-center">MID</td>
-                <td class="text-center">ESS</td>
-                <td class="text-end">68</td>
-                <td class="text-end">68.0</td>
                 <td class="text-end">
                   Rd 7
                 </td>
@@ -2259,28 +2538,6 @@
               </tr>
               
               <tr>
-                <td>Nick Larkey</td>
-                <td class="text-center">FWD</td>
-                <td class="text-center">NTH</td>
-                <td class="text-end">53</td>
-                <td class="text-end">53.0</td>
-                <td class="text-end">
-                  Rd 6
-                </td>
-              </tr>
-              
-              <tr>
-                <td>Lincoln McCarthy</td>
-                <td class="text-center">FWD</td>
-                <td class="text-center">BRL</td>
-                <td class="text-end">45</td>
-                <td class="text-end">45.0</td>
-                <td class="text-end">
-                  Rd 8
-                </td>
-              </tr>
-              
-              <tr>
                 <td>Oscar Steene</td>
                 <td class="text-center">RUC</td>
                 <td class="text-center">COL</td>
@@ -2288,17 +2545,6 @@
                 <td class="text-end">—</td>
                 <td class="text-end">
                   Rd 9
-                </td>
-              </tr>
-              
-              <tr>
-                <td>Koltyn Tholstrup</td>
-                <td class="text-center">FWD</td>
-                <td class="text-center">MEL</td>
-                <td class="text-end">—</td>
-                <td class="text-end">—</td>
-                <td class="text-end">
-                  Rd 7
                 </td>
               </tr>
               
@@ -2569,13 +2815,13 @@
   
   
   
-  <div class="modal fade" id="modal-Paul-Pickup" tabindex="-1" aria-hidden="true">
+  <div class="modal fade" id="modal-Paul-Waiver" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title">
-            Paul — Pickup
-            <span class="text-muted fs-6 ms-2">(78.4 avg)</span>
+            Paul — Waiver
+            <span class="text-muted fs-6 ms-2">(84.0 avg)</span>
           </h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
         </div>
@@ -2592,17 +2838,6 @@
               </tr>
             </thead>
             <tbody>
-              
-              <tr>
-                <td>Mitch Lewis</td>
-                <td class="text-center">FWD</td>
-                <td class="text-center">HAW</td>
-                <td class="text-end">107</td>
-                <td class="text-end">107.0</td>
-                <td class="text-end">
-                  Rd 6
-                </td>
-              </tr>
               
               <tr>
                 <td>Sam Berry</td>
@@ -2693,28 +2928,6 @@
               </tr>
               
               <tr>
-                <td>Keidean Coleman</td>
-                <td class="text-center">DEF</td>
-                <td class="text-center">BRL</td>
-                <td class="text-end">420</td>
-                <td class="text-end">84.0</td>
-                <td class="text-end">
-                  Rd 4
-                </td>
-              </tr>
-              
-              <tr>
-                <td>George Wardlaw</td>
-                <td class="text-center">MID</td>
-                <td class="text-center">NTH</td>
-                <td class="text-end">417</td>
-                <td class="text-end">83.4</td>
-                <td class="text-end">
-                  Rd 1
-                </td>
-              </tr>
-              
-              <tr>
                 <td>Alex Davies</td>
                 <td class="text-center">MID</td>
                 <td class="text-center">GCS</td>
@@ -2759,6 +2972,84 @@
               </tr>
               
               <tr>
+                <td>Oliver Hollands</td>
+                <td class="text-center">DEF</td>
+                <td class="text-center">CAR</td>
+                <td class="text-end">—</td>
+                <td class="text-end">—</td>
+                <td class="text-end">
+                  Rd 6
+                </td>
+              </tr>
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  <div class="modal fade" id="modal-Paul-FA" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">
+            Paul — FA
+            <span class="text-muted fs-6 ms-2">(67.4 avg)</span>
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-0">
+          <table class="table table-sm table-hover mb-0" style="font-size:0.85rem;">
+            <thead class="table-light">
+              <tr>
+                <th>Player</th>
+                <th class="text-center">Pos</th>
+                <th class="text-center">Team</th>
+                <th class="text-end">Total Pts Received</th>
+                <th class="text-end">Avg</th>
+                <th class="text-end">Acquired</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+              <tr>
+                <td>Mitch Lewis</td>
+                <td class="text-center">FWD</td>
+                <td class="text-center">HAW</td>
+                <td class="text-end">107</td>
+                <td class="text-end">107.0</td>
+                <td class="text-end">
+                  Rd 6
+                </td>
+              </tr>
+              
+              <tr>
+                <td>Keidean Coleman</td>
+                <td class="text-center">DEF</td>
+                <td class="text-center">BRL</td>
+                <td class="text-end">420</td>
+                <td class="text-end">84.0</td>
+                <td class="text-end">
+                  Rd 4
+                </td>
+              </tr>
+              
+              <tr>
+                <td>George Wardlaw</td>
+                <td class="text-center">MID</td>
+                <td class="text-center">NTH</td>
+                <td class="text-end">417</td>
+                <td class="text-end">83.4</td>
+                <td class="text-end">
+                  Rd 1
+                </td>
+              </tr>
+              
+              <tr>
                 <td>Dion Prestia</td>
                 <td class="text-center">FWD</td>
                 <td class="text-center">RIC</td>
@@ -2788,17 +3079,6 @@
                 <td class="text-end">30.0</td>
                 <td class="text-end">
                   Rd 4
-                </td>
-              </tr>
-              
-              <tr>
-                <td>Oliver Hollands</td>
-                <td class="text-center">DEF</td>
-                <td class="text-center">CAR</td>
-                <td class="text-end">—</td>
-                <td class="text-end">—</td>
-                <td class="text-end">
-                  Rd 6
                 </td>
               </tr>
               
@@ -3049,13 +3329,13 @@
   
   
   
-  <div class="modal fade" id="modal-Jordan-Pickup" tabindex="-1" aria-hidden="true">
+  <div class="modal fade" id="modal-Jordan-Waiver" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title">
-            Jordan — Pickup
-            <span class="text-muted fs-6 ms-2">(78.1 avg)</span>
+            Jordan — Waiver
+            <span class="text-muted fs-6 ms-2">(83.5 avg)</span>
           </h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
         </div>
@@ -3085,17 +3365,6 @@
               </tr>
               
               <tr>
-                <td>Josh Battle</td>
-                <td class="text-center">DEF</td>
-                <td class="text-center">HAW</td>
-                <td class="text-end">284</td>
-                <td class="text-end">94.7</td>
-                <td class="text-end">
-                  Rd 6
-                </td>
-              </tr>
-              
-              <tr>
                 <td>James Peatling</td>
                 <td class="text-center">MID</td>
                 <td class="text-center">ADE</td>
@@ -3114,17 +3383,6 @@
                 <td class="text-end">88.2</td>
                 <td class="text-end">
                   Rd 5
-                </td>
-              </tr>
-              
-              <tr>
-                <td>Jack Bowes</td>
-                <td class="text-center">MID</td>
-                <td class="text-center">GEE</td>
-                <td class="text-end">167</td>
-                <td class="text-end">83.5</td>
-                <td class="text-end">
-                  Rd 4
                 </td>
               </tr>
               
@@ -3151,6 +3409,73 @@
               </tr>
               
               <tr>
+                <td>Darcy Fort</td>
+                <td class="text-center">RUC</td>
+                <td class="text-center">BRL</td>
+                <td class="text-end">249</td>
+                <td class="text-end">62.2</td>
+                <td class="text-end">
+                  Rd 2
+                </td>
+              </tr>
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  <div class="modal fade" id="modal-Jordan-FA" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">
+            Jordan — FA
+            <span class="text-muted fs-6 ms-2">(71.5 avg)</span>
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-0">
+          <table class="table table-sm table-hover mb-0" style="font-size:0.85rem;">
+            <thead class="table-light">
+              <tr>
+                <th>Player</th>
+                <th class="text-center">Pos</th>
+                <th class="text-center">Team</th>
+                <th class="text-end">Total Pts Received</th>
+                <th class="text-end">Avg</th>
+                <th class="text-end">Acquired</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+              <tr>
+                <td>Josh Battle</td>
+                <td class="text-center">DEF</td>
+                <td class="text-center">HAW</td>
+                <td class="text-end">284</td>
+                <td class="text-end">94.7</td>
+                <td class="text-end">
+                  Rd 6
+                </td>
+              </tr>
+              
+              <tr>
+                <td>Jack Bowes</td>
+                <td class="text-center">MID</td>
+                <td class="text-center">GEE</td>
+                <td class="text-end">167</td>
+                <td class="text-end">83.5</td>
+                <td class="text-end">
+                  Rd 4
+                </td>
+              </tr>
+              
+              <tr>
                 <td>Jase Burgoyne</td>
                 <td class="text-center">DEF</td>
                 <td class="text-center">PTA</td>
@@ -3169,17 +3494,6 @@
                 <td class="text-end">64.0</td>
                 <td class="text-end">
                   Rd 7
-                </td>
-              </tr>
-              
-              <tr>
-                <td>Darcy Fort</td>
-                <td class="text-center">RUC</td>
-                <td class="text-center">BRL</td>
-                <td class="text-end">249</td>
-                <td class="text-end">62.2</td>
-                <td class="text-end">
-                  Rd 2
                 </td>
               </tr>
               
@@ -3485,13 +3799,13 @@
   
   
   
-  <div class="modal fade" id="modal-Anthony-Pickup" tabindex="-1" aria-hidden="true">
+  <div class="modal fade" id="modal-Anthony-Waiver" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title">
-            Anthony — Pickup
-            <span class="text-muted fs-6 ms-2">(63.4 avg)</span>
+            Anthony — Waiver
+            <span class="text-muted fs-6 ms-2">(65.6 avg)</span>
           </h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
         </div>
@@ -3521,17 +3835,6 @@
               </tr>
               
               <tr>
-                <td>Matthew Johnson</td>
-                <td class="text-center">MID</td>
-                <td class="text-center">FRE</td>
-                <td class="text-end">76</td>
-                <td class="text-end">76.0</td>
-                <td class="text-end">
-                  Rd 6
-                </td>
-              </tr>
-              
-              <tr>
                 <td>Sam Durham</td>
                 <td class="text-center">FWD</td>
                 <td class="text-center">ESS</td>
@@ -3554,17 +3857,6 @@
               </tr>
               
               <tr>
-                <td>Ben Keays</td>
-                <td class="text-center">FWD</td>
-                <td class="text-center">ADE</td>
-                <td class="text-end">42</td>
-                <td class="text-end">42.0</td>
-                <td class="text-end">
-                  Rd 1
-                </td>
-              </tr>
-              
-              <tr>
                 <td>Jordan Ridley</td>
                 <td class="text-center">DEF</td>
                 <td class="text-center">ESS</td>
@@ -3572,6 +3864,62 @@
                 <td class="text-end">28.0</td>
                 <td class="text-end">
                   Rd 5
+                </td>
+              </tr>
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  <div class="modal fade" id="modal-Anthony-FA" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">
+            Anthony — FA
+            <span class="text-muted fs-6 ms-2">(59.0 avg)</span>
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-0">
+          <table class="table table-sm table-hover mb-0" style="font-size:0.85rem;">
+            <thead class="table-light">
+              <tr>
+                <th>Player</th>
+                <th class="text-center">Pos</th>
+                <th class="text-center">Team</th>
+                <th class="text-end">Total Pts Received</th>
+                <th class="text-end">Avg</th>
+                <th class="text-end">Acquired</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+              <tr>
+                <td>Matthew Johnson</td>
+                <td class="text-center">MID</td>
+                <td class="text-center">FRE</td>
+                <td class="text-end">76</td>
+                <td class="text-end">76.0</td>
+                <td class="text-end">
+                  Rd 6
+                </td>
+              </tr>
+              
+              <tr>
+                <td>Ben Keays</td>
+                <td class="text-center">FWD</td>
+                <td class="text-center">ADE</td>
+                <td class="text-end">42</td>
+                <td class="text-end">42.0</td>
+                <td class="text-end">
+                  Rd 1
                 </td>
               </tr>
               
@@ -3897,13 +4245,13 @@
   
   
   
-  <div class="modal fade" id="modal-James-Pickup" tabindex="-1" aria-hidden="true">
+  <div class="modal fade" id="modal-James-Waiver" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title">
-            👑 James — Pickup
-            <span class="text-muted fs-6 ms-2">(83.4 avg)</span>
+            James — Waiver
+            <span class="text-muted fs-6 ms-2">(84.9 avg)</span>
           </h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
         </div>
@@ -3933,17 +4281,6 @@
               </tr>
               
               <tr>
-                <td>Liam Reidy</td>
-                <td class="text-center">RUC</td>
-                <td class="text-center">CAR</td>
-                <td class="text-end">108</td>
-                <td class="text-end">108.0</td>
-                <td class="text-end">
-                  Rd 7
-                </td>
-              </tr>
-              
-              <tr>
                 <td>Tom McCartin</td>
                 <td class="text-center">DEF</td>
                 <td class="text-center">SYD</td>
@@ -3962,17 +4299,6 @@
                 <td class="text-end">89.3</td>
                 <td class="text-end">
                   Rd 3
-                </td>
-              </tr>
-              
-              <tr>
-                <td>Harvey Thomas</td>
-                <td class="text-center">FWD</td>
-                <td class="text-center">GWS</td>
-                <td class="text-end">601</td>
-                <td class="text-end">85.9</td>
-                <td class="text-end">
-                  Rd 1
                 </td>
               </tr>
               
@@ -3999,6 +4325,73 @@
               </tr>
               
               <tr>
+                <td>Patrick Dangerfield</td>
+                <td class="text-center">FWD</td>
+                <td class="text-center">GEE</td>
+                <td class="text-end">—</td>
+                <td class="text-end">—</td>
+                <td class="text-end">
+                  Rd 7
+                </td>
+              </tr>
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  <div class="modal fade" id="modal-James-FA" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">
+            James — FA
+            <span class="text-muted fs-6 ms-2">(81.0 avg)</span>
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-0">
+          <table class="table table-sm table-hover mb-0" style="font-size:0.85rem;">
+            <thead class="table-light">
+              <tr>
+                <th>Player</th>
+                <th class="text-center">Pos</th>
+                <th class="text-center">Team</th>
+                <th class="text-end">Total Pts Received</th>
+                <th class="text-end">Avg</th>
+                <th class="text-end">Acquired</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+              <tr>
+                <td>Liam Reidy</td>
+                <td class="text-center">RUC</td>
+                <td class="text-center">CAR</td>
+                <td class="text-end">108</td>
+                <td class="text-end">108.0</td>
+                <td class="text-end">
+                  Rd 7
+                </td>
+              </tr>
+              
+              <tr>
+                <td>Harvey Thomas</td>
+                <td class="text-center">FWD</td>
+                <td class="text-center">GWS</td>
+                <td class="text-end">601</td>
+                <td class="text-end">85.9</td>
+                <td class="text-end">
+                  Rd 1
+                </td>
+              </tr>
+              
+              <tr>
                 <td>Jaxon Prior</td>
                 <td class="text-center">DEF</td>
                 <td class="text-center">ESS</td>
@@ -4017,17 +4410,6 @@
                 <td class="text-end">—</td>
                 <td class="text-end">
                   Rd 9
-                </td>
-              </tr>
-              
-              <tr>
-                <td>Patrick Dangerfield</td>
-                <td class="text-center">FWD</td>
-                <td class="text-center">GEE</td>
-                <td class="text-end">—</td>
-                <td class="text-end">—</td>
-                <td class="text-end">
-                  Rd 7
                 </td>
               </tr>
               
