@@ -1196,7 +1196,7 @@ function buildLadderJourney(containerId, plotlyData) {
   const allRounds = [...new Set(coaches.flatMap(c => c.rounds))].sort((a, b) => a - b);
   if (!coaches.length || !allRounds.length) return;
   const numPos = 8;
-  const iconR = 13;  // icon radius (border adds 2px → total 15px)
+  const iconR = 10;  // icon radius (border adds 2px → total 12px)
 
   // Responsive width
   const totalW = Math.max(container.clientWidth || 500, 300);
@@ -1309,7 +1309,7 @@ function buildLadderJourney(containerId, plotlyData) {
       const img = document.createElementNS(svgNS, 'image');
       img.setAttribute('x', cx - iconR); img.setAttribute('y', cy - iconR);
       img.setAttribute('width', iconR * 2); img.setAttribute('height', iconR * 2);
-      img.setAttribute('href', `/static/images/coaches/${coach.name}_2022.png`);
+      img.setAttribute('href', `static/images/coaches/${coach.name}_2022.png`);
       img.setAttribute('clip-path', `url(#${clipId})`);
       img.setAttribute('preserveAspectRatio', 'xMidYMid slice');
       g.appendChild(img);
@@ -1330,7 +1330,7 @@ function buildLadderJourney(containerId, plotlyData) {
 
   // ── Legend — below X axis labels ───────────────────────────────
   const legY = mt + innerH + (iconR + 2) + 28;
-  const legIconR = 10;
+  const legIconR = 8;
   const legSpacing = Math.min(Math.floor(totalW / coaches.length), 80);
   const legStartX = (totalW - legSpacing * coaches.length) / 2 + legSpacing / 2;
 
@@ -1351,7 +1351,7 @@ function buildLadderJourney(containerId, plotlyData) {
     const li = document.createElementNS(svgNS, 'image');
     li.setAttribute('x', lx - legIconR); li.setAttribute('y', legY - legIconR);
     li.setAttribute('width', legIconR * 2); li.setAttribute('height', legIconR * 2);
-    li.setAttribute('href', `/static/images/coaches/${coach.name}_2022.png`);
+    li.setAttribute('href', `static/images/coaches/${coach.name}_2022.png`);
     li.setAttribute('clip-path', `url(#clip-leg-${coach.name})`);
     li.setAttribute('preserveAspectRatio', 'xMidYMid slice');
     // Shift clip path to correct position
