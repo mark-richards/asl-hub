@@ -10118,7 +10118,7 @@ function buildPowerRankingsChart(containerId, plotlyData) {
   const yMin = Math.floor(dataMin - yPad);
   const yMax = Math.ceil(dataMax + yPad);
 
-  const iconR = 13;
+  const iconR = 10;
   const totalW = Math.max(container.clientWidth || 500, 300);
   const totalH = 370;
   const ml = 44, mr = 20, mt = 28, mb = 20;
@@ -10231,7 +10231,7 @@ function buildPowerRankingsChart(containerId, plotlyData) {
       const img = document.createElementNS(svgNS, 'image');
       img.setAttribute('x', cx - iconR); img.setAttribute('y', cy - iconR);
       img.setAttribute('width', iconR * 2); img.setAttribute('height', iconR * 2);
-      img.setAttribute('href', `/static/images/coaches/${coach.name}_2022.png`);
+      img.setAttribute('href', `static/images/coaches/${coach.name}_2022.png`);
       img.setAttribute('clip-path', `url(#${clipId})`);
       img.setAttribute('preserveAspectRatio', 'xMidYMid slice');
       g.appendChild(img);
@@ -10251,7 +10251,7 @@ function buildPowerRankingsChart(containerId, plotlyData) {
 
   // ── Legend ─────────────────────────────────────────────────────
   const legY = mt + innerH + (iconR + 2) + 28;
-  const legIconR = 10;
+  const legIconR = 8;
   const legSpacing = Math.min(Math.floor(totalW / coaches.length), 80);
   const legStartX = (totalW - legSpacing * coaches.length) / 2 + legSpacing / 2;
 
@@ -10270,7 +10270,7 @@ function buildPowerRankingsChart(containerId, plotlyData) {
     const li = document.createElementNS(svgNS, 'image');
     li.setAttribute('x', lx - legIconR); li.setAttribute('y', legY - legIconR);
     li.setAttribute('width', legIconR * 2); li.setAttribute('height', legIconR * 2);
-    li.setAttribute('href', `/static/images/coaches/${coach.name}_2022.png`);
+    li.setAttribute('href', `static/images/coaches/${coach.name}_2022.png`);
     li.setAttribute('clip-path', `url(#clip-leg-${coach.name})`);
     li.setAttribute('preserveAspectRatio', 'xMidYMid slice');
     const legCpCircle = defs.querySelector(`#clip-leg-${coach.name} circle`);
