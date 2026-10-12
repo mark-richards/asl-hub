@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-bs-theme="light" data-build="1791802497">
+<html lang="en" data-bs-theme="light" data-build="1791802998">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,6 +7,11 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
   <link rel="stylesheet" href="/asl-hub/static/css/custom.css">
+  <style>
+    .navbar-nav .nav-link { border-left: 3px solid transparent; padding-left: .75rem; }
+    .navbar-nav .nav-link.active { border-left-color: var(--bs-primary); background-color: rgba(255,255,255,.06); }
+    .nav-section-label { font-size: .68rem; letter-spacing: .06em; color: rgba(255,255,255,.5); padding: .5rem .75rem .15rem; }
+  </style>
 </head>
 <body>
 
@@ -15,16 +20,53 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
   <div class="container-fluid">
     <a class="navbar-brand fw-bold" href="/asl-hub/season/2024">🏉 ASL Fantasy 2024</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navMenu">
+
+    <div class="d-flex align-items-center order-lg-2 ms-auto">
+      
+      <div class="dropdown me-2">
+        <button class="btn btn-sm btn-outline-light dropdown-toggle" type="button" data-bs-toggle="dropdown">
+          <i class="bi bi-calendar3"></i> 2024
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end">
+          
+          <li><a class="dropdown-item " href="/asl-hub/coach/Luke">2026</a></li>
+          
+          <li><a class="dropdown-item " href="/asl-hub/coach/Luke/2025">2025</a></li>
+          
+          <li><a class="dropdown-item active" href="/asl-hub/coach/Luke/2024">2024</a></li>
+          
+          <li><a class="dropdown-item " href="/asl-hub/coach/Luke/2023">2023</a></li>
+          
+          <li><a class="dropdown-item " href="/asl-hub/coach/Luke/2022">2022</a></li>
+          
+          <li><a class="dropdown-item " href="/asl-hub/coach/Luke/2021">2021</a></li>
+          
+          <li><a class="dropdown-item " href="/asl-hub/coach/Luke/2020">2020</a></li>
+          
+          <li><a class="dropdown-item " href="/asl-hub/coach/Luke/2019">2019</a></li>
+          
+          <li><a class="dropdown-item " href="/asl-hub/coach/Luke/2018">2018</a></li>
+          
+          <li><a class="dropdown-item " href="/asl-hub/coach/Luke/2017">2017</a></li>
+          
+          <li><a class="dropdown-item " href="/asl-hub/coach/Luke/2016">2016</a></li>
+          
+        </ul>
+      </div>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse order-lg-1" id="navMenu">
       <ul class="navbar-nav me-auto">
+        <li class="nav-section-label d-lg-none">This Season</li>
         <li class="nav-item">
-          <a class="nav-link " href="/asl-hub/season/2024">Season Summary</a>
+          <a class="nav-link " href="/asl-hub/season/2024"><i class="bi bi-clipboard-data"></i> Season Summary</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Coaches</a>
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"><i class="bi bi-people-fill"></i> Coaches</a>
           <ul class="dropdown-menu">
             
             <li><a class="dropdown-item" href="/asl-hub/coach/Mark/2024">Mark</a></li>
@@ -46,47 +88,19 @@
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link " href="/asl-hub/power-rankings/2024">Power Rankings</a>
+          <a class="nav-link " href="/asl-hub/power-rankings/2024"><i class="bi bi-graph-up-arrow"></i> Power Rankings</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " href="/asl-hub/draft-heat-map/2024">Draft Heat Map</a>
+          <a class="nav-link " href="/asl-hub/draft-heat-map/2024"><i class="bi bi-fire"></i> Draft Heat Map</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " href="/asl-hub/acquisition/2024">Acquisition</a>
+          <a class="nav-link " href="/asl-hub/acquisition/2024"><i class="bi bi-arrow-left-right"></i> Acquisition</a>
         </li>
+        <li class="nav-item d-lg-none"><hr class="dropdown-divider border-secondary my-1"></li>
+        <li class="nav-section-label d-lg-none">All-Time</li>
         <li class="nav-item">
-          <a class="nav-link " href="/asl-hub/records/">Hall of Fame</a>
+          <a class="nav-link ms-lg-3 " href="/asl-hub/records/"><i class="bi bi-trophy-fill"></i> Hall of Fame</a>
         </li>
-        
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">2024 Season</a>
-          <ul class="dropdown-menu dropdown-menu-end">
-            
-            <li><a class="dropdown-item " href="/asl-hub/coach/Luke">2026</a></li>
-            
-            <li><a class="dropdown-item " href="/asl-hub/coach/Luke/2025">2025</a></li>
-            
-            <li><a class="dropdown-item active" href="/asl-hub/coach/Luke/2024">2024</a></li>
-            
-            <li><a class="dropdown-item " href="/asl-hub/coach/Luke/2023">2023</a></li>
-            
-            <li><a class="dropdown-item " href="/asl-hub/coach/Luke/2022">2022</a></li>
-            
-            <li><a class="dropdown-item " href="/asl-hub/coach/Luke/2021">2021</a></li>
-            
-            <li><a class="dropdown-item " href="/asl-hub/coach/Luke/2020">2020</a></li>
-            
-            <li><a class="dropdown-item " href="/asl-hub/coach/Luke/2019">2019</a></li>
-            
-            <li><a class="dropdown-item " href="/asl-hub/coach/Luke/2018">2018</a></li>
-            
-            <li><a class="dropdown-item " href="/asl-hub/coach/Luke/2017">2017</a></li>
-            
-            <li><a class="dropdown-item " href="/asl-hub/coach/Luke/2016">2016</a></li>
-            
-          </ul>
-        </li>
-        
       </ul>
       
     </div>
