@@ -1,0 +1,2184 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Power Rankings — 2016</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/asl-hub/static/css/custom.css">
+</head>
+<body>
+
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold" href="/asl-hub/">🏉 ASL Fantasy 2016</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link " href="/asl-hub/">Season Summary</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Coaches</a>
+          <ul class="dropdown-menu">
+            
+            <li><a class="dropdown-item" href="/asl-hub/coach/Mark">Mark</a></li>
+            
+            <li><a class="dropdown-item" href="/asl-hub/coach/Simon">Simon</a></li>
+            
+            <li><a class="dropdown-item" href="/asl-hub/coach/Luke">Luke</a></li>
+            
+            <li><a class="dropdown-item" href="/asl-hub/coach/Lester">Lester</a></li>
+            
+            <li><a class="dropdown-item" href="/asl-hub/coach/Paul">Paul</a></li>
+            
+            <li><a class="dropdown-item" href="/asl-hub/coach/Jordan">Jordan</a></li>
+            
+            <li><a class="dropdown-item" href="/asl-hub/coach/Anthony">Anthony</a></li>
+            
+            <li><a class="dropdown-item" href="/asl-hub/coach/James">James</a></li>
+            
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/asl-hub/power-rankings">Power Rankings</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="/asl-hub/draft-heat-map">Draft Heat Map</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="/asl-hub/acquisition">Acquisition</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="/asl-hub/records">Honour Board</a>
+        </li>
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">2016 Season</a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            
+            <li><a class="dropdown-item " href="/asl-hub/power-rankings/2026">2026</a></li>
+            
+            <li><a class="dropdown-item " href="/asl-hub/power-rankings/2025">2025</a></li>
+            
+            <li><a class="dropdown-item " href="/asl-hub/power-rankings/2024">2024</a></li>
+            
+            <li><a class="dropdown-item " href="/asl-hub/power-rankings/2023">2023</a></li>
+            
+            <li><a class="dropdown-item " href="/asl-hub/power-rankings/2022">2022</a></li>
+            
+            <li><a class="dropdown-item " href="/asl-hub/power-rankings/2021">2021</a></li>
+            
+            <li><a class="dropdown-item " href="/asl-hub/power-rankings/2020">2020</a></li>
+            
+            <li><a class="dropdown-item " href="/asl-hub/power-rankings/2019">2019</a></li>
+            
+            <li><a class="dropdown-item " href="/asl-hub/power-rankings/2018">2018</a></li>
+            
+            <li><a class="dropdown-item " href="/asl-hub/power-rankings/2017">2017</a></li>
+            
+            <li><a class="dropdown-item active" href="/asl-hub/power-rankings/2016">2016</a></li>
+            
+          </ul>
+        </li>
+        
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid px-4">
+  
+<h2 class="mb-4">Power Rankings</h2>
+
+
+<div class="card shadow-sm mb-4">
+  <div class="card-header fw-semibold">Power Rankings — 3 Round Average per Player</div>
+  <div class="card-body p-2">
+    <div id="prChart"></div>
+  </div>
+</div>
+
+
+
+<div class="card shadow-sm mb-4">
+  <div class="card-body p-0">
+    <div class="table-responsive">
+      <table class="table table-sm table-bordered mb-0 align-middle" style="font-size:0.85rem;">
+        <thead class="table-dark">
+          <tr>
+            <th style="min-width:70px">Coach</th>
+            <th class="text-end" title="Season average score per player">Avg</th>
+            <th class="text-end" title="Rolling 3-round average score per player">3Rd Avg</th>
+            <th class="text-end" title="Total in-game injuries this season">🤕</th>
+            <th class="text-end" title="Average score of in-game injured players">🤕 Avg</th>
+            
+            <th class="text-end" style="min-width:38px">21</th>
+            
+            <th class="text-end" style="min-width:38px">20</th>
+            
+            <th class="text-end" style="min-width:38px">19</th>
+            
+            <th class="text-end" style="min-width:38px">18</th>
+            
+            <th class="text-end" style="min-width:38px">17</th>
+            
+            <th class="text-end" style="min-width:38px">16</th>
+            
+            <th class="text-end" style="min-width:38px">15</th>
+            
+            <th class="text-end" style="min-width:38px">14</th>
+            
+            <th class="text-end" style="min-width:38px">13</th>
+            
+            <th class="text-end" style="min-width:38px">12</th>
+            
+            <th class="text-end" style="min-width:38px">11</th>
+            
+            <th class="text-end" style="min-width:38px">10</th>
+            
+            <th class="text-end" style="min-width:38px">9</th>
+            
+            <th class="text-end" style="min-width:38px">8</th>
+            
+            <th class="text-end" style="min-width:38px">7</th>
+            
+            <th class="text-end" style="min-width:38px">6</th>
+            
+            <th class="text-end" style="min-width:38px">5</th>
+            
+            <th class="text-end" style="min-width:38px">4</th>
+            
+            <th class="text-end" style="min-width:38px">3</th>
+            
+            <th class="text-end" style="min-width:38px">2</th>
+            
+            <th class="text-end" style="min-width:38px">1</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr>
+            <td class="fw-semibold">
+              <a href="/asl-hub/coach/Luke" class="text-decoration-none">Luke</a>
+            </td>
+            <td class="text-end">84.9</td>
+            <td class="text-end fw-semibold">90.1</td>
+            <td class="text-end fw-semibold"
+                style="background-color:rgb(230,230,230); color:#aaa;">
+              —
+            </td>
+            <td class="text-end fw-semibold"
+                style="background-color:rgb(230,230,230); color:#aaa;">
+              —
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(147,191,110); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,534 lost to 1,663 vs Paul&lt;/strong&gt;">
+              
+                80 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(31,122,23); color:#fff; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,802 def 1,575 vs Mark&lt;/strong&gt;">
+              
+                94 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(30,122,22); color:#fff; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,803 def 1,514 vs Jordan&lt;/strong&gt;">
+              
+                94 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(33,123,24); color:#fff; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,797 def 1,756 vs Anthony&lt;/strong&gt;">
+              
+                94 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(47,132,35); color:#fff; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,764 def 1,509 vs James&lt;/strong&gt;">
+              
+                92 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(114,172,86); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,609 lost to 1,631 vs Simon&lt;/strong&gt;">
+              
+                84 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(219,73,34); color:#fff; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;773 lost to 1,411 vs Lester&lt;/strong&gt;">
+              
+                40 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(123,176,92); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,591 lost to 1,615 vs Paul&lt;/strong&gt;">
+              
+                83 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(137,185,102); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,558 def 1,423 vs Mark&lt;/strong&gt;">
+              
+                82 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(16,113,12); color:#fff; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,835 def 1,482 vs Jordan&lt;/strong&gt;">
+              
+                96 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(127,179,95); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,581 lost to 1,874 vs Anthony&lt;/strong&gt;">
+              
+                83 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(99,162,74); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,645 lost to 1,803 vs James&lt;/strong&gt;">
+              
+                86 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(181,211,136); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,456 lost to 1,647 vs Simon&lt;/strong&gt;">
+              
+                76 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(128,179,95); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,579 lost to 1,699 vs Lester&lt;/strong&gt;">
+              
+                83 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(172,206,129); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,477 lost to 1,624 vs Paul&lt;/strong&gt;">
+              
+                77 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(92,158,69); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,661 lost to 1,692 vs Mark&lt;/strong&gt;">
+              
+                87 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(85,154,64); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,675 def 1,554 vs Jordan&lt;/strong&gt;">
+              
+                88 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(113,171,84); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,614 def 1,575 vs Anthony&lt;/strong&gt;">
+              
+                84 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(139,186,104); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,553 def 1,551 vs James&lt;/strong&gt;">
+              
+                81 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(45,130,34); color:#fff; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,769 def 1,471 vs Simon&lt;/strong&gt;">
+              
+                93 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(25,119,19); color:#fff; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,814 def 1,570 vs Lester&lt;/strong&gt;">
+              
+                95 ✅
+                
+              
+            </td>
+            
+          </tr>
+          
+          <tr>
+            <td class="fw-semibold">
+              <a href="/asl-hub/coach/Anthony" class="text-decoration-none">Anthony</a>
+            </td>
+            <td class="text-end">85.5</td>
+            <td class="text-end fw-semibold">89.2</td>
+            <td class="text-end fw-semibold"
+                style="background-color:rgb(230,230,230); color:#aaa;">
+              —
+            </td>
+            <td class="text-end fw-semibold"
+                style="background-color:rgb(230,230,230); color:#aaa;">
+              —
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(51,134,38); color:#fff; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,755 def 1,571 vs James&lt;/strong&gt;">
+              
+                92 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(106,167,79); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,628 lost to 1,639 vs Simon&lt;/strong&gt;">
+              
+                85 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(76,149,56); color:#fff; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,698 def 1,556 vs Lester&lt;/strong&gt;">
+              
+                89 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(51,134,38); color:#fff; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,756 lost to 1,797 vs Luke&lt;/strong&gt;">
+              
+                92 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(57,138,43); color:#fff; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,740 def 1,547 vs Mark&lt;/strong&gt;">
+              
+                91 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(93,159,69); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,658 def 1,457 vs Jordan&lt;/strong&gt;">
+              
+                87 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(93,159,69); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,659 def 1,320 vs Paul&lt;/strong&gt;">
+              
+                87 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(241,246,180); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,318 lost to 1,416 vs James&lt;/strong&gt;">
+              
+                69 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(183,212,137); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,452 def 1,213 vs Simon&lt;/strong&gt;">
+              
+                76 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(157,197,118); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,510 lost to 1,607 vs Lester&lt;/strong&gt;">
+              
+                79 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(0,104,0); color:#fff; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,874 def 1,581 vs Luke&lt;/strong&gt;">
+              
+                98 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(238,244,178); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,327 lost to 1,655 vs Mark&lt;/strong&gt;">
+              
+                69 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(147,191,110); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,535 lost to 1,586 vs Jordan&lt;/strong&gt;">
+              
+                80 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(142,188,106); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,546 lost to 1,807 vs Paul&lt;/strong&gt;">
+              
+                81 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(85,154,64); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,675 def 1,674 vs James&lt;/strong&gt;">
+              
+                88 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(126,178,94); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,582 lost to 1,667 vs Simon&lt;/strong&gt;">
+              
+                83 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(145,190,108); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,539 lost to 1,675 vs Lester&lt;/strong&gt;">
+              
+                81 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(129,180,97); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,575 lost to 1,614 vs Luke&lt;/strong&gt;">
+              
+                82 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(48,132,36); color:#fff; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,762 def 1,683 vs Mark&lt;/strong&gt;">
+              
+                92 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(53,135,40); color:#fff; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,749 def 1,618 vs Jordan&lt;/strong&gt;">
+              
+                92 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(40,127,30); color:#fff; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,780 def 1,600 vs Paul&lt;/strong&gt;">
+              
+                93 ✅
+                
+              
+            </td>
+            
+          </tr>
+          
+          <tr>
+            <td class="fw-semibold">
+              <a href="/asl-hub/coach/Paul" class="text-decoration-none">Paul</a>
+            </td>
+            <td class="text-end">83.7</td>
+            <td class="text-end fw-semibold">87.8</td>
+            <td class="text-end fw-semibold"
+                style="background-color:rgb(230,230,230); color:#aaa;">
+              —
+            </td>
+            <td class="text-end fw-semibold"
+                style="background-color:rgb(230,230,230); color:#aaa;">
+              —
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(91,158,68); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,663 def 1,534 vs Luke&lt;/strong&gt;">
+              
+                87 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(60,139,45); color:#fff; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,735 drew 1,735 vs James&lt;/strong&gt;">
+              
+                91 🤝
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(114,172,86); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,610 lost to 1,640 vs Mark&lt;/strong&gt;">
+              
+                84 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(160,198,120); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,505 lost to 1,638 vs Simon&lt;/strong&gt;">
+              
+                79 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(104,166,78); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,633 def 1,483 vs Jordan&lt;/strong&gt;">
+              
+                85 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(104,165,78); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,634 lost to 1,823 vs Lester&lt;/strong&gt;">
+              
+                86 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(240,246,180); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,320 lost to 1,659 vs Anthony&lt;/strong&gt;">
+              
+                69 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(112,170,84); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,615 def 1,591 vs Luke&lt;/strong&gt;">
+              
+                85 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(239,174,15); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,059 lost to 1,109 vs James&lt;/strong&gt;">
+              
+                55 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(87,155,65); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,672 def 1,539 vs Mark&lt;/strong&gt;">
+              
+                88 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(151,193,113); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,525 lost to 1,580 vs Simon&lt;/strong&gt;">
+              
+                80 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(82,152,61); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,684 def 1,566 vs Jordan&lt;/strong&gt;">
+              
+                88 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(106,167,79); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,628 lost to 1,835 vs Lester&lt;/strong&gt;">
+              
+                85 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(28,121,21); color:#fff; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,807 def 1,546 vs Anthony&lt;/strong&gt;">
+              
+                95 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(108,168,81); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,624 def 1,477 vs Luke&lt;/strong&gt;">
+              
+                85 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(113,171,84); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,614 def 1,600 vs James&lt;/strong&gt;">
+              
+                84 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(81,152,61); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,685 def 1,550 vs Mark&lt;/strong&gt;">
+              
+                88 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(113,171,84); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,614 lost to 1,620 vs Simon&lt;/strong&gt;">
+              
+                84 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(157,196,117); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,512 lost to 1,558 vs Jordan&lt;/strong&gt;">
+              
+                79 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(90,157,68); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,665 def 1,400 vs Lester&lt;/strong&gt;">
+              
+                87 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(119,174,89); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,600 lost to 1,780 vs Anthony&lt;/strong&gt;">
+              
+                84 ❌
+                
+              
+            </td>
+            
+          </tr>
+          
+          <tr>
+            <td class="fw-semibold">
+              <a href="/asl-hub/coach/James" class="text-decoration-none">James</a>
+            </td>
+            <td class="text-end">82.9</td>
+            <td class="text-end fw-semibold">87.5</td>
+            <td class="text-end fw-semibold"
+                style="background-color:rgb(230,230,230); color:#aaa;">
+              —
+            </td>
+            <td class="text-end fw-semibold"
+                style="background-color:rgb(230,230,230); color:#aaa;">
+              —
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(131,181,98); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,571 lost to 1,755 vs Anthony&lt;/strong&gt;">
+              
+                82 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(60,139,45); color:#fff; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,735 drew 1,735 vs Paul&lt;/strong&gt;">
+              
+                91 🤝
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(82,152,61); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,683 def 1,574 vs Simon&lt;/strong&gt;">
+              
+                88 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(69,145,52); color:#fff; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,714 def 1,706 vs Lester&lt;/strong&gt;">
+              
+                90 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(158,197,118); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,509 lost to 1,764 vs Luke&lt;/strong&gt;">
+              
+                79 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(103,165,77); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,635 def 1,601 vs Mark&lt;/strong&gt;">
+              
+                86 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(147,191,110); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,536 def 702 vs Jordan&lt;/strong&gt;">
+              
+                80 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(199,221,149); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,416 def 1,318 vs Anthony&lt;/strong&gt;">
+              
+                74 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(242,192,11); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,109 def 1,059 vs Paul&lt;/strong&gt;">
+              
+                58 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(163,200,122); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,497 lost to 1,658 vs Simon&lt;/strong&gt;">
+              
+                78 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(196,220,147); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,421 lost to 1,693 vs Lester&lt;/strong&gt;">
+              
+                74 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(30,122,22); color:#fff; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,803 def 1,645 vs Luke&lt;/strong&gt;">
+              
+                94 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(166,202,125); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,489 lost to 1,739 vs Mark&lt;/strong&gt;">
+              
+                78 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(91,158,68); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,663 def 1,525 vs Jordan&lt;/strong&gt;">
+              
+                87 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(86,155,65); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,674 lost to 1,675 vs Anthony&lt;/strong&gt;">
+              
+                88 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(119,174,89); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,600 lost to 1,614 vs Paul&lt;/strong&gt;">
+              
+                84 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(133,183,100); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,565 lost to 1,610 vs Simon&lt;/strong&gt;">
+              
+                82 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(120,175,90); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,596 lost to 1,642 vs Lester&lt;/strong&gt;">
+              
+                84 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(140,187,105); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,551 lost to 1,553 vs Luke&lt;/strong&gt;">
+              
+                81 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(88,156,66); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,670 def 1,621 vs Mark&lt;/strong&gt;">
+              
+                87 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(109,168,81); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,623 def 1,574 vs Jordan&lt;/strong&gt;">
+              
+                85 ✅
+                
+              
+            </td>
+            
+          </tr>
+          
+          <tr>
+            <td class="fw-semibold">
+              <a href="/asl-hub/coach/Simon" class="text-decoration-none">Simon</a>
+            </td>
+            <td class="text-end">82.9</td>
+            <td class="text-end fw-semibold">86.3</td>
+            <td class="text-end fw-semibold"
+                style="background-color:rgb(230,230,230); color:#aaa;">
+              —
+            </td>
+            <td class="text-end fw-semibold"
+                style="background-color:rgb(230,230,230); color:#aaa;">
+              —
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(71,146,53); color:#fff; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,708 def 1,611 vs Jordan&lt;/strong&gt;">
+              
+                89 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(101,164,76); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,639 def 1,628 vs Anthony&lt;/strong&gt;">
+              
+                86 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(130,181,97); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,574 lost to 1,683 vs James&lt;/strong&gt;">
+              
+                82 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(102,164,76); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,638 def 1,505 vs Paul&lt;/strong&gt;">
+              
+                86 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(32,123,24); color:#fff; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,799 def 1,533 vs Lester&lt;/strong&gt;">
+              
+                94 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(105,166,79); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,631 def 1,609 vs Luke&lt;/strong&gt;">
+              
+                85 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(219,234,164); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,368 def 876 vs Mark&lt;/strong&gt;">
+              
+                72 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(231,134,22); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;946 lost to 1,198 vs Jordan&lt;/strong&gt;">
+              
+                49 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(249,228,4); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,213 lost to 1,452 vs Anthony&lt;/strong&gt;">
+              
+                63 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(93,159,69); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,658 def 1,497 vs James&lt;/strong&gt;">
+              
+                87 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(127,179,95); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,580 def 1,525 vs Paul&lt;/strong&gt;">
+              
+                83 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(31,122,23); color:#fff; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,802 def 1,436 vs Lester&lt;/strong&gt;">
+              
+                94 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(98,162,73); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,647 def 1,456 vs Luke&lt;/strong&gt;">
+              
+                86 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(194,219,145); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,427 lost to 1,797 vs Mark&lt;/strong&gt;">
+              
+                75 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(36,125,27); color:#fff; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,790 def 1,207 vs Jordan&lt;/strong&gt;">
+              
+                94 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(90,157,67); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,667 def 1,582 vs Anthony&lt;/strong&gt;">
+              
+                87 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(114,172,86); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,610 def 1,565 vs James&lt;/strong&gt;">
+              
+                84 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(109,169,82); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,620 def 1,614 vs Paul&lt;/strong&gt;">
+              
+                85 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(50,133,37); color:#fff; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,757 def 1,743 vs Lester&lt;/strong&gt;">
+              
+                92 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(175,207,131); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,471 lost to 1,769 vs Luke&lt;/strong&gt;">
+              
+                77 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(141,187,105); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,549 lost to 1,737 vs Mark&lt;/strong&gt;">
+              
+                81 ❌
+                
+              
+            </td>
+            
+          </tr>
+          
+          <tr>
+            <td class="fw-semibold">
+              <a href="/asl-hub/coach/Mark" class="text-decoration-none">Mark</a>
+            </td>
+            <td class="text-end">82.8</td>
+            <td class="text-end fw-semibold">84.3</td>
+            <td class="text-end fw-semibold"
+                style="background-color:rgb(230,230,230); color:#aaa;">
+              —
+            </td>
+            <td class="text-end fw-semibold"
+                style="background-color:rgb(230,230,230); color:#aaa;">
+              —
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(123,177,92); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,588 def 1,488 vs Lester&lt;/strong&gt;">
+              
+                83 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(129,180,97); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,575 lost to 1,802 vs Luke&lt;/strong&gt;">
+              
+                82 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(101,164,76); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,640 def 1,610 vs Paul&lt;/strong&gt;">
+              
+                86 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(117,173,87); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,604 def 1,536 vs Jordan&lt;/strong&gt;">
+              
+                84 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(142,188,106); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,547 lost to 1,740 vs Anthony&lt;/strong&gt;">
+              
+                81 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(118,173,88); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,601 lost to 1,635 vs James&lt;/strong&gt;">
+              
+                84 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(226,109,27); color:#fff; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;876 lost to 1,368 vs Simon&lt;/strong&gt;">
+              
+                46 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(249,228,4); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,212 lost to 1,244 vs Lester&lt;/strong&gt;">
+              
+                63 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(195,220,146); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,423 lost to 1,558 vs Luke&lt;/strong&gt;">
+              
+                74 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(145,190,108); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,539 lost to 1,672 vs Paul&lt;/strong&gt;">
+              
+                81 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(48,132,36); color:#fff; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,761 def 1,512 vs Jordan&lt;/strong&gt;">
+              
+                92 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(95,160,71); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,655 def 1,327 vs Anthony&lt;/strong&gt;">
+              
+                87 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(58,138,43); color:#fff; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,739 def 1,489 vs James&lt;/strong&gt;">
+              
+                91 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(33,123,24); color:#fff; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,797 def 1,427 vs Simon&lt;/strong&gt;">
+              
+                94 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(141,187,105); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,549 def 1,524 vs Lester&lt;/strong&gt;">
+              
+                81 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(78,150,58); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,692 def 1,661 vs Luke&lt;/strong&gt;">
+              
+                89 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(140,187,105); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,550 lost to 1,685 vs Paul&lt;/strong&gt;">
+              
+                81 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(100,163,75); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,642 lost to 1,672 vs Jordan&lt;/strong&gt;">
+              
+                86 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(82,152,61); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,683 lost to 1,762 vs Anthony&lt;/strong&gt;">
+              
+                88 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(109,169,82); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,621 lost to 1,670 vs James&lt;/strong&gt;">
+              
+                85 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(59,139,44); color:#fff; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,737 def 1,549 vs Simon&lt;/strong&gt;">
+              
+                91 ✅
+                
+              
+            </td>
+            
+          </tr>
+          
+          <tr>
+            <td class="fw-semibold">
+              <a href="/asl-hub/coach/Jordan" class="text-decoration-none">Jordan</a>
+            </td>
+            <td class="text-end">77.5</td>
+            <td class="text-end fw-semibold">83.1</td>
+            <td class="text-end fw-semibold"
+                style="background-color:rgb(230,230,230); color:#aaa;">
+              —
+            </td>
+            <td class="text-end fw-semibold"
+                style="background-color:rgb(230,230,230); color:#aaa;">
+              —
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(114,171,85); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,611 lost to 1,708 vs Simon&lt;/strong&gt;">
+              
+                84 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(114,171,85); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,611 def 1,561 vs Lester&lt;/strong&gt;">
+              
+                84 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(156,196,117); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,514 lost to 1,803 vs Luke&lt;/strong&gt;">
+              
+                79 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(147,191,110); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,536 lost to 1,604 vs Mark&lt;/strong&gt;">
+              
+                80 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(169,204,126); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,483 lost to 1,633 vs Paul&lt;/strong&gt;">
+              
+                78 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(181,211,135); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,457 lost to 1,658 vs Anthony&lt;/strong&gt;">
+              
+                76 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(215,48,39); color:#fff; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;702 lost to 1,536 vs James&lt;/strong&gt;">
+              
+                36 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(248,223,5); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,198 def 946 vs Simon&lt;/strong&gt;">
+              
+                63 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(181,211,135); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,457 def 1,254 vs Lester&lt;/strong&gt;">
+              
+                76 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(170,204,127); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,482 lost to 1,835 vs Luke&lt;/strong&gt;">
+              
+                78 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(157,196,117); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,512 lost to 1,761 vs Mark&lt;/strong&gt;">
+              
+                79 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(133,183,100); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,566 lost to 1,684 vs Paul&lt;/strong&gt;">
+              
+                82 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(124,177,93); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,586 def 1,535 vs Anthony&lt;/strong&gt;">
+              
+                83 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(151,193,113); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,525 lost to 1,663 vs James&lt;/strong&gt;">
+              
+                80 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(249,226,5); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,207 lost to 1,790 vs Simon&lt;/strong&gt;">
+              
+                63 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(156,196,117); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,515 lost to 1,643 vs Lester&lt;/strong&gt;">
+              
+                79 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(138,186,104); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,554 lost to 1,675 vs Luke&lt;/strong&gt;">
+              
+                81 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(87,155,65); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,672 def 1,642 vs Mark&lt;/strong&gt;">
+              
+                88 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(137,185,102); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,558 def 1,512 vs Paul&lt;/strong&gt;">
+              
+                82 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(110,169,82); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,618 lost to 1,749 vs Anthony&lt;/strong&gt;">
+              
+                85 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(130,181,97); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,574 lost to 1,623 vs James&lt;/strong&gt;">
+              
+                82 ❌
+                
+              
+            </td>
+            
+          </tr>
+          
+          <tr>
+            <td class="fw-semibold">
+              <a href="/asl-hub/coach/Lester" class="text-decoration-none">Lester</a>
+            </td>
+            <td class="text-end">82.8</td>
+            <td class="text-end fw-semibold">80.8</td>
+            <td class="text-end fw-semibold"
+                style="background-color:rgb(230,230,230); color:#aaa;">
+              —
+            </td>
+            <td class="text-end fw-semibold"
+                style="background-color:rgb(230,230,230); color:#aaa;">
+              —
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(167,203,125); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,488 lost to 1,588 vs Mark&lt;/strong&gt;">
+              
+                78 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(135,184,101); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,561 lost to 1,611 vs Jordan&lt;/strong&gt;">
+              
+                82 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(138,185,103); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,556 lost to 1,698 vs Anthony&lt;/strong&gt;">
+              
+                81 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(72,147,54); color:#fff; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,706 lost to 1,714 vs James&lt;/strong&gt;">
+              
+                89 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(147,191,110); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,533 lost to 1,799 vs Simon&lt;/strong&gt;">
+              
+                80 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(22,117,16); color:#fff; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,823 def 1,634 vs Paul&lt;/strong&gt;">
+              
+                95 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(200,222,150); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,411 def 773 vs Luke&lt;/strong&gt;">
+              
+                74 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(252,239,2); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,244 def 1,212 vs Mark&lt;/strong&gt;">
+              
+                65 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(252,243,2); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,254 lost to 1,457 vs Jordan&lt;/strong&gt;">
+              
+                66 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(115,172,86); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,607 def 1,510 vs Anthony&lt;/strong&gt;">
+              
+                84 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(78,150,58); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,693 def 1,421 vs James&lt;/strong&gt;">
+              
+                89 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(190,216,142); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,436 lost to 1,802 vs Simon&lt;/strong&gt;">
+              
+                75 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(16,113,12); color:#fff; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,835 def 1,628 vs Paul&lt;/strong&gt;">
+              
+                96 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(76,149,56); color:#fff; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,699 def 1,579 vs Luke&lt;/strong&gt;">
+              
+                89 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(152,194,113); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,524 lost to 1,549 vs Mark&lt;/strong&gt;">
+              
+                80 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(100,163,74); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,643 def 1,515 vs Jordan&lt;/strong&gt;">
+              
+                86 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(85,154,64); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,675 def 1,539 vs Anthony&lt;/strong&gt;">
+              
+                88 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(100,163,75); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,642 def 1,596 vs James&lt;/strong&gt;">
+              
+                86 ✅
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(57,137,42); color:#fff; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,743 lost to 1,757 vs Simon&lt;/strong&gt;">
+              
+                91 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(205,225,154); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,400 lost to 1,665 vs Paul&lt;/strong&gt;">
+              
+                73 ❌
+                
+              
+            </td>
+            
+            <td class="text-end fw-semibold pr-cell"
+                style="background-color:rgb(132,182,99); color:#000; padding:3px 6px; cursor:default;"
+                data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;strong&gt;1,570 lost to 1,814 vs Luke&lt;/strong&gt;">
+              
+                82 ❌
+                
+              
+            </td>
+            
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="card-footer text-muted small">
+    Values = team score ÷ on-field players (avg per player). Sorted by 3-round form. Rounds newest → oldest.
+  </div>
+</div>
+
+
+
+<div class="card shadow-sm">
+  <div class="card-header fw-semibold">Player Rankings (On-Field, Min 2 Games)</div>
+  <div class="card-body">
+
+    <ul class="nav nav-tabs mb-3" id="rankTabs" role="tablist">
+      
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active"
+                id="tab-overall"
+                data-bs-toggle="tab"
+                data-bs-target="#pane-overall"
+                type="button" role="tab">
+          OVERALL
+        </button>
+      </li>
+      
+      <li class="nav-item" role="presentation">
+        <button class="nav-link "
+                id="tab-DEF"
+                data-bs-toggle="tab"
+                data-bs-target="#pane-DEF"
+                type="button" role="tab">
+          DEF
+        </button>
+      </li>
+      
+      <li class="nav-item" role="presentation">
+        <button class="nav-link "
+                id="tab-MID"
+                data-bs-toggle="tab"
+                data-bs-target="#pane-MID"
+                type="button" role="tab">
+          MID
+        </button>
+      </li>
+      
+      <li class="nav-item" role="presentation">
+        <button class="nav-link "
+                id="tab-RUC"
+                data-bs-toggle="tab"
+                data-bs-target="#pane-RUC"
+                type="button" role="tab">
+          RUC
+        </button>
+      </li>
+      
+      <li class="nav-item" role="presentation">
+        <button class="nav-link "
+                id="tab-FWD"
+                data-bs-toggle="tab"
+                data-bs-target="#pane-FWD"
+                type="button" role="tab">
+          FWD
+        </button>
+      </li>
+      
+    </ul>
+
+    <div class="tab-content">
+      
+      <div class="tab-pane fade show active"
+           id="pane-overall" role="tabpanel">
+
+        
+        
+        <p class="text-muted py-3">No player data available yet for this season.</p>
+        
+      </div>
+      
+      <div class="tab-pane fade "
+           id="pane-DEF" role="tabpanel">
+
+        
+        
+        <p class="text-muted py-3">No player data available yet for this season.</p>
+        
+      </div>
+      
+      <div class="tab-pane fade "
+           id="pane-MID" role="tabpanel">
+
+        
+        
+        <p class="text-muted py-3">No player data available yet for this season.</p>
+        
+      </div>
+      
+      <div class="tab-pane fade "
+           id="pane-RUC" role="tabpanel">
+
+        
+        
+        <p class="text-muted py-3">No player data available yet for this season.</p>
+        
+      </div>
+      
+      <div class="tab-pane fade "
+           id="pane-FWD" role="tabpanel">
+
+        
+        
+        <p class="text-muted py-3">No player data available yet for this season.</p>
+        
+      </div>
+      
+    </div>
+
+  </div>
+</div>
+
+</div>
+
+<footer class="text-center text-muted small py-3 mt-5 border-top">
+  ASL Fantasy League Analytics &mdash; 2016 Season
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+
+
+<script>
+// Initialise Bootstrap tooltips on all heat-map cells
+document.querySelectorAll('.pr-cell[data-bs-toggle="tooltip"]').forEach(el => {
+  new bootstrap.Tooltip(el, { boundary: document.body });
+});
+</script>
+<script>
+const prData = {"data":[{"connectgaps":true,"hovertemplate":"\u003cb\u003eLuke\u003c\u002fb\u003e\u003cbr\u003eRound %{x}\u003cbr\u003eAvg SPP: %{y:.1f}\u003cextra\u003e\u003c\u002fextra\u003e","line":{"color":"#984ea3","width":2},"mode":"lines","name":"Luke","x":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21],"y":[95.5,94.3,90.1,86.6,84.9,86.8,84.4,82.8,79.2,82.1,82.1,88.8,87.3,87.4,68.8,69.7,72.7,90.7,94.1,94.8,90.2],"type":"scatter"},{"connectgaps":true,"hovertemplate":"\u003cb\u003eAnthony\u003c\u002fb\u003e\u003cbr\u003eRound %{x}\u003cbr\u003eAvg SPP: %{y:.1f}\u003cextra\u003e\u003c\u002fextra\u003e","line":{"color":"#e41a1c","width":2},"mode":"lines","name":"Anthony","x":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21],"y":[93.7,92.9,92.8,89.2,85.5,82.4,84.1,84.3,83.4,77.3,83.1,82.6,84.8,75.1,77.7,81.3,88.7,90.4,91.1,89.2,89.1],"type":"scatter"},{"connectgaps":true,"hovertemplate":"\u003cb\u003ePaul\u003c\u002fb\u003e\u003cbr\u003eRound %{x}\u003cbr\u003eAvg SPP: %{y:.1f}\u003cextra\u003e\u003c\u002fextra\u003e","line":{"color":"#f781bf","width":2},"mode":"lines","name":"Paul","x":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21],"y":[84.2,85.9,83.8,84.1,84.4,86.2,86.4,88.5,88.8,89.8,84.9,85.6,74.7,76.2,70.1,80.2,80.5,83.7,83.3,85.1,87.9],"type":"scatter"},{"connectgaps":true,"hovertemplate":"\u003cb\u003eJames\u003c\u002fb\u003e\u003cbr\u003eRound %{x}\u003cbr\u003eAvg SPP: %{y:.1f}\u003cextra\u003e\u003c\u002fextra\u003e","line":{"color":"#377eb8","width":2},"mode":"lines","name":"James","x":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21],"y":[85.4,86.7,85.0,84.5,82.7,83.5,84.9,86.6,84.7,86.9,82.7,82.8,70.6,70.6,71.2,80.5,82.1,85.2,86.1,90.0,87.5],"type":"scatter"},{"connectgaps":true,"hovertemplate":"\u003cb\u003eSimon\u003c\u002fb\u003e\u003cbr\u003eRound %{x}\u003cbr\u003eAvg SPP: %{y:.1f}\u003cextra\u003e\u003c\u002fextra\u003e","line":{"color":"#999999","width":2},"mode":"lines","name":"Simon","x":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21],"y":[81.5,79.5,83.8,85.1,87.5,85.9,88.9,85.7,85.3,85.5,88.2,88.4,78.1,67.0,61.9,69.2,84.2,88.9,87.9,85.1,86.3],"type":"scatter"},{"connectgaps":true,"hovertemplate":"\u003cb\u003eMark\u003c\u002fb\u003e\u003cbr\u003eRound %{x}\u003cbr\u003eAvg SPP: %{y:.1f}\u003cextra\u003e\u003c\u002fextra\u003e","line":{"color":"#a65628","width":2},"mode":"lines","name":"Mark","x":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21],"y":[91.4,88.4,88.4,86.8,85.5,85.7,84.1,88.4,89.2,91.1,90.4,86.9,82.9,73.2,61.6,64.7,70.6,83.4,84.1,84.5,84.3],"type":"scatter"},{"connectgaps":true,"hovertemplate":"\u003cb\u003eJordan\u003c\u002fb\u003e\u003cbr\u003eRound %{x}\u003cbr\u003eAvg SPP: %{y:.1f}\u003cextra\u003e\u003c\u002fextra\u003e","line":{"color":"#4daf4a","width":2},"mode":"lines","name":"Jordan","x":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21],"y":[82.8,84.0,83.3,85.1,83.9,83.2,75.0,74.5,75.8,82.1,81.8,80.0,78.1,72.6,58.9,58.9,63.9,78.5,79.5,81.8,83.1],"type":"scatter"},{"connectgaps":true,"hovertemplate":"\u003cb\u003eLester\u003c\u002fb\u003e\u003cbr\u003eRound %{x}\u003cbr\u003eAvg SPP: %{y:.1f}\u003cextra\u003e\u003c\u002fextra\u003e","line":{"color":"#ff7f00","width":2},"mode":"lines","name":"Lester","x":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21],"y":[82.6,78.2,82.7,83.9,88.8,87.0,84.9,85.4,88.7,87.2,87.1,83.1,79.9,72.0,68.6,78.6,83.6,88.8,84.1,84.6,80.8],"type":"scatter"}],"layout":{"annotations":[{"font":{"color":"#888","size":11},"showarrow":false,"text":"3-Round Rolling Average per Player","x":0.5,"xanchor":"center","xref":"paper","y":1.0,"yanchor":"bottom","yref":"paper"}],"height":380,"hovermode":"x unified","images":[{"layer":"above","sizex":0.5,"sizey":4,"source":"Luke_2022.png","x":1,"xanchor":"center","xref":"x","y":95.5,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Luke_2022.png","x":2,"xanchor":"center","xref":"x","y":94.3,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Luke_2022.png","x":3,"xanchor":"center","xref":"x","y":90.1,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Luke_2022.png","x":4,"xanchor":"center","xref":"x","y":86.6,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Luke_2022.png","x":5,"xanchor":"center","xref":"x","y":84.9,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Luke_2022.png","x":6,"xanchor":"center","xref":"x","y":86.8,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Luke_2022.png","x":7,"xanchor":"center","xref":"x","y":84.4,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Luke_2022.png","x":8,"xanchor":"center","xref":"x","y":82.8,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Luke_2022.png","x":9,"xanchor":"center","xref":"x","y":79.2,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Luke_2022.png","x":10,"xanchor":"center","xref":"x","y":82.1,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Luke_2022.png","x":11,"xanchor":"center","xref":"x","y":82.1,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Luke_2022.png","x":12,"xanchor":"center","xref":"x","y":88.8,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Luke_2022.png","x":13,"xanchor":"center","xref":"x","y":87.3,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Luke_2022.png","x":14,"xanchor":"center","xref":"x","y":87.4,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Luke_2022.png","x":15,"xanchor":"center","xref":"x","y":68.8,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Luke_2022.png","x":16,"xanchor":"center","xref":"x","y":69.7,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Luke_2022.png","x":17,"xanchor":"center","xref":"x","y":72.7,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Luke_2022.png","x":18,"xanchor":"center","xref":"x","y":90.7,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Luke_2022.png","x":19,"xanchor":"center","xref":"x","y":94.1,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Luke_2022.png","x":20,"xanchor":"center","xref":"x","y":94.8,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Luke_2022.png","x":21,"xanchor":"center","xref":"x","y":90.2,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Anthony_2022.png","x":1,"xanchor":"center","xref":"x","y":93.7,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Anthony_2022.png","x":2,"xanchor":"center","xref":"x","y":92.9,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Anthony_2022.png","x":3,"xanchor":"center","xref":"x","y":92.8,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Anthony_2022.png","x":4,"xanchor":"center","xref":"x","y":89.2,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Anthony_2022.png","x":5,"xanchor":"center","xref":"x","y":85.5,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Anthony_2022.png","x":6,"xanchor":"center","xref":"x","y":82.4,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Anthony_2022.png","x":7,"xanchor":"center","xref":"x","y":84.1,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Anthony_2022.png","x":8,"xanchor":"center","xref":"x","y":84.3,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Anthony_2022.png","x":9,"xanchor":"center","xref":"x","y":83.4,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Anthony_2022.png","x":10,"xanchor":"center","xref":"x","y":77.3,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Anthony_2022.png","x":11,"xanchor":"center","xref":"x","y":83.1,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Anthony_2022.png","x":12,"xanchor":"center","xref":"x","y":82.6,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Anthony_2022.png","x":13,"xanchor":"center","xref":"x","y":84.8,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Anthony_2022.png","x":14,"xanchor":"center","xref":"x","y":75.1,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Anthony_2022.png","x":15,"xanchor":"center","xref":"x","y":77.7,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Anthony_2022.png","x":16,"xanchor":"center","xref":"x","y":81.3,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Anthony_2022.png","x":17,"xanchor":"center","xref":"x","y":88.7,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Anthony_2022.png","x":18,"xanchor":"center","xref":"x","y":90.4,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Anthony_2022.png","x":19,"xanchor":"center","xref":"x","y":91.1,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Anthony_2022.png","x":20,"xanchor":"center","xref":"x","y":89.2,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Anthony_2022.png","x":21,"xanchor":"center","xref":"x","y":89.1,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Paul_2022.png","x":1,"xanchor":"center","xref":"x","y":84.2,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Paul_2022.png","x":2,"xanchor":"center","xref":"x","y":85.9,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Paul_2022.png","x":3,"xanchor":"center","xref":"x","y":83.8,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Paul_2022.png","x":4,"xanchor":"center","xref":"x","y":84.1,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Paul_2022.png","x":5,"xanchor":"center","xref":"x","y":84.4,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Paul_2022.png","x":6,"xanchor":"center","xref":"x","y":86.2,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Paul_2022.png","x":7,"xanchor":"center","xref":"x","y":86.4,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Paul_2022.png","x":8,"xanchor":"center","xref":"x","y":88.5,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Paul_2022.png","x":9,"xanchor":"center","xref":"x","y":88.8,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Paul_2022.png","x":10,"xanchor":"center","xref":"x","y":89.8,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Paul_2022.png","x":11,"xanchor":"center","xref":"x","y":84.9,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Paul_2022.png","x":12,"xanchor":"center","xref":"x","y":85.6,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Paul_2022.png","x":13,"xanchor":"center","xref":"x","y":74.7,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Paul_2022.png","x":14,"xanchor":"center","xref":"x","y":76.2,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Paul_2022.png","x":15,"xanchor":"center","xref":"x","y":70.1,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Paul_2022.png","x":16,"xanchor":"center","xref":"x","y":80.2,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Paul_2022.png","x":17,"xanchor":"center","xref":"x","y":80.5,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Paul_2022.png","x":18,"xanchor":"center","xref":"x","y":83.7,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Paul_2022.png","x":19,"xanchor":"center","xref":"x","y":83.3,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Paul_2022.png","x":20,"xanchor":"center","xref":"x","y":85.1,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Paul_2022.png","x":21,"xanchor":"center","xref":"x","y":87.9,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"James_2022.png","x":1,"xanchor":"center","xref":"x","y":85.4,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"James_2022.png","x":2,"xanchor":"center","xref":"x","y":86.7,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"James_2022.png","x":3,"xanchor":"center","xref":"x","y":85.0,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"James_2022.png","x":4,"xanchor":"center","xref":"x","y":84.5,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"James_2022.png","x":5,"xanchor":"center","xref":"x","y":82.7,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"James_2022.png","x":6,"xanchor":"center","xref":"x","y":83.5,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"James_2022.png","x":7,"xanchor":"center","xref":"x","y":84.9,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"James_2022.png","x":8,"xanchor":"center","xref":"x","y":86.6,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"James_2022.png","x":9,"xanchor":"center","xref":"x","y":84.7,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"James_2022.png","x":10,"xanchor":"center","xref":"x","y":86.9,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"James_2022.png","x":11,"xanchor":"center","xref":"x","y":82.7,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"James_2022.png","x":12,"xanchor":"center","xref":"x","y":82.8,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"James_2022.png","x":13,"xanchor":"center","xref":"x","y":70.6,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"James_2022.png","x":14,"xanchor":"center","xref":"x","y":70.6,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"James_2022.png","x":15,"xanchor":"center","xref":"x","y":71.2,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"James_2022.png","x":16,"xanchor":"center","xref":"x","y":80.5,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"James_2022.png","x":17,"xanchor":"center","xref":"x","y":82.1,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"James_2022.png","x":18,"xanchor":"center","xref":"x","y":85.2,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"James_2022.png","x":19,"xanchor":"center","xref":"x","y":86.1,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"James_2022.png","x":20,"xanchor":"center","xref":"x","y":90.0,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"James_2022.png","x":21,"xanchor":"center","xref":"x","y":87.5,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Simon_2022.png","x":1,"xanchor":"center","xref":"x","y":81.5,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Simon_2022.png","x":2,"xanchor":"center","xref":"x","y":79.5,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Simon_2022.png","x":3,"xanchor":"center","xref":"x","y":83.8,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Simon_2022.png","x":4,"xanchor":"center","xref":"x","y":85.1,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Simon_2022.png","x":5,"xanchor":"center","xref":"x","y":87.5,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Simon_2022.png","x":6,"xanchor":"center","xref":"x","y":85.9,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Simon_2022.png","x":7,"xanchor":"center","xref":"x","y":88.9,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Simon_2022.png","x":8,"xanchor":"center","xref":"x","y":85.7,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Simon_2022.png","x":9,"xanchor":"center","xref":"x","y":85.3,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Simon_2022.png","x":10,"xanchor":"center","xref":"x","y":85.5,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Simon_2022.png","x":11,"xanchor":"center","xref":"x","y":88.2,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Simon_2022.png","x":12,"xanchor":"center","xref":"x","y":88.4,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Simon_2022.png","x":13,"xanchor":"center","xref":"x","y":78.1,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Simon_2022.png","x":14,"xanchor":"center","xref":"x","y":67.0,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Simon_2022.png","x":15,"xanchor":"center","xref":"x","y":61.9,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Simon_2022.png","x":16,"xanchor":"center","xref":"x","y":69.2,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Simon_2022.png","x":17,"xanchor":"center","xref":"x","y":84.2,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Simon_2022.png","x":18,"xanchor":"center","xref":"x","y":88.9,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Simon_2022.png","x":19,"xanchor":"center","xref":"x","y":87.9,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Simon_2022.png","x":20,"xanchor":"center","xref":"x","y":85.1,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Simon_2022.png","x":21,"xanchor":"center","xref":"x","y":86.3,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Mark_2022.png","x":1,"xanchor":"center","xref":"x","y":91.4,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Mark_2022.png","x":2,"xanchor":"center","xref":"x","y":88.4,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Mark_2022.png","x":3,"xanchor":"center","xref":"x","y":88.4,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Mark_2022.png","x":4,"xanchor":"center","xref":"x","y":86.8,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Mark_2022.png","x":5,"xanchor":"center","xref":"x","y":85.5,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Mark_2022.png","x":6,"xanchor":"center","xref":"x","y":85.7,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Mark_2022.png","x":7,"xanchor":"center","xref":"x","y":84.1,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Mark_2022.png","x":8,"xanchor":"center","xref":"x","y":88.4,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Mark_2022.png","x":9,"xanchor":"center","xref":"x","y":89.2,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Mark_2022.png","x":10,"xanchor":"center","xref":"x","y":91.1,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Mark_2022.png","x":11,"xanchor":"center","xref":"x","y":90.4,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Mark_2022.png","x":12,"xanchor":"center","xref":"x","y":86.9,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Mark_2022.png","x":13,"xanchor":"center","xref":"x","y":82.9,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Mark_2022.png","x":14,"xanchor":"center","xref":"x","y":73.2,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Mark_2022.png","x":15,"xanchor":"center","xref":"x","y":61.6,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Mark_2022.png","x":16,"xanchor":"center","xref":"x","y":64.7,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Mark_2022.png","x":17,"xanchor":"center","xref":"x","y":70.6,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Mark_2022.png","x":18,"xanchor":"center","xref":"x","y":83.4,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Mark_2022.png","x":19,"xanchor":"center","xref":"x","y":84.1,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Mark_2022.png","x":20,"xanchor":"center","xref":"x","y":84.5,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Mark_2022.png","x":21,"xanchor":"center","xref":"x","y":84.3,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Jordan_2022.png","x":1,"xanchor":"center","xref":"x","y":82.8,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Jordan_2022.png","x":2,"xanchor":"center","xref":"x","y":84.0,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Jordan_2022.png","x":3,"xanchor":"center","xref":"x","y":83.3,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Jordan_2022.png","x":4,"xanchor":"center","xref":"x","y":85.1,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Jordan_2022.png","x":5,"xanchor":"center","xref":"x","y":83.9,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Jordan_2022.png","x":6,"xanchor":"center","xref":"x","y":83.2,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Jordan_2022.png","x":7,"xanchor":"center","xref":"x","y":75.0,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Jordan_2022.png","x":8,"xanchor":"center","xref":"x","y":74.5,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Jordan_2022.png","x":9,"xanchor":"center","xref":"x","y":75.8,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Jordan_2022.png","x":10,"xanchor":"center","xref":"x","y":82.1,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Jordan_2022.png","x":11,"xanchor":"center","xref":"x","y":81.8,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Jordan_2022.png","x":12,"xanchor":"center","xref":"x","y":80.0,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Jordan_2022.png","x":13,"xanchor":"center","xref":"x","y":78.1,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Jordan_2022.png","x":14,"xanchor":"center","xref":"x","y":72.6,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Jordan_2022.png","x":15,"xanchor":"center","xref":"x","y":58.9,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Jordan_2022.png","x":16,"xanchor":"center","xref":"x","y":58.9,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Jordan_2022.png","x":17,"xanchor":"center","xref":"x","y":63.9,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Jordan_2022.png","x":18,"xanchor":"center","xref":"x","y":78.5,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Jordan_2022.png","x":19,"xanchor":"center","xref":"x","y":79.5,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Jordan_2022.png","x":20,"xanchor":"center","xref":"x","y":81.8,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Jordan_2022.png","x":21,"xanchor":"center","xref":"x","y":83.1,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Lester_2022.png","x":1,"xanchor":"center","xref":"x","y":82.6,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Lester_2022.png","x":2,"xanchor":"center","xref":"x","y":78.2,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Lester_2022.png","x":3,"xanchor":"center","xref":"x","y":82.7,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Lester_2022.png","x":4,"xanchor":"center","xref":"x","y":83.9,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Lester_2022.png","x":5,"xanchor":"center","xref":"x","y":88.8,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Lester_2022.png","x":6,"xanchor":"center","xref":"x","y":87.0,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Lester_2022.png","x":7,"xanchor":"center","xref":"x","y":84.9,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Lester_2022.png","x":8,"xanchor":"center","xref":"x","y":85.4,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Lester_2022.png","x":9,"xanchor":"center","xref":"x","y":88.7,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Lester_2022.png","x":10,"xanchor":"center","xref":"x","y":87.2,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Lester_2022.png","x":11,"xanchor":"center","xref":"x","y":87.1,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Lester_2022.png","x":12,"xanchor":"center","xref":"x","y":83.1,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Lester_2022.png","x":13,"xanchor":"center","xref":"x","y":79.9,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Lester_2022.png","x":14,"xanchor":"center","xref":"x","y":72.0,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Lester_2022.png","x":15,"xanchor":"center","xref":"x","y":68.6,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Lester_2022.png","x":16,"xanchor":"center","xref":"x","y":78.6,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Lester_2022.png","x":17,"xanchor":"center","xref":"x","y":83.6,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Lester_2022.png","x":18,"xanchor":"center","xref":"x","y":88.8,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Lester_2022.png","x":19,"xanchor":"center","xref":"x","y":84.1,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Lester_2022.png","x":20,"xanchor":"center","xref":"x","y":84.6,"yanchor":"middle","yref":"y"},{"layer":"above","sizex":0.5,"sizey":4,"source":"Lester_2022.png","x":21,"xanchor":"center","xref":"x","y":80.8,"yanchor":"middle","yref":"y"}],"legend":{"orientation":"h","x":1,"xanchor":"right","y":1.02,"yanchor":"bottom"},"margin":{"b":40,"l":50,"r":20,"t":60},"paper_bgcolor":"white","plot_bgcolor":"white","template":{"data":{"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"#E5ECF6","showlakes":true,"showland":true,"subunitcolor":"white"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"bgcolor":"#E5ECF6","radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white"},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white"},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"bgcolor":"#E5ECF6","caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","zerolinewidth":2}}},"title":{"font":{"size":16},"text":"Power Rankings","x":0.5},"xaxis":{"dtick":1,"gridcolor":"#e0e0e0","tickvals":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21],"title":{"text":"Round"}},"yaxis":{"gridcolor":"#e0e0e0","title":{"text":"Avg Score per Player"}}}};
+
+// Plotly 5.x encodes numeric arrays as {dtype, bdata} (base64 binary).
+function decodePlotlyArray(val) {
+  if (!val) return [];
+  if (Array.isArray(val)) return val;
+  if (val.bdata) {
+    const bin = atob(val.bdata);
+    const buf = new Uint8Array(bin.length);
+    for (let i = 0; i < bin.length; i++) buf[i] = bin.charCodeAt(i);
+    const types = { i1: Int8Array, i2: Int16Array, i4: Int32Array,
+                    u1: Uint8Array, u2: Uint16Array, u4: Uint32Array,
+                    f4: Float32Array, f8: Float64Array };
+    return Array.from(new (types[val.dtype] || Float64Array)(buf.buffer));
+  }
+  return Array.from(val);
+}
+
+function buildPowerRankingsChart(containerId, plotlyData) {
+  const container = document.getElementById(containerId);
+  const svgNS = 'http://www.w3.org/2000/svg';
+
+  const coaches = (plotlyData.data || []).map(t => ({
+    name:   t.name,
+    color:  (t.line && t.line.color) || (t.marker && t.marker.color) || '#1f77b4',
+    rounds: decodePlotlyArray(t.x),
+    values: decodePlotlyArray(t.y),
+  })).filter(c => c.rounds.length > 0);
+
+  const allRounds = [...new Set(coaches.flatMap(c => c.rounds))].sort((a, b) => a - b);
+  if (!coaches.length || !allRounds.length) return;
+
+  // Y axis range with padding
+  const allVals = coaches.flatMap(c => c.values).filter(v => v != null && !isNaN(v));
+  if (!allVals.length) return;
+  const dataMin = Math.min(...allVals);
+  const dataMax = Math.max(...allVals);
+  const yPad = Math.max((dataMax - dataMin) * 0.15, 5);
+  const yMin = Math.floor(dataMin - yPad);
+  const yMax = Math.ceil(dataMax + yPad);
+
+  const iconR = 10;
+  const totalW = Math.max(container.clientWidth || 500, 300);
+  const totalH = 370;
+  const ml = 44, mr = 20, mt = 28, mb = 20;
+  const legendH = 50;
+  const innerW = totalW - ml - mr;
+  const innerH = totalH - mt - mb - legendH;
+
+  const xScale = r => {
+    if (allRounds.length === 1) return ml + innerW / 2;
+    return ml + (r - allRounds[0]) / (allRounds[allRounds.length - 1] - allRounds[0]) * innerW;
+  };
+  const yScale = v => mt + (yMax - v) / (yMax - yMin) * innerH;
+
+  const svg = document.createElementNS(svgNS, 'svg');
+  svg.setAttribute('width', '100%');
+  svg.setAttribute('viewBox', `0 0 ${totalW} ${totalH}`);
+  svg.style.fontFamily = 'inherit';
+  svg.style.overflow = 'visible';
+
+  // ── Defs: circular clip paths ──────────────────────────────────
+  const defs = document.createElementNS(svgNS, 'defs');
+  coaches.forEach(coach => {
+    coach.rounds.forEach((r, j) => {
+      if (coach.values[j] == null) return;
+      const id = `clip-${coach.name}-r${r}`;
+      const cp = document.createElementNS(svgNS, 'clipPath');
+      cp.setAttribute('id', id);
+      const c = document.createElementNS(svgNS, 'circle');
+      c.setAttribute('cx', xScale(r));
+      c.setAttribute('cy', yScale(coach.values[j]));
+      c.setAttribute('r', iconR);
+      cp.appendChild(c);
+      defs.appendChild(cp);
+    });
+    const legId = `clip-leg-${coach.name}`;
+    const legCp = document.createElementNS(svgNS, 'clipPath');
+    legCp.setAttribute('id', legId);
+    const legC = document.createElementNS(svgNS, 'circle');
+    legC.setAttribute('cx', 0); legC.setAttribute('cy', 0); legC.setAttribute('r', 10);
+    legCp.appendChild(legC);
+    defs.appendChild(legCp);
+  });
+  svg.appendChild(defs);
+
+  // ── Y axis grid lines and labels ───────────────────────────────
+  const numTicks = 5;
+  for (let i = 0; i <= numTicks; i++) {
+    const v = yMin + (yMax - yMin) * i / numTicks;
+    const y = yScale(v);
+    const gl = document.createElementNS(svgNS, 'line');
+    gl.setAttribute('x1', ml); gl.setAttribute('x2', ml + innerW);
+    gl.setAttribute('y1', y);  gl.setAttribute('y2', y);
+    gl.setAttribute('stroke', '#e8e8e8'); gl.setAttribute('stroke-width', '1');
+    svg.appendChild(gl);
+    const yt = document.createElementNS(svgNS, 'text');
+    yt.setAttribute('x', ml - 6); yt.setAttribute('y', y + 4);
+    yt.setAttribute('text-anchor', 'end'); yt.setAttribute('font-size', '11');
+    yt.setAttribute('fill', '#999');
+    yt.textContent = Math.round(v);
+    svg.appendChild(yt);
+  }
+
+  // ── X axis labels ──────────────────────────────────────────────
+  const xLabelY = mt + innerH + (iconR + 2) + 12;
+  allRounds.forEach(r => {
+    const xt = document.createElementNS(svgNS, 'text');
+    xt.setAttribute('x', xScale(r)); xt.setAttribute('y', xLabelY);
+    xt.setAttribute('text-anchor', 'middle'); xt.setAttribute('font-size', '11');
+    xt.setAttribute('fill', '#999');
+    xt.textContent = r;
+    svg.appendChild(xt);
+  });
+
+  // ── Coach lines + icon markers ─────────────────────────────────
+  const groups = [];
+  coaches.forEach(coach => {
+    const g = document.createElementNS(svgNS, 'g');
+    g.setAttribute('data-coach', coach.name);
+    g.style.cursor = 'pointer';
+    g.style.transition = 'opacity 0.2s';
+
+    // Polyline (skip null values)
+    const pts = coach.rounds
+      .map((r, i) => coach.values[i] != null ? `${xScale(r)},${yScale(coach.values[i])}` : null)
+      .filter(Boolean)
+      .join(' ');
+    const poly = document.createElementNS(svgNS, 'polyline');
+    poly.setAttribute('points', pts);
+    poly.setAttribute('fill', 'none');
+    poly.setAttribute('stroke', coach.color);
+    poly.setAttribute('stroke-width', '2.5');
+    poly.setAttribute('stroke-linejoin', 'round');
+    poly.setAttribute('stroke-linecap', 'round');
+    g.appendChild(poly);
+
+    // Icon at each data point
+    coach.rounds.forEach((r, j) => {
+      const v = coach.values[j];
+      if (v == null) return;
+      const cx = xScale(r);
+      const cy = yScale(v);
+      const clipId = `clip-${coach.name}-r${r}`;
+
+      const border = document.createElementNS(svgNS, 'circle');
+      border.setAttribute('cx', cx); border.setAttribute('cy', cy);
+      border.setAttribute('r', iconR + 2);
+      border.setAttribute('fill', coach.color);
+      g.appendChild(border);
+
+      const img = document.createElementNS(svgNS, 'image');
+      img.setAttribute('x', cx - iconR); img.setAttribute('y', cy - iconR);
+      img.setAttribute('width', iconR * 2); img.setAttribute('height', iconR * 2);
+      img.setAttribute('href', `/asl-hub/static/images/coaches/${coach.name}_2022.png`);
+      img.setAttribute('clip-path', `url(#${clipId})`);
+      img.setAttribute('preserveAspectRatio', 'xMidYMid slice');
+      g.appendChild(img);
+    });
+
+    svg.appendChild(g);
+    groups.push(g);
+  });
+
+  // ── Hover isolation ────────────────────────────────────────────
+  groups.forEach(g => {
+    const enter = () => groups.forEach(og => { og.style.opacity = og === g ? '1' : '0.12'; });
+    const leave = () => groups.forEach(og => { og.style.opacity = '1'; });
+    g.addEventListener('mouseenter', enter);
+    g.addEventListener('mouseleave', leave);
+  });
+
+  // ── Legend ─────────────────────────────────────────────────────
+  const legY = mt + innerH + (iconR + 2) + 28;
+  const legIconR = 8;
+  const legSpacing = Math.min(Math.floor(totalW / coaches.length), 80);
+  const legStartX = (totalW - legSpacing * coaches.length) / 2 + legSpacing / 2;
+
+  coaches.forEach((coach, i) => {
+    const lx = legStartX + i * legSpacing;
+    const lg = document.createElementNS(svgNS, 'g');
+    lg.style.cursor = 'pointer';
+    lg.style.transition = 'opacity 0.2s';
+
+    const lb = document.createElementNS(svgNS, 'circle');
+    lb.setAttribute('cx', lx); lb.setAttribute('cy', legY);
+    lb.setAttribute('r', legIconR + 1.5);
+    lb.setAttribute('fill', coach.color);
+    lg.appendChild(lb);
+
+    const li = document.createElementNS(svgNS, 'image');
+    li.setAttribute('x', lx - legIconR); li.setAttribute('y', legY - legIconR);
+    li.setAttribute('width', legIconR * 2); li.setAttribute('height', legIconR * 2);
+    li.setAttribute('href', `/asl-hub/static/images/coaches/${coach.name}_2022.png`);
+    li.setAttribute('clip-path', `url(#clip-leg-${coach.name})`);
+    li.setAttribute('preserveAspectRatio', 'xMidYMid slice');
+    const legCpCircle = defs.querySelector(`#clip-leg-${coach.name} circle`);
+    if (legCpCircle) {
+      legCpCircle.setAttribute('cx', lx);
+      legCpCircle.setAttribute('cy', legY);
+    }
+    lg.appendChild(li);
+
+    const lt = document.createElementNS(svgNS, 'text');
+    lt.setAttribute('x', lx); lt.setAttribute('y', legY + legIconR + 12);
+    lt.setAttribute('text-anchor', 'middle'); lt.setAttribute('font-size', '9');
+    lt.setAttribute('fill', '#555');
+    lt.textContent = coach.name;
+    lg.appendChild(lt);
+
+    const mainG = groups.find(g => g.getAttribute('data-coach') === coach.name);
+    lg.addEventListener('mouseenter', () => {
+      groups.forEach(og => { og.style.opacity = og === mainG ? '1' : '0.12'; });
+    });
+    lg.addEventListener('mouseleave', () => {
+      groups.forEach(og => { og.style.opacity = '1'; });
+    });
+
+    svg.appendChild(lg);
+  });
+
+  container.innerHTML = '';
+  container.appendChild(svg);
+}
+
+buildPowerRankingsChart('prChart', prData);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>James — 2023</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/asl-hub/static/css/custom.css">
+</head>
+<body>
+
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold" href="/asl-hub/">🏉 ASL Fantasy 2023</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link " href="/asl-hub/">Season Summary</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Coaches</a>
+          <ul class="dropdown-menu">
+            
+            <li><a class="dropdown-item" href="/asl-hub/coach/Mark">Mark</a></li>
+            
+            <li><a class="dropdown-item" href="/asl-hub/coach/Simon">Simon</a></li>
+            
+            <li><a class="dropdown-item" href="/asl-hub/coach/Luke">Luke</a></li>
+            
+            <li><a class="dropdown-item" href="/asl-hub/coach/Lester">Lester</a></li>
+            
+            <li><a class="dropdown-item" href="/asl-hub/coach/Paul">Paul</a></li>
+            
+            <li><a class="dropdown-item" href="/asl-hub/coach/Jordan">Jordan</a></li>
+            
+            <li><a class="dropdown-item" href="/asl-hub/coach/Anthony">Anthony</a></li>
+            
+            <li><a class="dropdown-item" href="/asl-hub/coach/James">James</a></li>
+            
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="/asl-hub/power-rankings">Power Rankings</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="/asl-hub/draft-heat-map">Draft Heat Map</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="/asl-hub/acquisition">Acquisition</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="/asl-hub/records">Honour Board</a>
+        </li>
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">2023 Season</a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            
+            <li><a class="dropdown-item " href="/asl-hub/coach/James/2026">2026</a></li>
+            
+            <li><a class="dropdown-item " href="/asl-hub/coach/James/2025">2025</a></li>
+            
+            <li><a class="dropdown-item " href="/asl-hub/coach/James/2024">2024</a></li>
+            
+            <li><a class="dropdown-item active" href="/asl-hub/coach/James/2023">2023</a></li>
+            
+            <li><a class="dropdown-item " href="/asl-hub/coach/James/2022">2022</a></li>
+            
+            <li><a class="dropdown-item " href="/asl-hub/coach/James/2021">2021</a></li>
+            
+            <li><a class="dropdown-item " href="/asl-hub/coach/James/2020">2020</a></li>
+            
+            <li><a class="dropdown-item " href="/asl-hub/coach/James/2019">2019</a></li>
+            
+            <li><a class="dropdown-item " href="/asl-hub/coach/James/2018">2018</a></li>
+            
+            <li><a class="dropdown-item " href="/asl-hub/coach/James/2017">2017</a></li>
+            
+            <li><a class="dropdown-item " href="/asl-hub/coach/James/2016">2016</a></li>
+            
+          </ul>
+        </li>
+        
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid px-4">
+  
+<div class="row g-3 mb-4 align-items-center">
+  <div class="col-auto">
+    
+    <img src="data:image/png;base64,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" alt="James" class="coach-portrait">
+    
+  </div>
+  <div class="col">
+    <h2 class="mb-0">James</h2>
+    <div class="text-muted small">2023 Season Profile</div>
+  </div>
+  <div class="col-auto d-flex gap-3">
+    <div class="text-center">
+      <div class="fs-4 fw-bold">1626.5</div>
+      <div class="text-muted small">Avg Score</div>
+    </div>
+    <div class="text-center">
+      <div class="fs-4 fw-bold">1929</div>
+      <div class="text-muted small">Best Score</div>
+    </div>
+    <div class="text-center">
+      <div class="fs-4 fw-bold">34157.0</div>
+      <div class="text-muted small">Total Pts</div>
+    </div>
+  </div>
+</div>
+
+<div class="row g-3">
+
+  
+  
+
+  
+  
+
+  
+  <div class="col-12">
+    <div class="card shadow-sm">
+      <div class="card-header fw-semibold">Positional Breakdown by Round</div>
+      <div class="card-body p-2">
+        <div id="posChart"></div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="col-12 col-lg-5">
+    <div class="card shadow-sm h-100">
+      <div class="card-header fw-semibold">Round-by-Round Scores</div>
+      <div class="card-body p-0">
+        <div class="table-responsive">
+          <table class="table table-sm table-hover mb-0">
+            <thead class="table-dark">
+              <tr>
+                <th>Rd</th>
+                <th class="text-end">Score</th>
+                <th>vs</th>
+                <th class="text-end">Opp</th>
+                <th class="text-center">Result</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+              <tr>
+                <td>1</td>
+                <td class="text-end fw-semibold">1600</td>
+                <td class="text-muted small">Anthony</td>
+                <td class="text-end text-muted">1673</td>
+                <td class="text-center">
+                  
+                    <span class="badge bg-danger">L</span>
+                  
+                </td>
+              </tr>
+              
+              <tr>
+                <td>2</td>
+                <td class="text-end fw-semibold">1771</td>
+                <td class="text-muted small">Luke</td>
+                <td class="text-end text-muted">1832</td>
+                <td class="text-center">
+                  
+                    <span class="badge bg-danger">L</span>
+                  
+                </td>
+              </tr>
+              
+              <tr>
+                <td>3</td>
+                <td class="text-end fw-semibold">1602</td>
+                <td class="text-muted small">Simon</td>
+                <td class="text-end text-muted">1537</td>
+                <td class="text-center">
+                  
+                    <span class="badge bg-success">W</span>
+                  
+                </td>
+              </tr>
+              
+              <tr>
+                <td>4</td>
+                <td class="text-end fw-semibold">1586</td>
+                <td class="text-muted small">Mark</td>
+                <td class="text-end text-muted">1898</td>
+                <td class="text-center">
+                  
+                    <span class="badge bg-danger">L</span>
+                  
+                </td>
+              </tr>
+              
+              <tr>
+                <td>5</td>
+                <td class="text-end fw-semibold">1757</td>
+                <td class="text-muted small">Lester</td>
+                <td class="text-end text-muted">1979</td>
+                <td class="text-center">
+                  
+                    <span class="badge bg-danger">L</span>
+                  
+                </td>
+              </tr>
+              
+              <tr>
+                <td>6</td>
+                <td class="text-end fw-semibold">1639</td>
+                <td class="text-muted small">Jordan</td>
+                <td class="text-end text-muted">1646</td>
+                <td class="text-center">
+                  
+                    <span class="badge bg-danger">L</span>
+                  
+                </td>
+              </tr>
+              
+              <tr>
+                <td>7</td>
+                <td class="text-end fw-semibold">1761</td>
+                <td class="text-muted small">Paul</td>
+                <td class="text-end text-muted">1868</td>
+                <td class="text-center">
+                  
+                    <span class="badge bg-danger">L</span>
+                  
+                </td>
+              </tr>
+              
+              <tr>
+                <td>8</td>
+                <td class="text-end fw-semibold">1781</td>
+                <td class="text-muted small">Anthony</td>
+                <td class="text-end text-muted">1778</td>
+                <td class="text-center">
+                  
+                    <span class="badge bg-success">W</span>
+                  
+                </td>
+              </tr>
+              
+              <tr>
+                <td>9</td>
+                <td class="text-end fw-semibold">1449</td>
+                <td class="text-muted small">Luke</td>
+                <td class="text-end text-muted">1831</td>
+                <td class="text-center">
+                  
+                    <span class="badge bg-danger">L</span>
+                  
+                </td>
+              </tr>
+              
+              <tr>
+                <td>10</td>
+                <td class="text-end fw-semibold">1929</td>
+                <td class="text-muted small">Simon</td>
+                <td class="text-end text-muted">1698</td>
+                <td class="text-center">
+                  
+                    <span class="badge bg-success">W</span>
+                  
+                </td>
+              </tr>
+              
+              <tr>
+                <td>11</td>
+                <td class="text-end fw-semibold">1612</td>
+                <td class="text-muted small">Mark</td>
+                <td class="text-end text-muted">1533</td>
+                <td class="text-center">
+                  
+                    <span class="badge bg-success">W</span>
+                  
+                </td>
+              </tr>
+              
+              <tr>
+                <td>12</td>
+                <td class="text-end fw-semibold">1261</td>
+                <td class="text-muted small">Lester</td>
+                <td class="text-end text-muted">1544</td>
+                <td class="text-center">
+                  
+                    <span class="badge bg-danger">L</span>
+                  
+                </td>
+              </tr>
+              
+              <tr>
+                <td>13</td>
+                <td class="text-end fw-semibold">1359</td>
+                <td class="text-muted small">Jordan</td>
+                <td class="text-end text-muted">1435</td>
+                <td class="text-center">
+                  
+                    <span class="badge bg-danger">L</span>
+                  
+                </td>
+              </tr>
+              
+              <tr>
+                <td>14</td>
+                <td class="text-end fw-semibold">1425</td>
+                <td class="text-muted small">Paul</td>
+                <td class="text-end text-muted">1398</td>
+                <td class="text-center">
+                  
+                    <span class="badge bg-success">W</span>
+                  
+                </td>
+              </tr>
+              
+              <tr>
+                <td>15</td>
+                <td class="text-end fw-semibold">1431</td>
+                <td class="text-muted small">Anthony</td>
+                <td class="text-end text-muted">650</td>
+                <td class="text-center">
+                  
+                    <span class="badge bg-success">W</span>
+                  
+                </td>
+              </tr>
+              
+              <tr>
+                <td>16</td>
+                <td class="text-end fw-semibold">1664</td>
+                <td class="text-muted small">Luke</td>
+                <td class="text-end text-muted">1495</td>
+                <td class="text-center">
+                  
+                    <span class="badge bg-success">W</span>
+                  
+                </td>
+              </tr>
+              
+              <tr>
+                <td>17</td>
+                <td class="text-end fw-semibold">1778</td>
+                <td class="text-muted small">Simon</td>
+                <td class="text-end text-muted">1725</td>
+                <td class="text-center">
+                  
+                    <span class="badge bg-success">W</span>
+                  
+                </td>
+              </tr>
+              
+              <tr>
+                <td>18</td>
+                <td class="text-end fw-semibold">1659</td>
+                <td class="text-muted small">Mark</td>
+                <td class="text-end text-muted">1576</td>
+                <td class="text-center">
+                  
+                    <span class="badge bg-success">W</span>
+                  
+                </td>
+              </tr>
+              
+              <tr>
+                <td>19</td>
+                <td class="text-end fw-semibold">1641</td>
+                <td class="text-muted small">Lester</td>
+                <td class="text-end text-muted">2018</td>
+                <td class="text-center">
+                  
+                    <span class="badge bg-danger">L</span>
+                  
+                </td>
+              </tr>
+              
+              <tr>
+                <td>20</td>
+                <td class="text-end fw-semibold">1723</td>
+                <td class="text-muted small">Jordan</td>
+                <td class="text-end text-muted">1625</td>
+                <td class="text-center">
+                  
+                    <span class="badge bg-success">W</span>
+                  
+                </td>
+              </tr>
+              
+              <tr>
+                <td>21</td>
+                <td class="text-end fw-semibold">1729</td>
+                <td class="text-muted small">Paul</td>
+                <td class="text-end text-muted">1744</td>
+                <td class="text-center">
+                  
+                    <span class="badge bg-danger">L</span>
+                  
+                </td>
+              </tr>
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="col-12 col-lg-7">
+    <div class="card shadow-sm h-100">
+      <div class="card-header fw-semibold">Top Players This Season (On-Field)</div>
+      <div class="card-body p-0">
+        <div class="table-responsive">
+          <table class="table table-sm table-hover mb-0">
+            <thead class="table-dark">
+              <tr>
+                <th>Player</th>
+                <th>Pos</th>
+                <th class="text-end">Gms</th>
+                <th class="text-end">Avg</th>
+                <th class="text-end">Best</th>
+                <th class="text-end">Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+              <tr>
+                <td>Zac Bailey</td>
+                <td><span class="badge bg-secondary">MID</span></td>
+                <td class="text-end">1</td>
+                <td class="text-end fw-semibold">126.0</td>
+                <td class="text-end">126</td>
+                <td class="text-end text-muted">126</td>
+              </tr>
+              
+              <tr>
+                <td>Rory Sloane</td>
+                <td><span class="badge bg-secondary">MID</span></td>
+                <td class="text-end">1</td>
+                <td class="text-end fw-semibold">119.0</td>
+                <td class="text-end">119</td>
+                <td class="text-end text-muted">119</td>
+              </tr>
+              
+              <tr>
+                <td>Zach Merrett</td>
+                <td><span class="badge bg-secondary">MID</span></td>
+                <td class="text-end">19</td>
+                <td class="text-end fw-semibold">117.4</td>
+                <td class="text-end">168</td>
+                <td class="text-end text-muted">2231</td>
+              </tr>
+              
+              <tr>
+                <td>Ned Reeves</td>
+                <td><span class="badge bg-secondary">RUC</span></td>
+                <td class="text-end">1</td>
+                <td class="text-end fw-semibold">107.0</td>
+                <td class="text-end">107</td>
+                <td class="text-end text-muted">107</td>
+              </tr>
+              
+              <tr>
+                <td>Errol Gulden</td>
+                <td><span class="badge bg-secondary">FWD</span></td>
+                <td class="text-end">21</td>
+                <td class="text-end fw-semibold">105.9</td>
+                <td class="text-end">164</td>
+                <td class="text-end text-muted">2223</td>
+              </tr>
+              
+              <tr>
+                <td>Andrew McGrath</td>
+                <td><span class="badge bg-secondary">MID</span></td>
+                <td class="text-end">1</td>
+                <td class="text-end fw-semibold">102.0</td>
+                <td class="text-end">102</td>
+                <td class="text-end text-muted">102</td>
+              </tr>
+              
+              <tr>
+                <td>Jack Steele</td>
+                <td><span class="badge bg-secondary">MID</span></td>
+                <td class="text-end">8</td>
+                <td class="text-end fw-semibold">100.6</td>
+                <td class="text-end">160</td>
+                <td class="text-end text-muted">805</td>
+              </tr>
+              
+              <tr>
+                <td>Mitch Duncan</td>
+                <td><span class="badge bg-secondary">DEF</span></td>
+                <td class="text-end">8</td>
+                <td class="text-end fw-semibold">99.2</td>
+                <td class="text-end">144</td>
+                <td class="text-end text-muted">794</td>
+              </tr>
+              
+              <tr>
+                <td>Jake Lloyd</td>
+                <td><span class="badge bg-secondary">DEF</span></td>
+                <td class="text-end">19</td>
+                <td class="text-end fw-semibold">96.5</td>
+                <td class="text-end">139</td>
+                <td class="text-end text-muted">1833</td>
+              </tr>
+              
+              <tr>
+                <td>Charlie Curnow</td>
+                <td><span class="badge bg-secondary">FWD</span></td>
+                <td class="text-end">20</td>
+                <td class="text-end fw-semibold">95.8</td>
+                <td class="text-end">186</td>
+                <td class="text-end text-muted">1917</td>
+              </tr>
+              
+              <tr>
+                <td>Reilly O&#39;Brien</td>
+                <td><span class="badge bg-secondary">RUC</span></td>
+                <td class="text-end">21</td>
+                <td class="text-end fw-semibold">92.5</td>
+                <td class="text-end">144</td>
+                <td class="text-end text-muted">1943</td>
+              </tr>
+              
+              <tr>
+                <td>Christian Salem</td>
+                <td><span class="badge bg-secondary">DEF</span></td>
+                <td class="text-end">2</td>
+                <td class="text-end fw-semibold">92.0</td>
+                <td class="text-end">99</td>
+                <td class="text-end text-muted">184</td>
+              </tr>
+              
+              <tr>
+                <td>Nathan Broad</td>
+                <td><span class="badge bg-secondary">DEF</span></td>
+                <td class="text-end">2</td>
+                <td class="text-end fw-semibold">90.0</td>
+                <td class="text-end">118</td>
+                <td class="text-end text-muted">180</td>
+              </tr>
+              
+              <tr>
+                <td>Matt Flynn</td>
+                <td><span class="badge bg-secondary">RUC</span></td>
+                <td class="text-end">9</td>
+                <td class="text-end fw-semibold">88.0</td>
+                <td class="text-end">132</td>
+                <td class="text-end text-muted">792</td>
+              </tr>
+              
+              <tr>
+                <td>Callum Mills</td>
+                <td><span class="badge bg-secondary">MID</span></td>
+                <td class="text-end">16</td>
+                <td class="text-end fw-semibold">87.9</td>
+                <td class="text-end">123</td>
+                <td class="text-end text-muted">1406</td>
+              </tr>
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="col-12">
+    <div class="card shadow-sm">
+      <div class="card-header fw-semibold">Current Roster</div>
+      <div class="card-body p-0">
+        <div class="table-responsive">
+          <table class="table table-sm table-hover mb-0">
+            <thead class="table-dark">
+              <tr>
+                <th>Player</th>
+                <th>AFL Team</th>
+                <th>Pos</th>
+                <th class="text-end">Avg</th>
+                <th class="text-end">Avg3</th>
+                <th class="text-end">Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+              <tr>
+                <td class="fw-semibold">Zach Merrett</td>
+                <td class="text-muted small">ESS</td>
+                <td><span class="badge bg-secondary">MID</span></td>
+                <td class="text-end">117.4</td>
+                <td class="text-end">129.0</td>
+                <td class="text-end text-muted">$625,900</td>
+              </tr>
+              
+              <tr>
+                <td class="fw-semibold">Errol Gulden</td>
+                <td class="text-muted small">SYD</td>
+                <td><span class="badge bg-secondary">FWD</span></td>
+                <td class="text-end">111.2</td>
+                <td class="text-end">112.7</td>
+                <td class="text-end text-muted">$604,100</td>
+              </tr>
+              
+              <tr>
+                <td class="fw-semibold">Charlie Curnow</td>
+                <td class="text-muted small">CAR</td>
+                <td><span class="badge bg-secondary">FWD</span></td>
+                <td class="text-end">99.0</td>
+                <td class="text-end">126.0</td>
+                <td class="text-end text-muted">$588,700</td>
+              </tr>
+              
+              <tr>
+                <td class="fw-semibold">Reilly O&#39;Brien</td>
+                <td class="text-muted small">ADE</td>
+                <td><span class="badge bg-secondary">RUC</span></td>
+                <td class="text-end">97.2</td>
+                <td class="text-end">90.7</td>
+                <td class="text-end text-muted">$508,800</td>
+              </tr>
+              
+              <tr>
+                <td class="fw-semibold">Jake Lloyd</td>
+                <td class="text-muted small">SYD</td>
+                <td><span class="badge bg-secondary">DEF</span></td>
+                <td class="text-end">96.5</td>
+                <td class="text-end">105.3</td>
+                <td class="text-end text-muted">$469,500</td>
+              </tr>
+              
+              <tr>
+                <td class="fw-semibold">Jack Steele</td>
+                <td class="text-muted small">STK</td>
+                <td><span class="badge bg-secondary">MID</span></td>
+                <td class="text-end">96.0</td>
+                <td class="text-end">108.3</td>
+                <td class="text-end text-muted">$574,300</td>
+              </tr>
+              
+              <tr>
+                <td class="fw-semibold">Mitch Duncan</td>
+                <td class="text-muted small">GEE</td>
+                <td><span class="badge bg-secondary">DEF</span></td>
+                <td class="text-end">90.6</td>
+                <td class="text-end">101.3</td>
+                <td class="text-end text-muted">$508,500</td>
+              </tr>
+              
+              <tr>
+                <td class="fw-semibold">Sam Taylor</td>
+                <td class="text-muted small">GWS</td>
+                <td><span class="badge bg-secondary">DEF</span></td>
+                <td class="text-end">89.4</td>
+                <td class="text-end">97.7</td>
+                <td class="text-end text-muted">$538,200</td>
+              </tr>
+              
+              <tr>
+                <td class="fw-semibold">Jack Crisp</td>
+                <td class="text-muted small">COL</td>
+                <td><span class="badge bg-secondary">MID</span></td>
+                <td class="text-end">89.1</td>
+                <td class="text-end">90.7</td>
+                <td class="text-end text-muted">$475,100</td>
+              </tr>
+              
+              <tr>
+                <td class="fw-semibold">Callum Mills</td>
+                <td class="text-muted small">SYD</td>
+                <td><span class="badge bg-secondary">MID</span></td>
+                <td class="text-end">87.9</td>
+                <td class="text-end">84.7</td>
+                <td class="text-end text-muted">$447,900</td>
+              </tr>
+              
+              <tr>
+                <td class="fw-semibold">Andrew McGrath</td>
+                <td class="text-muted small">ESS</td>
+                <td><span class="badge bg-secondary">DEF</span></td>
+                <td class="text-end">85.8</td>
+                <td class="text-end">70.7</td>
+                <td class="text-end text-muted">$426,900</td>
+              </tr>
+              
+              <tr>
+                <td class="fw-semibold">Jaeger O&#39;Meara</td>
+                <td class="text-muted small">FRE</td>
+                <td><span class="badge bg-secondary">MID</span></td>
+                <td class="text-end">84.6</td>
+                <td class="text-end">75.3</td>
+                <td class="text-end text-muted">$450,800</td>
+              </tr>
+              
+              <tr>
+                <td class="fw-semibold">Jacob Weitering</td>
+                <td class="text-muted small">CAR</td>
+                <td><span class="badge bg-secondary">DEF</span></td>
+                <td class="text-end">83.5</td>
+                <td class="text-end">97.7</td>
+                <td class="text-end text-muted">$456,500</td>
+              </tr>
+              
+              <tr>
+                <td class="fw-semibold">Liam Baker</td>
+                <td class="text-muted small">RIC</td>
+                <td><span class="badge bg-secondary">FWD</span></td>
+                <td class="text-end">82.3</td>
+                <td class="text-end">78.7</td>
+                <td class="text-end text-muted">$393,800</td>
+              </tr>
+              
+              <tr>
+                <td class="fw-semibold">Ollie Wines</td>
+                <td class="text-muted small">PTA</td>
+                <td><span class="badge bg-secondary">MID</span></td>
+                <td class="text-end">81.6</td>
+                <td class="text-end">68.0</td>
+                <td class="text-end text-muted">$399,700</td>
+              </tr>
+              
+              <tr>
+                <td class="fw-semibold">Dyson Heppell</td>
+                <td class="text-muted small">ESS</td>
+                <td><span class="badge bg-secondary">MID</span></td>
+                <td class="text-end">80.6</td>
+                <td class="text-end">101.0</td>
+                <td class="text-end text-muted">$487,000</td>
+              </tr>
+              
+              <tr>
+                <td class="fw-semibold">Kyle Langford</td>
+                <td class="text-muted small">ESS</td>
+                <td><span class="badge bg-secondary">FWD</span></td>
+                <td class="text-end">79.9</td>
+                <td class="text-end">100.7</td>
+                <td class="text-end text-muted">$405,100</td>
+              </tr>
+              
+              <tr>
+                <td class="fw-semibold">Tom Hawkins</td>
+                <td class="text-muted small">GEE</td>
+                <td><span class="badge bg-secondary">FWD</span></td>
+                <td class="text-end">79.4</td>
+                <td class="text-end">64.3</td>
+                <td class="text-end text-muted">$388,200</td>
+              </tr>
+              
+              <tr>
+                <td class="fw-semibold">Scott Lycett</td>
+                <td class="text-muted small">PTA</td>
+                <td><span class="badge bg-secondary">RUC</span></td>
+                <td class="text-end">74.8</td>
+                <td class="text-end">69.3</td>
+                <td class="text-end text-muted">$411,400</td>
+              </tr>
+              
+              <tr>
+                <td class="fw-semibold">Ed Langdon</td>
+                <td class="text-muted small">MEL</td>
+                <td><span class="badge bg-secondary">MID</span></td>
+                <td class="text-end">72.1</td>
+                <td class="text-end">86.0</td>
+                <td class="text-end text-muted">$404,000</td>
+              </tr>
+              
+              <tr>
+                <td class="fw-semibold">Kysaiah Pickett</td>
+                <td class="text-muted small">MEL</td>
+                <td><span class="badge bg-secondary">FWD</span></td>
+                <td class="text-end">70.7</td>
+                <td class="text-end">84.7</td>
+                <td class="text-end text-muted">$369,800</td>
+              </tr>
+              
+              <tr>
+                <td class="fw-semibold">Nick Bryan</td>
+                <td class="text-muted small">ESS</td>
+                <td><span class="badge bg-secondary">RUC</span></td>
+                <td class="text-end">62.5</td>
+                <td class="text-end">62.7</td>
+                <td class="text-end text-muted">$286,300</td>
+              </tr>
+              
+              <tr>
+                <td class="fw-semibold">Nat Fyfe</td>
+                <td class="text-muted small">FRE</td>
+                <td><span class="badge bg-secondary">MID</span></td>
+                <td class="text-end">50.7</td>
+                <td class="text-end">55.7</td>
+                <td class="text-end text-muted">$313,100</td>
+              </tr>
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</div>
+
+<footer class="text-center text-muted small py-3 mt-5 border-top">
+  ASL Fantasy League Analytics &mdash; 2023 Season
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+
+
+<script>
+const posData = {"data": [{"hovertemplate": "<b>DEF</b> R%{x}: %{y:.0f}<extra></extra>", "line": {"color": "#1f77b4", "width": 2}, "mode": "lines+markers", "name": "DEF", "x": {"dtype": "i1", "bdata": "AQIDBAUGBwgJCgsMDQ4PEBESExQV"}, "y": {"dtype": "f8", "bdata": "AAAAAABgeEAAAAAAANB4QAAAAAAAcHdAAAAAAADgfEAAAAAAAPB+QAAAAAAA0HZAAAAAAAAQfEAAAAAAAJB7QAAAAAAAgHVAAAAAAADgekAAAAAAAAB7QAAAAAAAsHdAAAAAAABQdEAAAAAAAEB6QAAAAAAAkHlAAAAAAACwd0AAAAAAAMB4QAAAAAAAwHBAAAAAAABgekAAAAAAAMB5QAAAAAAAgHlA"}, "type": "scatter"}, {"hovertemplate": "<b>MID</b> R%{x}: %{y:.0f}<extra></extra>", "line": {"color": "#2ca02c", "width": 2}, "mode": "lines+markers", "name": "MID", "x": {"dtype": "i1", "bdata": "AQIDBAUGBwgJCgsMDQ4PEBESExQV"}, "y": {"dtype": "f8", "bdata": "AAAAAABohEAAAAAAADCFQAAAAAAACIJAAAAAAADAgEAAAAAAAGCAQAAAAAAAEIhAAAAAAAAwfkAAAAAAADCFQAAAAAAAMIJAAAAAAAB4h0AAAAAAAECDQAAAAAAAgH9AAAAAAAAQgUAAAAAAAIiBQAAAAAAAaIJAAAAAAABghEAAAAAAAICGQAAAAAAAcINAAAAAAAAghUAAAAAAACCCQAAAAAAAYIFA"}, "type": "scatter"}, {"hovertemplate": "<b>RUC</b> R%{x}: %{y:.0f}<extra></extra>", "line": {"color": "#9467bd", "width": 2}, "mode": "lines+markers", "name": "RUC", "x": {"dtype": "i1", "bdata": "AQIDBAUGBwgJCgsMDQ4PEBESExQV"}, "y": {"dtype": "f8", "bdata": "AAAAAADAZ0AAAAAAAKBsQAAAAAAAIGtAAAAAAACgYEAAAAAAAKBjQAAAAAAAoGRAAAAAAACgYkAAAAAAAABqQAAAAAAAQGRAAAAAAAAAa0AAAAAAAOBsQAAAAAAAAGBAAAAAAAAgakAAAAAAAABYQAAAAAAAgFlAAAAAAAAAYkAAAAAAAMBqQAAAAAAAAGVAAAAAAADAXUAAAAAAAIBeQAAAAAAAQFpA"}, "type": "scatter"}, {"hovertemplate": "<b>FWD</b> R%{x}: %{y:.0f}<extra></extra>", "line": {"color": "#ff7f0e", "width": 2}, "mode": "lines+markers", "name": "FWD", "x": {"dtype": "i1", "bdata": "AQIDBAUGBwgJCgsMDQ4PEBESExQV"}, "y": {"dtype": "f8", "bdata": "AAAAAADwdkAAAAAAADB9QAAAAAAAEHtAAAAAAABwfEAAAAAAAMB1QAAAAAAAMHVAAAAAAAD4gUAAAAAAAGB8QAAAAAAAkHZAAAAAAACggEAAAAAAANB0QAAAAAAAQG9AAAAAAABAdUAAAAAAAAB5QAAAAAAAcHhAAAAAAAAge0AAAAAAAAB8QAAAAAAAIH1AAAAAAACAdUAAAAAAAIB/QAAAAAAAEHlA"}, "type": "scatter"}], "layout": {"template": {"data": {"histogram2dcontour": [{"type": "histogram2dcontour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "choropleth": [{"type": "choropleth", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "histogram2d": [{"type": "histogram2d", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "heatmap": [{"type": "heatmap", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "contourcarpet": [{"type": "contourcarpet", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "contour": [{"type": "contour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "surface": [{"type": "surface", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "mesh3d": [{"type": "mesh3d", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "scatter": [{"fillpattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}, "type": "scatter"}], "parcoords": [{"type": "parcoords", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolargl": [{"type": "scatterpolargl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "bar"}], "scattergeo": [{"type": "scattergeo", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolar": [{"type": "scatterpolar", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "histogram": [{"marker": {"pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "histogram"}], "scattergl": [{"type": "scattergl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatter3d": [{"type": "scatter3d", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermap": [{"type": "scattermap", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermapbox": [{"type": "scattermapbox", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterternary": [{"type": "scatterternary", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattercarpet": [{"type": "scattercarpet", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "barpolar"}], "pie": [{"automargin": true, "type": "pie"}]}, "layout": {"autotypenumbers": "strict", "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "hovermode": "closest", "hoverlabel": {"align": "left"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"bgcolor": "#E5ECF6", "angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "ternary": {"bgcolor": "#E5ECF6", "aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]]}, "xaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "yaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "geo": {"bgcolor": "white", "landcolor": "#E5ECF6", "subunitcolor": "white", "showland": true, "showlakes": true, "lakecolor": "white"}, "title": {"x": 0.05}, "mapbox": {"style": "light"}}}, "xaxis": {"title": {"text": "Round"}, "dtick": 1, "gridcolor": "#e0e0e0"}, "yaxis": {"title": {"text": "On-field Points"}, "gridcolor": "#e0e0e0"}, "legend": {"orientation": "h", "yanchor": "bottom", "y": 1.02, "xanchor": "right", "x": 1}, "margin": {"l": 50, "r": 20, "t": 60, "b": 40}, "title": {"text": "James \u2014 Positional Scores by Round"}, "plot_bgcolor": "white", "paper_bgcolor": "white", "height": 320}};
+Plotly.react('posChart', posData.data, posData.layout, {responsive: true, displayModeBar: false});
+</script>
+
+</body>
+</html>

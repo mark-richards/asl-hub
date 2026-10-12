@@ -1,0 +1,823 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Anthony — 2018</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/asl-hub/static/css/custom.css">
+</head>
+<body>
+
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold" href="/asl-hub/">🏉 ASL Fantasy 2018</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link " href="/asl-hub/">Season Summary</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Coaches</a>
+          <ul class="dropdown-menu">
+            
+            <li><a class="dropdown-item" href="/asl-hub/coach/Mark">Mark</a></li>
+            
+            <li><a class="dropdown-item" href="/asl-hub/coach/Simon">Simon</a></li>
+            
+            <li><a class="dropdown-item" href="/asl-hub/coach/Luke">Luke</a></li>
+            
+            <li><a class="dropdown-item" href="/asl-hub/coach/Lester">Lester</a></li>
+            
+            <li><a class="dropdown-item" href="/asl-hub/coach/Paul">Paul</a></li>
+            
+            <li><a class="dropdown-item" href="/asl-hub/coach/Jordan">Jordan</a></li>
+            
+            <li><a class="dropdown-item" href="/asl-hub/coach/Anthony">Anthony</a></li>
+            
+            <li><a class="dropdown-item" href="/asl-hub/coach/James">James</a></li>
+            
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="/asl-hub/power-rankings">Power Rankings</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="/asl-hub/draft-heat-map">Draft Heat Map</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="/asl-hub/acquisition">Acquisition</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="/asl-hub/records">Honour Board</a>
+        </li>
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">2018 Season</a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            
+            <li><a class="dropdown-item " href="/asl-hub/coach/Anthony/2026">2026</a></li>
+            
+            <li><a class="dropdown-item " href="/asl-hub/coach/Anthony/2025">2025</a></li>
+            
+            <li><a class="dropdown-item " href="/asl-hub/coach/Anthony/2024">2024</a></li>
+            
+            <li><a class="dropdown-item " href="/asl-hub/coach/Anthony/2023">2023</a></li>
+            
+            <li><a class="dropdown-item " href="/asl-hub/coach/Anthony/2022">2022</a></li>
+            
+            <li><a class="dropdown-item " href="/asl-hub/coach/Anthony/2021">2021</a></li>
+            
+            <li><a class="dropdown-item " href="/asl-hub/coach/Anthony/2020">2020</a></li>
+            
+            <li><a class="dropdown-item " href="/asl-hub/coach/Anthony/2019">2019</a></li>
+            
+            <li><a class="dropdown-item active" href="/asl-hub/coach/Anthony/2018">2018</a></li>
+            
+            <li><a class="dropdown-item " href="/asl-hub/coach/Anthony/2017">2017</a></li>
+            
+            <li><a class="dropdown-item " href="/asl-hub/coach/Anthony/2016">2016</a></li>
+            
+          </ul>
+        </li>
+        
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid px-4">
+  
+<div class="row g-3 mb-4 align-items-center">
+  <div class="col-auto">
+    
+    <img src="data:image/png;base64,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" alt="Anthony" class="coach-portrait">
+    
+  </div>
+  <div class="col">
+    <h2 class="mb-0">Anthony</h2>
+    <div class="text-muted small">2018 Season Profile</div>
+  </div>
+  <div class="col-auto d-flex gap-3">
+    <div class="text-center">
+      <div class="fs-4 fw-bold">1652.3</div>
+      <div class="text-muted small">Avg Score</div>
+    </div>
+    <div class="text-center">
+      <div class="fs-4 fw-bold">1858</div>
+      <div class="text-muted small">Best Score</div>
+    </div>
+    <div class="text-center">
+      <div class="fs-4 fw-bold">34698</div>
+      <div class="text-muted small">Total Pts</div>
+    </div>
+  </div>
+</div>
+
+<div class="row g-3">
+
+  
+  
+
+  
+  
+
+  
+  <div class="col-12">
+    <div class="card shadow-sm">
+      <div class="card-header fw-semibold">Positional Breakdown by Round</div>
+      <div class="card-body p-2">
+        <div id="posChart"></div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="col-12 col-lg-5">
+    <div class="card shadow-sm h-100">
+      <div class="card-header fw-semibold">Round-by-Round Scores</div>
+      <div class="card-body p-0">
+        <div class="table-responsive">
+          <table class="table table-sm table-hover mb-0">
+            <thead class="table-dark">
+              <tr>
+                <th>Rd</th>
+                <th class="text-end">Score</th>
+                <th>vs</th>
+                <th class="text-end">Opp</th>
+                <th class="text-center">Result</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+              <tr>
+                <td>1</td>
+                <td class="text-end fw-semibold">1705</td>
+                <td class="text-muted small">Simon</td>
+                <td class="text-end text-muted">1613</td>
+                <td class="text-center">
+                  
+                    <span class="badge bg-success">W</span>
+                  
+                </td>
+              </tr>
+              
+              <tr>
+                <td>2</td>
+                <td class="text-end fw-semibold">1474</td>
+                <td class="text-muted small">Lester</td>
+                <td class="text-end text-muted">1527</td>
+                <td class="text-center">
+                  
+                    <span class="badge bg-danger">L</span>
+                  
+                </td>
+              </tr>
+              
+              <tr>
+                <td>3</td>
+                <td class="text-end fw-semibold">1666</td>
+                <td class="text-muted small">James</td>
+                <td class="text-end text-muted">1371</td>
+                <td class="text-center">
+                  
+                    <span class="badge bg-success">W</span>
+                  
+                </td>
+              </tr>
+              
+              <tr>
+                <td>4</td>
+                <td class="text-end fw-semibold">1673</td>
+                <td class="text-muted small">Luke</td>
+                <td class="text-end text-muted">1602</td>
+                <td class="text-center">
+                  
+                    <span class="badge bg-success">W</span>
+                  
+                </td>
+              </tr>
+              
+              <tr>
+                <td>5</td>
+                <td class="text-end fw-semibold">1736</td>
+                <td class="text-muted small">Mark</td>
+                <td class="text-end text-muted">1484</td>
+                <td class="text-center">
+                  
+                    <span class="badge bg-success">W</span>
+                  
+                </td>
+              </tr>
+              
+              <tr>
+                <td>6</td>
+                <td class="text-end fw-semibold">1514</td>
+                <td class="text-muted small">Jordan</td>
+                <td class="text-end text-muted">1737</td>
+                <td class="text-center">
+                  
+                    <span class="badge bg-danger">L</span>
+                  
+                </td>
+              </tr>
+              
+              <tr>
+                <td>7</td>
+                <td class="text-end fw-semibold">1780</td>
+                <td class="text-muted small">Paul</td>
+                <td class="text-end text-muted">1634</td>
+                <td class="text-center">
+                  
+                    <span class="badge bg-success">W</span>
+                  
+                </td>
+              </tr>
+              
+              <tr>
+                <td>8</td>
+                <td class="text-end fw-semibold">1600</td>
+                <td class="text-muted small">Simon</td>
+                <td class="text-end text-muted">1795</td>
+                <td class="text-center">
+                  
+                    <span class="badge bg-danger">L</span>
+                  
+                </td>
+              </tr>
+              
+              <tr>
+                <td>9</td>
+                <td class="text-end fw-semibold">1720</td>
+                <td class="text-muted small">Lester</td>
+                <td class="text-end text-muted">1557</td>
+                <td class="text-center">
+                  
+                    <span class="badge bg-success">W</span>
+                  
+                </td>
+              </tr>
+              
+              <tr>
+                <td>10</td>
+                <td class="text-end fw-semibold">1486</td>
+                <td class="text-muted small">James</td>
+                <td class="text-end text-muted">1423</td>
+                <td class="text-center">
+                  
+                    <span class="badge bg-success">W</span>
+                  
+                </td>
+              </tr>
+              
+              <tr>
+                <td>11</td>
+                <td class="text-end fw-semibold">1640</td>
+                <td class="text-muted small">Luke</td>
+                <td class="text-end text-muted">1797</td>
+                <td class="text-center">
+                  
+                    <span class="badge bg-danger">L</span>
+                  
+                </td>
+              </tr>
+              
+              <tr>
+                <td>12</td>
+                <td class="text-end fw-semibold">1597</td>
+                <td class="text-muted small">Mark</td>
+                <td class="text-end text-muted">1451</td>
+                <td class="text-center">
+                  
+                    <span class="badge bg-success">W</span>
+                  
+                </td>
+              </tr>
+              
+              <tr>
+                <td>13</td>
+                <td class="text-end fw-semibold">1409</td>
+                <td class="text-muted small">Jordan</td>
+                <td class="text-end text-muted">1154</td>
+                <td class="text-center">
+                  
+                    <span class="badge bg-success">W</span>
+                  
+                </td>
+              </tr>
+              
+              <tr>
+                <td>14</td>
+                <td class="text-end fw-semibold">1471</td>
+                <td class="text-muted small">Paul</td>
+                <td class="text-end text-muted">1238</td>
+                <td class="text-center">
+                  
+                    <span class="badge bg-success">W</span>
+                  
+                </td>
+              </tr>
+              
+              <tr>
+                <td>15</td>
+                <td class="text-end fw-semibold">1828</td>
+                <td class="text-muted small">Simon</td>
+                <td class="text-end text-muted">1561</td>
+                <td class="text-center">
+                  
+                    <span class="badge bg-success">W</span>
+                  
+                </td>
+              </tr>
+              
+              <tr>
+                <td>16</td>
+                <td class="text-end fw-semibold">1777</td>
+                <td class="text-muted small">Lester</td>
+                <td class="text-end text-muted">1808</td>
+                <td class="text-center">
+                  
+                    <span class="badge bg-danger">L</span>
+                  
+                </td>
+              </tr>
+              
+              <tr>
+                <td>17</td>
+                <td class="text-end fw-semibold">1840</td>
+                <td class="text-muted small">James</td>
+                <td class="text-end text-muted">1487</td>
+                <td class="text-center">
+                  
+                    <span class="badge bg-success">W</span>
+                  
+                </td>
+              </tr>
+              
+              <tr>
+                <td>18</td>
+                <td class="text-end fw-semibold">1630</td>
+                <td class="text-muted small">Luke</td>
+                <td class="text-end text-muted">1672</td>
+                <td class="text-center">
+                  
+                    <span class="badge bg-danger">L</span>
+                  
+                </td>
+              </tr>
+              
+              <tr>
+                <td>19</td>
+                <td class="text-end fw-semibold">1858</td>
+                <td class="text-muted small">Mark</td>
+                <td class="text-end text-muted">1485</td>
+                <td class="text-center">
+                  
+                    <span class="badge bg-success">W</span>
+                  
+                </td>
+              </tr>
+              
+              <tr>
+                <td>20</td>
+                <td class="text-end fw-semibold">1726</td>
+                <td class="text-muted small">Jordan</td>
+                <td class="text-end text-muted">1636</td>
+                <td class="text-center">
+                  
+                    <span class="badge bg-success">W</span>
+                  
+                </td>
+              </tr>
+              
+              <tr>
+                <td>21</td>
+                <td class="text-end fw-semibold">1568</td>
+                <td class="text-muted small">Paul</td>
+                <td class="text-end text-muted">1596</td>
+                <td class="text-center">
+                  
+                    <span class="badge bg-danger">L</span>
+                  
+                </td>
+              </tr>
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="col-12 col-lg-7">
+    <div class="card shadow-sm h-100">
+      <div class="card-header fw-semibold">Top Players This Season (On-Field)</div>
+      <div class="card-body p-0">
+        <div class="table-responsive">
+          <table class="table table-sm table-hover mb-0">
+            <thead class="table-dark">
+              <tr>
+                <th>Player</th>
+                <th>Pos</th>
+                <th class="text-end">Gms</th>
+                <th class="text-end">Avg</th>
+                <th class="text-end">Best</th>
+                <th class="text-end">Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+              <tr>
+                <td>T Mitchell</td>
+                <td><span class="badge bg-secondary">MID</span></td>
+                <td class="text-end">20</td>
+                <td class="text-end fw-semibold">130.9</td>
+                <td class="text-end">192</td>
+                <td class="text-end text-muted">2618</td>
+              </tr>
+              
+              <tr>
+                <td>M Gawn</td>
+                <td><span class="badge bg-secondary">RUC</span></td>
+                <td class="text-end">20</td>
+                <td class="text-end fw-semibold">124.6</td>
+                <td class="text-end">168</td>
+                <td class="text-end text-muted">2493</td>
+              </tr>
+              
+              <tr>
+                <td>P Cripps</td>
+                <td><span class="badge bg-secondary">MID</span></td>
+                <td class="text-end">12</td>
+                <td class="text-end fw-semibold">123.8</td>
+                <td class="text-end">187</td>
+                <td class="text-end text-muted">1485</td>
+              </tr>
+              
+              <tr>
+                <td>B McEvoy</td>
+                <td><span class="badge bg-secondary">RUC</span></td>
+                <td class="text-end">1</td>
+                <td class="text-end fw-semibold">118.0</td>
+                <td class="text-end">118</td>
+                <td class="text-end text-muted">118</td>
+              </tr>
+              
+              <tr>
+                <td>R Gray</td>
+                <td><span class="badge bg-secondary">FWD</span></td>
+                <td class="text-end">7</td>
+                <td class="text-end fw-semibold">116.1</td>
+                <td class="text-end">145</td>
+                <td class="text-end text-muted">813</td>
+              </tr>
+              
+              <tr>
+                <td>Z Merrett</td>
+                <td><span class="badge bg-secondary">MID</span></td>
+                <td class="text-end">12</td>
+                <td class="text-end fw-semibold">113.8</td>
+                <td class="text-end">130</td>
+                <td class="text-end text-muted">1365</td>
+              </tr>
+              
+              <tr>
+                <td>E Curnow</td>
+                <td><span class="badge bg-secondary">MID</span></td>
+                <td class="text-end">6</td>
+                <td class="text-end fw-semibold">113.0</td>
+                <td class="text-end">136</td>
+                <td class="text-end text-muted">678</td>
+              </tr>
+              
+              <tr>
+                <td>J Sicily</td>
+                <td><span class="badge bg-secondary">DEF</span></td>
+                <td class="text-end">9</td>
+                <td class="text-end fw-semibold">112.7</td>
+                <td class="text-end">145</td>
+                <td class="text-end text-muted">1014</td>
+              </tr>
+              
+              <tr>
+                <td>K Simpson</td>
+                <td><span class="badge bg-secondary">DEF</span></td>
+                <td class="text-end">4</td>
+                <td class="text-end fw-semibold">110.2</td>
+                <td class="text-end">150</td>
+                <td class="text-end text-muted">441</td>
+              </tr>
+              
+              <tr>
+                <td>C Wingard</td>
+                <td><span class="badge bg-secondary">FWD</span></td>
+                <td class="text-end">9</td>
+                <td class="text-end fw-semibold">106.7</td>
+                <td class="text-end">122</td>
+                <td class="text-end text-muted">960</td>
+              </tr>
+              
+              <tr>
+                <td>J Patton</td>
+                <td><span class="badge bg-secondary">FWD</span></td>
+                <td class="text-end">1</td>
+                <td class="text-end fw-semibold">99.0</td>
+                <td class="text-end">99</td>
+                <td class="text-end text-muted">99</td>
+              </tr>
+              
+              <tr>
+                <td>S Pendlebury</td>
+                <td><span class="badge bg-secondary">MID</span></td>
+                <td class="text-end">20</td>
+                <td class="text-end fw-semibold">98.8</td>
+                <td class="text-end">163</td>
+                <td class="text-end text-muted">1976</td>
+              </tr>
+              
+              <tr>
+                <td>D Zorko</td>
+                <td><span class="badge bg-secondary">MID</span></td>
+                <td class="text-end">17</td>
+                <td class="text-end fw-semibold">96.9</td>
+                <td class="text-end">164</td>
+                <td class="text-end text-muted">1648</td>
+              </tr>
+              
+              <tr>
+                <td>J Billings</td>
+                <td><span class="badge bg-secondary">FWD</span></td>
+                <td class="text-end">8</td>
+                <td class="text-end fw-semibold">96.0</td>
+                <td class="text-end">125</td>
+                <td class="text-end text-muted">768</td>
+              </tr>
+              
+              <tr>
+                <td>S Menegola</td>
+                <td><span class="badge bg-secondary">MID</span></td>
+                <td class="text-end">2</td>
+                <td class="text-end fw-semibold">95.5</td>
+                <td class="text-end">121</td>
+                <td class="text-end text-muted">191</td>
+              </tr>
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="col-12">
+    <div class="card shadow-sm">
+      <div class="card-header fw-semibold">Current Roster</div>
+      <div class="card-body p-0">
+        <div class="table-responsive">
+          <table class="table table-sm table-hover mb-0">
+            <thead class="table-dark">
+              <tr>
+                <th>Player</th>
+                <th>AFL Team</th>
+                <th>Pos</th>
+                <th class="text-end">Avg</th>
+                <th class="text-end">Avg3</th>
+                <th class="text-end">Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+              <tr>
+                <td class="fw-semibold">A Saad</td>
+                <td class="text-muted small">ESS</td>
+                <td><span class="badge bg-secondary">DEF</span></td>
+                <td class="text-end">nan</td>
+                <td class="text-end">nan</td>
+                <td class="text-end text-muted">$nan</td>
+              </tr>
+              
+              <tr>
+                <td class="fw-semibold">Z Merrett</td>
+                <td class="text-muted small">ESS</td>
+                <td><span class="badge bg-secondary">MID</span></td>
+                <td class="text-end">nan</td>
+                <td class="text-end">nan</td>
+                <td class="text-end text-muted">$nan</td>
+              </tr>
+              
+              <tr>
+                <td class="fw-semibold">C Wingard</td>
+                <td class="text-muted small">PTA</td>
+                <td><span class="badge bg-secondary">FWD</span></td>
+                <td class="text-end">nan</td>
+                <td class="text-end">nan</td>
+                <td class="text-end text-muted">$nan</td>
+              </tr>
+              
+              <tr>
+                <td class="fw-semibold">T Rockliff</td>
+                <td class="text-muted small">PTA</td>
+                <td><span class="badge bg-secondary">MID</span></td>
+                <td class="text-end">nan</td>
+                <td class="text-end">nan</td>
+                <td class="text-end text-muted">$nan</td>
+              </tr>
+              
+              <tr>
+                <td class="fw-semibold">Z Tuohy</td>
+                <td class="text-muted small">GEE</td>
+                <td><span class="badge bg-secondary">DEF</span></td>
+                <td class="text-end">nan</td>
+                <td class="text-end">nan</td>
+                <td class="text-end text-muted">$nan</td>
+              </tr>
+              
+              <tr>
+                <td class="fw-semibold">S Menegola</td>
+                <td class="text-muted small">GEE</td>
+                <td><span class="badge bg-secondary">FWD</span></td>
+                <td class="text-end">nan</td>
+                <td class="text-end">nan</td>
+                <td class="text-end text-muted">$nan</td>
+              </tr>
+              
+              <tr>
+                <td class="fw-semibold">A Rance</td>
+                <td class="text-muted small">RIC</td>
+                <td><span class="badge bg-secondary">DEF</span></td>
+                <td class="text-end">nan</td>
+                <td class="text-end">nan</td>
+                <td class="text-end text-muted">$nan</td>
+              </tr>
+              
+              <tr>
+                <td class="fw-semibold">B Houli</td>
+                <td class="text-muted small">RIC</td>
+                <td><span class="badge bg-secondary">DEF</span></td>
+                <td class="text-end">nan</td>
+                <td class="text-end">nan</td>
+                <td class="text-end text-muted">$nan</td>
+              </tr>
+              
+              <tr>
+                <td class="fw-semibold">S Edwards</td>
+                <td class="text-muted small">RIC</td>
+                <td><span class="badge bg-secondary">FWD</span></td>
+                <td class="text-end">nan</td>
+                <td class="text-end">nan</td>
+                <td class="text-end text-muted">$nan</td>
+              </tr>
+              
+              <tr>
+                <td class="fw-semibold">S Pendlebury</td>
+                <td class="text-muted small">COL</td>
+                <td><span class="badge bg-secondary">MID</span></td>
+                <td class="text-end">nan</td>
+                <td class="text-end">nan</td>
+                <td class="text-end text-muted">$nan</td>
+              </tr>
+              
+              <tr>
+                <td class="fw-semibold">P Cripps</td>
+                <td class="text-muted small">CAR</td>
+                <td><span class="badge bg-secondary">MID</span></td>
+                <td class="text-end">nan</td>
+                <td class="text-end">nan</td>
+                <td class="text-end text-muted">$nan</td>
+              </tr>
+              
+              <tr>
+                <td class="fw-semibold">T Mitchell</td>
+                <td class="text-muted small">HAW</td>
+                <td><span class="badge bg-secondary">MID</span></td>
+                <td class="text-end">nan</td>
+                <td class="text-end">nan</td>
+                <td class="text-end text-muted">$nan</td>
+              </tr>
+              
+              <tr>
+                <td class="fw-semibold">L Shiels</td>
+                <td class="text-muted small">HAW</td>
+                <td><span class="badge bg-secondary">MID</span></td>
+                <td class="text-end">nan</td>
+                <td class="text-end">nan</td>
+                <td class="text-end text-muted">$nan</td>
+              </tr>
+              
+              <tr>
+                <td class="fw-semibold">J McVeigh</td>
+                <td class="text-muted small">SYD</td>
+                <td><span class="badge bg-secondary">DEF</span></td>
+                <td class="text-end">nan</td>
+                <td class="text-end">nan</td>
+                <td class="text-end text-muted">$nan</td>
+              </tr>
+              
+              <tr>
+                <td class="fw-semibold">D Zorko</td>
+                <td class="text-muted small">BRL</td>
+                <td><span class="badge bg-secondary">MID</span></td>
+                <td class="text-end">nan</td>
+                <td class="text-end">nan</td>
+                <td class="text-end text-muted">$nan</td>
+              </tr>
+              
+              <tr>
+                <td class="fw-semibold">M Gawn</td>
+                <td class="text-muted small">MEL</td>
+                <td><span class="badge bg-secondary">RUC</span></td>
+                <td class="text-end">nan</td>
+                <td class="text-end">nan</td>
+                <td class="text-end text-muted">$nan</td>
+              </tr>
+              
+              <tr>
+                <td class="fw-semibold">B Brown</td>
+                <td class="text-muted small">NTH</td>
+                <td><span class="badge bg-secondary">FWD</span></td>
+                <td class="text-end">nan</td>
+                <td class="text-end">nan</td>
+                <td class="text-end text-muted">$nan</td>
+              </tr>
+              
+              <tr>
+                <td class="fw-semibold">J Billings</td>
+                <td class="text-muted small">STK</td>
+                <td><span class="badge bg-secondary">FWD</span></td>
+                <td class="text-end">nan</td>
+                <td class="text-end">nan</td>
+                <td class="text-end text-muted">$nan</td>
+              </tr>
+              
+              <tr>
+                <td class="fw-semibold">J Pittard</td>
+                <td class="text-muted small">PTA</td>
+                <td><span class="badge bg-secondary">BEN</span></td>
+                <td class="text-end">nan</td>
+                <td class="text-end">nan</td>
+                <td class="text-end text-muted">$nan</td>
+              </tr>
+              
+              <tr>
+                <td class="fw-semibold">B Smith</td>
+                <td class="text-muted small">ADE</td>
+                <td><span class="badge bg-secondary">BEN</span></td>
+                <td class="text-end">nan</td>
+                <td class="text-end">nan</td>
+                <td class="text-end text-muted">$nan</td>
+              </tr>
+              
+              <tr>
+                <td class="fw-semibold">J Sicily</td>
+                <td class="text-muted small">HAW</td>
+                <td><span class="badge bg-secondary">BEN</span></td>
+                <td class="text-end">nan</td>
+                <td class="text-end">nan</td>
+                <td class="text-end text-muted">$nan</td>
+              </tr>
+              
+              <tr>
+                <td class="fw-semibold">N Jones</td>
+                <td class="text-muted small">MEL</td>
+                <td><span class="badge bg-secondary">BEN</span></td>
+                <td class="text-end">nan</td>
+                <td class="text-end">nan</td>
+                <td class="text-end text-muted">$nan</td>
+              </tr>
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</div>
+
+<footer class="text-center text-muted small py-3 mt-5 border-top">
+  ASL Fantasy League Analytics &mdash; 2018 Season
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+
+
+<script>
+const posData = {"data": [{"hovertemplate": "<b>DEF</b> R%{x}: %{y:.0f}<extra></extra>", "line": {"color": "#1f77b4", "width": 2}, "mode": "lines+markers", "name": "DEF", "x": {"dtype": "i1", "bdata": "AQIDBAUGBwgJCgsMDQ4PEBESExQV"}, "y": {"dtype": "i2", "bdata": "twFhAWsB1gH8AYkBwAG+AaIBOwGvAaQBIQHVAJ4BiwGUAUsBnQF2AS8B"}, "type": "scatter"}, {"hovertemplate": "<b>MID</b> R%{x}: %{y:.0f}<extra></extra>", "line": {"color": "#2ca02c", "width": 2}, "mode": "lines+markers", "name": "MID", "x": {"dtype": "i1", "bdata": "AQIDBAUGBwgJCgsMDQ4PEBESExQV"}, "y": {"dtype": "i2", "bdata": "hQKaAgID2AF6AkoC8gImAkQDaQJSAqIChAIlAxUDEgMoAzADXQPXApgC"}, "type": "scatter"}, {"hovertemplate": "<b>RUC</b> R%{x}: %{y:.0f}<extra></extra>", "line": {"color": "#9467bd", "width": 2}, "mode": "lines+markers", "name": "RUC", "x": {"dtype": "i1", "bdata": "AQIDBAUGBwgJCgsMDQ4PEBESExQV"}, "y": {"dtype": "i2", "bdata": "iwBhAHUAcACXAKgAfwCUAHkAcgCLAEwAdgCMAJEAlwCDAF0AggBwAFIA"}, "type": "scatter"}, {"hovertemplate": "<b>FWD</b> R%{x}: %{y:.0f}<extra></extra>", "line": {"color": "#ff7f0e", "width": 2}, "mode": "lines+markers", "name": "FWD", "x": {"dtype": "i1", "bdata": "AQIDBAUGBwgJCgsMDQ4PEBESExQV"}, "y": {"dtype": "i2", "bdata": "4gFmAaABawK7AW8BwwHIAVkBuAHcAasBZgE5AeABvQHxAYYBxgEBAgcC"}, "type": "scatter"}], "layout": {"template": {"data": {"histogram2dcontour": [{"type": "histogram2dcontour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "choropleth": [{"type": "choropleth", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "histogram2d": [{"type": "histogram2d", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "heatmap": [{"type": "heatmap", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "contourcarpet": [{"type": "contourcarpet", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "contour": [{"type": "contour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "surface": [{"type": "surface", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "mesh3d": [{"type": "mesh3d", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "scatter": [{"fillpattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}, "type": "scatter"}], "parcoords": [{"type": "parcoords", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolargl": [{"type": "scatterpolargl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "bar"}], "scattergeo": [{"type": "scattergeo", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolar": [{"type": "scatterpolar", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "histogram": [{"marker": {"pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "histogram"}], "scattergl": [{"type": "scattergl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatter3d": [{"type": "scatter3d", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermap": [{"type": "scattermap", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermapbox": [{"type": "scattermapbox", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterternary": [{"type": "scatterternary", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattercarpet": [{"type": "scattercarpet", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "barpolar"}], "pie": [{"automargin": true, "type": "pie"}]}, "layout": {"autotypenumbers": "strict", "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "hovermode": "closest", "hoverlabel": {"align": "left"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"bgcolor": "#E5ECF6", "angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "ternary": {"bgcolor": "#E5ECF6", "aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]]}, "xaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "yaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "geo": {"bgcolor": "white", "landcolor": "#E5ECF6", "subunitcolor": "white", "showland": true, "showlakes": true, "lakecolor": "white"}, "title": {"x": 0.05}, "mapbox": {"style": "light"}}}, "xaxis": {"title": {"text": "Round"}, "dtick": 1, "gridcolor": "#e0e0e0"}, "yaxis": {"title": {"text": "On-field Points"}, "gridcolor": "#e0e0e0"}, "legend": {"orientation": "h", "yanchor": "bottom", "y": 1.02, "xanchor": "right", "x": 1}, "margin": {"l": 50, "r": 20, "t": 60, "b": 40}, "title": {"text": "Anthony \u2014 Positional Scores by Round"}, "plot_bgcolor": "white", "paper_bgcolor": "white", "height": 320}};
+Plotly.react('posChart', posData.data, posData.layout, {responsive: true, displayModeBar: false});
+</script>
+
+</body>
+</html>
