@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="en" data-bs-theme="light" data-build="1791770299">
+<html lang="en" data-bs-theme="light" data-build="1791772355">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Season Summary — 2024</title>
+  <title>Season Summary - 2024</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
   <link rel="stylesheet" href="/asl-hub/static/css/custom.css">
@@ -867,15 +867,15 @@
       
       <div class="col-12 col-lg-5">
         <h6 class="fw-semibold mb-1">Season Performance</h6>
-        <p class="text-muted small mb-2">True team strength — rank if you had played every possible schedule</p>
+        <p class="text-muted small mb-2">True team strength: rank if you had played every possible schedule</p>
         <div class="table-responsive">
           <table class="table table-sm table-hover mb-0 align-middle">
             <thead class="table-dark">
               <tr>
                 <th>#</th>
                 <th>Coach</th>
-                <th class="text-end" title="Mean weekly rank of your own score within the 8-team field — lower = higher-scoring team">Avg Score Rank</th>
-                <th class="text-end" title="Mean rank across all 8 possible schedules — lower = stronger team">Avg Ladder Rank</th>
+                <th class="text-end" title="Mean weekly rank of your own score within the 8-team field (lower = higher-scoring team)">Avg Score Rank</th>
+                <th class="text-end" title="Mean rank across all 8 possible schedules (lower = stronger team)">Avg Ladder Rank</th>
                 <th class="text-end" title="Best rank achieved under any schedule">Best</th>
                 <th class="text-end" title="Worst rank achieved under any schedule">Worst</th>
                 <th class="text-end" title="Actual rank minus avg simulated rank. Negative = lucky schedule.">Luck</th>
@@ -1010,13 +1010,13 @@
               <tr>
                 <th>#</th>
                 <th>Coach</th>
-                <th class="text-end" title="Mean weekly rank of opponents faced (1=always faced the top scorer, 8=always faced the bottom scorer) — lower = harder schedule">Opp Rank</th>
-                <th class="text-end" title="Mean score of opponents faced — higher = harder schedule">Opp Avg</th>
-                <th class="text-end" title="Expected wins: sum of fraction of the 7-team field your score beat each round — a score-based W/L expectation">Exp W</th>
+                <th class="text-end" title="Mean weekly rank of opponents faced (1=always faced the top scorer, 8=always faced the bottom scorer); lower = harder schedule">Opp Rank</th>
+                <th class="text-end" title="Mean score of opponents faced (higher = harder schedule)">Opp Avg</th>
+                <th class="text-end" title="Expected wins: sum of fraction of the 7-team field your score beat each round (a score-based W/L expectation)">Exp W</th>
                 <th class="text-end" title="Actual wins recorded">Act W</th>
                 <th class="text-end" title="Actual wins minus expected wins. Positive = won more than your scores deserved (lucky). Negative = won fewer (unlucky).">W Luck</th>
-                <th class="text-end" title="Wins where your score was below the round average — you beat a weak opponent despite underperforming">🍀 W</th>
-                <th class="text-end" title="Losses where your score was above the round average — you lost despite outperforming the field">💔 L</th>
+                <th class="text-end" title="Wins where your score was below the round average (you beat a weak opponent despite underperforming)">🍀 W</th>
+                <th class="text-end" title="Losses where your score was above the round average (you lost despite outperforming the field)">💔 L</th>
               </tr>
             </thead>
             <tbody>
@@ -1231,7 +1231,7 @@
   <div class="card-footer text-muted small">
     <strong>Opp Rank</strong>: mean weekly rank of opponents faced (1 = always faced the top scorer). Lower = harder schedule.
     &nbsp;|&nbsp;
-    <strong>Exp W</strong>: sum of the fraction of the 7-team field your score beat each round — what your scores deserved.
+    <strong>Exp W</strong>: sum of the fraction of the 7-team field your score beat each round, i.e. what your scores deserved.
     &nbsp;|&nbsp;
     <strong>W Luck</strong> = actual wins − expected wins.
     <span class="badge bg-success">Positive</span> = lucky (won more than scores warranted).
@@ -1240,7 +1240,7 @@
     <strong>🍀 W</strong>: wins where your score was below the round average.
     <strong>💔 L</strong>: losses where your score was above the round average.
     &nbsp;|&nbsp;
-    <strong>Avg Score Rank</strong>: mean weekly rank (1–8) of your own score within the full field — a schedule-independent measure of raw scoring strength.
+    <strong>Avg Score Rank</strong>: mean weekly rank (1-8) of your own score within the full field, a schedule-independent measure of raw scoring strength.
     &nbsp;|&nbsp;
     <strong>Luck</strong> (Season Performance) = actual rank − avg simulated rank.
     <span class="badge bg-success">Negative</span> = lucky fixture draw.
@@ -1253,13 +1253,13 @@
   <div class="card-header fw-semibold">Monte Carlo Schedule Simulation</div>
   <div class="card-body">
     <p class="text-muted small mb-3">
-      20,000 randomised, valid round-robin schedules — each one
-      respects the real league's actual structure (every coach plays every other coach once every 7
+      20,000 randomised, valid round-robin schedules, each one
+      respecting the real league's actual structure (every coach plays every other coach once every 7
       rounds, on a repeating cycle), only which cycle gets drawn is randomised. Every coach's own real
       weekly score is judged against whichever real opponent that trial's schedule assigns them.
       Rather than list every trial, each bar below shows the <strong>full distribution</strong> of
-      finishing positions a coach landed on across all 20,000 runs
-      — <strong>click a segment</strong> to see one concrete example schedule that produced that rank.
+      finishing positions a coach landed on across all 20,000 runs:
+      <strong>click a segment</strong> to see one concrete example schedule that produced that rank.
     </p>
     <div class="table-responsive" id="mcAccordion">
       <table class="table table-sm mb-0 align-middle">
@@ -1272,7 +1272,7 @@
             <th class="text-end" title="% of trials finishing rank 1-4">Top 4%</th>
             <th class="text-end" title="% of trials finishing last (wooden spoon)">Spoon %</th>
             <th class="text-end" title="Actual rank minus avg trial rank. Negative = lucky schedule.">Luck</th>
-            <th style="min-width:260px;">Finish-position distribution (rank 1 → 8) — click a segment</th>
+            <th style="min-width:260px;">Finish-position distribution (rank 1 to 8), click a segment</th>
           </tr>
         </thead>
         <tbody>
@@ -1298,7 +1298,7 @@
                        role="button" data-bs-toggle="collapse" data-bs-target="#mc-Paul-1"
                        aria-expanded="false" style="width:39.9%; font-size:0.62rem; cursor:pointer; border-right:2px solid var(--bs-body-bg,#fff);"
                        
-                       title="Rank 1: 39.9% of trials — click for an example">
+                       title="Rank 1: 39.9% of trials, click for an example">
                     1
                   </div>
                   
@@ -1309,7 +1309,7 @@
                        role="button" data-bs-toggle="collapse" data-bs-target="#mc-Paul-2"
                        aria-expanded="false" style="width:27.4%; font-size:0.62rem; cursor:pointer; border-right:2px solid var(--bs-body-bg,#fff);"
                        
-                       title="Rank 2: 27.4% of trials — click for an example">
+                       title="Rank 2: 27.4% of trials, click for an example">
                     2
                   </div>
                   
@@ -1320,7 +1320,7 @@
                        role="button" data-bs-toggle="collapse" data-bs-target="#mc-Paul-3"
                        aria-expanded="false" style="width:19.4%; font-size:0.62rem; cursor:pointer; border-right:2px solid var(--bs-body-bg,#fff);"
                        
-                       title="Rank 3: 19.4% of trials — click for an example">
+                       title="Rank 3: 19.4% of trials, click for an example">
                     3
                   </div>
                   
@@ -1331,7 +1331,7 @@
                        role="button" data-bs-toggle="collapse" data-bs-target="#mc-Paul-4"
                        aria-expanded="false" style="width:9.6%; font-size:0.62rem; cursor:pointer; border-right:2px solid var(--bs-body-bg,#fff);"
                        
-                       title="Rank 4: 9.6% of trials — click for an example">
+                       title="Rank 4: 9.6% of trials, click for an example">
                     4
                   </div>
                   
@@ -1342,7 +1342,7 @@
                        role="button" data-bs-toggle="collapse" data-bs-target="#mc-Paul-5"
                        aria-expanded="false" style="width:3.3%; font-size:0.62rem; cursor:pointer; border-right:2px solid var(--bs-body-bg,#fff);"
                        
-                       title="Rank 5: 3.3% of trials — click for an example">
+                       title="Rank 5: 3.3% of trials, click for an example">
                     
                   </div>
                   
@@ -1353,7 +1353,7 @@
                        role="button" data-bs-toggle="collapse" data-bs-target="#mc-Paul-6"
                        aria-expanded="false" style="width:0.4%; font-size:0.62rem; cursor:pointer; border-right:2px solid var(--bs-body-bg,#fff);"
                        
-                       title="Rank 6: 0.4% of trials — click for an example">
+                       title="Rank 6: 0.4% of trials, click for an example">
                     
                   </div>
                   
@@ -1372,7 +1372,7 @@
                 <div class="p-3 bg-body-tertiary">
                   <p class="text-muted small mb-2">
                     One example randomised schedule where <strong>Paul</strong> finished
-                    <strong>rank 1</strong> — record
+                    <strong>rank 1</strong>, record
                     15-0-6
                     (60 pts), 35,610 points for.
                   </p>
@@ -1741,7 +1741,7 @@
                 <div class="p-3 bg-body-tertiary">
                   <p class="text-muted small mb-2">
                     One example randomised schedule where <strong>Paul</strong> finished
-                    <strong>rank 2</strong> — record
+                    <strong>rank 2</strong>, record
                     13-0-8
                     (52 pts), 35,610 points for.
                   </p>
@@ -2110,7 +2110,7 @@
                 <div class="p-3 bg-body-tertiary">
                   <p class="text-muted small mb-2">
                     One example randomised schedule where <strong>Paul</strong> finished
-                    <strong>rank 3</strong> — record
+                    <strong>rank 3</strong>, record
                     11-0-10
                     (44 pts), 35,610 points for.
                   </p>
@@ -2479,7 +2479,7 @@
                 <div class="p-3 bg-body-tertiary">
                   <p class="text-muted small mb-2">
                     One example randomised schedule where <strong>Paul</strong> finished
-                    <strong>rank 4</strong> — record
+                    <strong>rank 4</strong>, record
                     10-0-11
                     (40 pts), 35,610 points for.
                   </p>
@@ -2848,7 +2848,7 @@
                 <div class="p-3 bg-body-tertiary">
                   <p class="text-muted small mb-2">
                     One example randomised schedule where <strong>Paul</strong> finished
-                    <strong>rank 5</strong> — record
+                    <strong>rank 5</strong>, record
                     10-0-11
                     (40 pts), 35,610 points for.
                   </p>
@@ -3217,7 +3217,7 @@
                 <div class="p-3 bg-body-tertiary">
                   <p class="text-muted small mb-2">
                     One example randomised schedule where <strong>Paul</strong> finished
-                    <strong>rank 6</strong> — record
+                    <strong>rank 6</strong>, record
                     10-0-11
                     (40 pts), 35,610 points for.
                   </p>
@@ -3586,7 +3586,7 @@
                 <div class="p-3 bg-body-tertiary">
                   <p class="text-muted small mb-2">
                     One example randomised schedule where <strong>Paul</strong> finished
-                    <strong>rank 7</strong> — record
+                    <strong>rank 7</strong>, record
                     9-0-12
                     (36 pts), 35,610 points for.
                   </p>
@@ -3973,7 +3973,7 @@
                        role="button" data-bs-toggle="collapse" data-bs-target="#mc-Jordan-1"
                        aria-expanded="false" style="width:33.6%; font-size:0.62rem; cursor:pointer; border-right:2px solid var(--bs-body-bg,#fff);"
                        
-                       title="Rank 1: 33.6% of trials — click for an example">
+                       title="Rank 1: 33.6% of trials, click for an example">
                     1
                   </div>
                   
@@ -3984,7 +3984,7 @@
                        role="button" data-bs-toggle="collapse" data-bs-target="#mc-Jordan-2"
                        aria-expanded="false" style="width:25.0%; font-size:0.62rem; cursor:pointer; border-right:2px solid var(--bs-body-bg,#fff);"
                        
-                       title="Rank 2: 25.0% of trials — click for an example">
+                       title="Rank 2: 25.0% of trials, click for an example">
                     2
                   </div>
                   
@@ -3995,7 +3995,7 @@
                        role="button" data-bs-toggle="collapse" data-bs-target="#mc-Jordan-3"
                        aria-expanded="false" style="width:20.6%; font-size:0.62rem; cursor:pointer; border-right:2px solid var(--bs-body-bg,#fff);"
                        
-                       title="Rank 3: 20.6% of trials — click for an example">
+                       title="Rank 3: 20.6% of trials, click for an example">
                     3
                   </div>
                   
@@ -4006,7 +4006,7 @@
                        role="button" data-bs-toggle="collapse" data-bs-target="#mc-Jordan-4"
                        aria-expanded="false" style="width:12.4%; font-size:0.62rem; cursor:pointer; border-right:2px solid var(--bs-body-bg,#fff);"
                        
-                       title="Rank 4: 12.4% of trials — click for an example">
+                       title="Rank 4: 12.4% of trials, click for an example">
                     4
                   </div>
                   
@@ -4017,7 +4017,7 @@
                        role="button" data-bs-toggle="collapse" data-bs-target="#mc-Jordan-5"
                        aria-expanded="false" style="width:6.0%; font-size:0.62rem; cursor:pointer; border-right:2px solid var(--bs-body-bg,#fff);"
                        
-                       title="Rank 5: 6.0% of trials — click for an example">
+                       title="Rank 5: 6.0% of trials, click for an example">
                     
                   </div>
                   
@@ -4028,7 +4028,7 @@
                        role="button" data-bs-toggle="collapse" data-bs-target="#mc-Jordan-6"
                        aria-expanded="false" style="width:1.7%; font-size:0.62rem; cursor:pointer; border-right:2px solid var(--bs-body-bg,#fff);"
                        
-                       title="Rank 6: 1.7% of trials — click for an example">
+                       title="Rank 6: 1.7% of trials, click for an example">
                     
                   </div>
                   
@@ -4039,7 +4039,7 @@
                        role="button" data-bs-toggle="collapse" data-bs-target="#mc-Jordan-7"
                        aria-expanded="false" style="width:0.5%; font-size:0.62rem; cursor:pointer; border-right:2px solid var(--bs-body-bg,#fff);"
                        
-                       title="Rank 7: 0.5% of trials — click for an example">
+                       title="Rank 7: 0.5% of trials, click for an example">
                     
                   </div>
                   
@@ -4050,7 +4050,7 @@
                        role="button" data-bs-toggle="collapse" data-bs-target="#mc-Jordan-8"
                        aria-expanded="false" style="width:0.1%; font-size:0.62rem; cursor:pointer; border-right:2px solid var(--bs-body-bg,#fff);"
                        
-                       title="Rank 8: 0.1% of trials — click for an example">
+                       title="Rank 8: 0.1% of trials, click for an example">
                     
                   </div>
                   
@@ -4065,7 +4065,7 @@
                 <div class="p-3 bg-body-tertiary">
                   <p class="text-muted small mb-2">
                     One example randomised schedule where <strong>Jordan</strong> finished
-                    <strong>rank 1</strong> — record
+                    <strong>rank 1</strong>, record
                     13-0-8
                     (52 pts), 35,946 points for.
                   </p>
@@ -4434,7 +4434,7 @@
                 <div class="p-3 bg-body-tertiary">
                   <p class="text-muted small mb-2">
                     One example randomised schedule where <strong>Jordan</strong> finished
-                    <strong>rank 2</strong> — record
+                    <strong>rank 2</strong>, record
                     13-0-8
                     (52 pts), 35,946 points for.
                   </p>
@@ -4803,7 +4803,7 @@
                 <div class="p-3 bg-body-tertiary">
                   <p class="text-muted small mb-2">
                     One example randomised schedule where <strong>Jordan</strong> finished
-                    <strong>rank 3</strong> — record
+                    <strong>rank 3</strong>, record
                     12-0-9
                     (48 pts), 35,946 points for.
                   </p>
@@ -5172,7 +5172,7 @@
                 <div class="p-3 bg-body-tertiary">
                   <p class="text-muted small mb-2">
                     One example randomised schedule where <strong>Jordan</strong> finished
-                    <strong>rank 4</strong> — record
+                    <strong>rank 4</strong>, record
                     13-0-8
                     (52 pts), 35,946 points for.
                   </p>
@@ -5541,7 +5541,7 @@
                 <div class="p-3 bg-body-tertiary">
                   <p class="text-muted small mb-2">
                     One example randomised schedule where <strong>Jordan</strong> finished
-                    <strong>rank 5</strong> — record
+                    <strong>rank 5</strong>, record
                     10-0-11
                     (40 pts), 35,946 points for.
                   </p>
@@ -5910,7 +5910,7 @@
                 <div class="p-3 bg-body-tertiary">
                   <p class="text-muted small mb-2">
                     One example randomised schedule where <strong>Jordan</strong> finished
-                    <strong>rank 6</strong> — record
+                    <strong>rank 6</strong>, record
                     9-0-12
                     (36 pts), 35,946 points for.
                   </p>
@@ -6279,7 +6279,7 @@
                 <div class="p-3 bg-body-tertiary">
                   <p class="text-muted small mb-2">
                     One example randomised schedule where <strong>Jordan</strong> finished
-                    <strong>rank 7</strong> — record
+                    <strong>rank 7</strong>, record
                     9-0-12
                     (36 pts), 35,946 points for.
                   </p>
@@ -6648,7 +6648,7 @@
                 <div class="p-3 bg-body-tertiary">
                   <p class="text-muted small mb-2">
                     One example randomised schedule where <strong>Jordan</strong> finished
-                    <strong>rank 8</strong> — record
+                    <strong>rank 8</strong>, record
                     8-0-13
                     (32 pts), 35,946 points for.
                   </p>
@@ -7033,7 +7033,7 @@
                        role="button" data-bs-toggle="collapse" data-bs-target="#mc-Anthony-1"
                        aria-expanded="false" style="width:11.4%; font-size:0.62rem; cursor:pointer; border-right:2px solid var(--bs-body-bg,#fff);"
                        
-                       title="Rank 1: 11.4% of trials — click for an example">
+                       title="Rank 1: 11.4% of trials, click for an example">
                     1
                   </div>
                   
@@ -7044,7 +7044,7 @@
                        role="button" data-bs-toggle="collapse" data-bs-target="#mc-Anthony-2"
                        aria-expanded="false" style="width:21.3%; font-size:0.62rem; cursor:pointer; border-right:2px solid var(--bs-body-bg,#fff);"
                        
-                       title="Rank 2: 21.3% of trials — click for an example">
+                       title="Rank 2: 21.3% of trials, click for an example">
                     2
                   </div>
                   
@@ -7055,7 +7055,7 @@
                        role="button" data-bs-toggle="collapse" data-bs-target="#mc-Anthony-3"
                        aria-expanded="false" style="width:24.9%; font-size:0.62rem; cursor:pointer; border-right:2px solid var(--bs-body-bg,#fff);"
                        
-                       title="Rank 3: 24.9% of trials — click for an example">
+                       title="Rank 3: 24.9% of trials, click for an example">
                     3
                   </div>
                   
@@ -7066,7 +7066,7 @@
                        role="button" data-bs-toggle="collapse" data-bs-target="#mc-Anthony-4"
                        aria-expanded="false" style="width:21.4%; font-size:0.62rem; cursor:pointer; border-right:2px solid var(--bs-body-bg,#fff);"
                        
-                       title="Rank 4: 21.4% of trials — click for an example">
+                       title="Rank 4: 21.4% of trials, click for an example">
                     4
                   </div>
                   
@@ -7077,7 +7077,7 @@
                        role="button" data-bs-toggle="collapse" data-bs-target="#mc-Anthony-5"
                        aria-expanded="false" style="width:13.1%; font-size:0.62rem; cursor:pointer; border-right:2px solid var(--bs-body-bg,#fff);"
                        
-                       title="Rank 5: 13.1% of trials — click for an example">
+                       title="Rank 5: 13.1% of trials, click for an example">
                     5
                   </div>
                   
@@ -7088,7 +7088,7 @@
                        role="button" data-bs-toggle="collapse" data-bs-target="#mc-Anthony-6"
                        aria-expanded="false" style="width:4.7%; font-size:0.62rem; cursor:pointer; border-right:2px solid var(--bs-body-bg,#fff);"
                        
-                       title="Rank 6: 4.7% of trials — click for an example">
+                       title="Rank 6: 4.7% of trials, click for an example">
                     
                   </div>
                   
@@ -7099,7 +7099,7 @@
                        role="button" data-bs-toggle="collapse" data-bs-target="#mc-Anthony-7"
                        aria-expanded="false" style="width:2.2%; font-size:0.62rem; cursor:pointer; border-right:2px solid var(--bs-body-bg,#fff);"
                        
-                       title="Rank 7: 2.2% of trials — click for an example">
+                       title="Rank 7: 2.2% of trials, click for an example">
                     
                   </div>
                   
@@ -7110,7 +7110,7 @@
                        role="button" data-bs-toggle="collapse" data-bs-target="#mc-Anthony-8"
                        aria-expanded="false" style="width:0.9%; font-size:0.62rem; cursor:pointer; border-right:2px solid var(--bs-body-bg,#fff);"
                        
-                       title="Rank 8: 0.9% of trials — click for an example">
+                       title="Rank 8: 0.9% of trials, click for an example">
                     
                   </div>
                   
@@ -7125,7 +7125,7 @@
                 <div class="p-3 bg-body-tertiary">
                   <p class="text-muted small mb-2">
                     One example randomised schedule where <strong>Anthony</strong> finished
-                    <strong>rank 1</strong> — record
+                    <strong>rank 1</strong>, record
                     14-0-7
                     (56 pts), 35,563 points for.
                   </p>
@@ -7494,7 +7494,7 @@
                 <div class="p-3 bg-body-tertiary">
                   <p class="text-muted small mb-2">
                     One example randomised schedule where <strong>Anthony</strong> finished
-                    <strong>rank 2</strong> — record
+                    <strong>rank 2</strong>, record
                     13-0-8
                     (52 pts), 35,563 points for.
                   </p>
@@ -7863,7 +7863,7 @@
                 <div class="p-3 bg-body-tertiary">
                   <p class="text-muted small mb-2">
                     One example randomised schedule where <strong>Anthony</strong> finished
-                    <strong>rank 3</strong> — record
+                    <strong>rank 3</strong>, record
                     13-0-8
                     (52 pts), 35,563 points for.
                   </p>
@@ -8232,7 +8232,7 @@
                 <div class="p-3 bg-body-tertiary">
                   <p class="text-muted small mb-2">
                     One example randomised schedule where <strong>Anthony</strong> finished
-                    <strong>rank 4</strong> — record
+                    <strong>rank 4</strong>, record
                     11-0-10
                     (44 pts), 35,563 points for.
                   </p>
@@ -8601,7 +8601,7 @@
                 <div class="p-3 bg-body-tertiary">
                   <p class="text-muted small mb-2">
                     One example randomised schedule where <strong>Anthony</strong> finished
-                    <strong>rank 5</strong> — record
+                    <strong>rank 5</strong>, record
                     9-0-12
                     (36 pts), 35,563 points for.
                   </p>
@@ -8970,7 +8970,7 @@
                 <div class="p-3 bg-body-tertiary">
                   <p class="text-muted small mb-2">
                     One example randomised schedule where <strong>Anthony</strong> finished
-                    <strong>rank 6</strong> — record
+                    <strong>rank 6</strong>, record
                     9-0-12
                     (36 pts), 35,563 points for.
                   </p>
@@ -9339,7 +9339,7 @@
                 <div class="p-3 bg-body-tertiary">
                   <p class="text-muted small mb-2">
                     One example randomised schedule where <strong>Anthony</strong> finished
-                    <strong>rank 7</strong> — record
+                    <strong>rank 7</strong>, record
                     8-0-13
                     (32 pts), 35,563 points for.
                   </p>
@@ -9708,7 +9708,7 @@
                 <div class="p-3 bg-body-tertiary">
                   <p class="text-muted small mb-2">
                     One example randomised schedule where <strong>Anthony</strong> finished
-                    <strong>rank 8</strong> — record
+                    <strong>rank 8</strong>, record
                     8-0-13
                     (32 pts), 35,563 points for.
                   </p>
@@ -10093,7 +10093,7 @@
                        role="button" data-bs-toggle="collapse" data-bs-target="#mc-Simon-1"
                        aria-expanded="false" style="width:10.2%; font-size:0.62rem; cursor:pointer; border-right:2px solid var(--bs-body-bg,#fff);"
                        
-                       title="Rank 1: 10.2% of trials — click for an example">
+                       title="Rank 1: 10.2% of trials, click for an example">
                     1
                   </div>
                   
@@ -10104,7 +10104,7 @@
                        role="button" data-bs-toggle="collapse" data-bs-target="#mc-Simon-2"
                        aria-expanded="false" style="width:15.6%; font-size:0.62rem; cursor:pointer; border-right:2px solid var(--bs-body-bg,#fff);"
                        
-                       title="Rank 2: 15.6% of trials — click for an example">
+                       title="Rank 2: 15.6% of trials, click for an example">
                     2
                   </div>
                   
@@ -10115,7 +10115,7 @@
                        role="button" data-bs-toggle="collapse" data-bs-target="#mc-Simon-3"
                        aria-expanded="false" style="width:17.8%; font-size:0.62rem; cursor:pointer; border-right:2px solid var(--bs-body-bg,#fff);"
                        
-                       title="Rank 3: 17.8% of trials — click for an example">
+                       title="Rank 3: 17.8% of trials, click for an example">
                     3
                   </div>
                   
@@ -10126,7 +10126,7 @@
                        role="button" data-bs-toggle="collapse" data-bs-target="#mc-Simon-4"
                        aria-expanded="false" style="width:22.7%; font-size:0.62rem; cursor:pointer; border-right:2px solid var(--bs-body-bg,#fff);"
                        
-                       title="Rank 4: 22.7% of trials — click for an example">
+                       title="Rank 4: 22.7% of trials, click for an example">
                     4
                   </div>
                   
@@ -10137,7 +10137,7 @@
                        role="button" data-bs-toggle="collapse" data-bs-target="#mc-Simon-5"
                        aria-expanded="false" style="width:22.3%; font-size:0.62rem; cursor:pointer; border-right:2px solid var(--bs-body-bg,#fff);"
                        
-                       title="Rank 5: 22.3% of trials — click for an example">
+                       title="Rank 5: 22.3% of trials, click for an example">
                     5
                   </div>
                   
@@ -10148,7 +10148,7 @@
                        role="button" data-bs-toggle="collapse" data-bs-target="#mc-Simon-6"
                        aria-expanded="false" style="width:7.1%; font-size:0.62rem; cursor:pointer; border-right:2px solid var(--bs-body-bg,#fff);"
                        
-                       title="Rank 6: 7.1% of trials — click for an example">
+                       title="Rank 6: 7.1% of trials, click for an example">
                     
                   </div>
                   
@@ -10159,7 +10159,7 @@
                        role="button" data-bs-toggle="collapse" data-bs-target="#mc-Simon-7"
                        aria-expanded="false" style="width:3.1%; font-size:0.62rem; cursor:pointer; border-right:2px solid var(--bs-body-bg,#fff);"
                        
-                       title="Rank 7: 3.1% of trials — click for an example">
+                       title="Rank 7: 3.1% of trials, click for an example">
                     
                   </div>
                   
@@ -10170,7 +10170,7 @@
                        role="button" data-bs-toggle="collapse" data-bs-target="#mc-Simon-8"
                        aria-expanded="false" style="width:1.2%; font-size:0.62rem; cursor:pointer; border-right:2px solid var(--bs-body-bg,#fff);"
                        
-                       title="Rank 8: 1.2% of trials — click for an example">
+                       title="Rank 8: 1.2% of trials, click for an example">
                     
                   </div>
                   
@@ -10185,7 +10185,7 @@
                 <div class="p-3 bg-body-tertiary">
                   <p class="text-muted small mb-2">
                     One example randomised schedule where <strong>Simon</strong> finished
-                    <strong>rank 1</strong> — record
+                    <strong>rank 1</strong>, record
                     15-0-6
                     (60 pts), 35,209 points for.
                   </p>
@@ -10554,7 +10554,7 @@
                 <div class="p-3 bg-body-tertiary">
                   <p class="text-muted small mb-2">
                     One example randomised schedule where <strong>Simon</strong> finished
-                    <strong>rank 2</strong> — record
+                    <strong>rank 2</strong>, record
                     13-0-8
                     (52 pts), 35,209 points for.
                   </p>
@@ -10923,7 +10923,7 @@
                 <div class="p-3 bg-body-tertiary">
                   <p class="text-muted small mb-2">
                     One example randomised schedule where <strong>Simon</strong> finished
-                    <strong>rank 3</strong> — record
+                    <strong>rank 3</strong>, record
                     13-0-8
                     (52 pts), 35,209 points for.
                   </p>
@@ -11292,7 +11292,7 @@
                 <div class="p-3 bg-body-tertiary">
                   <p class="text-muted small mb-2">
                     One example randomised schedule where <strong>Simon</strong> finished
-                    <strong>rank 4</strong> — record
+                    <strong>rank 4</strong>, record
                     10-0-11
                     (40 pts), 35,209 points for.
                   </p>
@@ -11661,7 +11661,7 @@
                 <div class="p-3 bg-body-tertiary">
                   <p class="text-muted small mb-2">
                     One example randomised schedule where <strong>Simon</strong> finished
-                    <strong>rank 5</strong> — record
+                    <strong>rank 5</strong>, record
                     10-0-11
                     (40 pts), 35,209 points for.
                   </p>
@@ -12030,7 +12030,7 @@
                 <div class="p-3 bg-body-tertiary">
                   <p class="text-muted small mb-2">
                     One example randomised schedule where <strong>Simon</strong> finished
-                    <strong>rank 6</strong> — record
+                    <strong>rank 6</strong>, record
                     8-0-13
                     (32 pts), 35,209 points for.
                   </p>
@@ -12399,7 +12399,7 @@
                 <div class="p-3 bg-body-tertiary">
                   <p class="text-muted small mb-2">
                     One example randomised schedule where <strong>Simon</strong> finished
-                    <strong>rank 7</strong> — record
+                    <strong>rank 7</strong>, record
                     9-0-12
                     (36 pts), 35,209 points for.
                   </p>
@@ -12768,7 +12768,7 @@
                 <div class="p-3 bg-body-tertiary">
                   <p class="text-muted small mb-2">
                     One example randomised schedule where <strong>Simon</strong> finished
-                    <strong>rank 8</strong> — record
+                    <strong>rank 8</strong>, record
                     7-0-14
                     (28 pts), 35,209 points for.
                   </p>
@@ -13153,7 +13153,7 @@
                        role="button" data-bs-toggle="collapse" data-bs-target="#mc-Luke-1"
                        aria-expanded="false" style="width:4.9%; font-size:0.62rem; cursor:pointer; border-right:2px solid var(--bs-body-bg,#fff);"
                        
-                       title="Rank 1: 4.9% of trials — click for an example">
+                       title="Rank 1: 4.9% of trials, click for an example">
                     
                   </div>
                   
@@ -13164,7 +13164,7 @@
                        role="button" data-bs-toggle="collapse" data-bs-target="#mc-Luke-2"
                        aria-expanded="false" style="width:10.4%; font-size:0.62rem; cursor:pointer; border-right:2px solid var(--bs-body-bg,#fff);"
                        
-                       title="Rank 2: 10.4% of trials — click for an example">
+                       title="Rank 2: 10.4% of trials, click for an example">
                     2
                   </div>
                   
@@ -13175,7 +13175,7 @@
                        role="button" data-bs-toggle="collapse" data-bs-target="#mc-Luke-3"
                        aria-expanded="false" style="width:15.7%; font-size:0.62rem; cursor:pointer; border-right:2px solid var(--bs-body-bg,#fff);"
                        
-                       title="Rank 3: 15.7% of trials — click for an example">
+                       title="Rank 3: 15.7% of trials, click for an example">
                     3
                   </div>
                   
@@ -13186,7 +13186,7 @@
                        role="button" data-bs-toggle="collapse" data-bs-target="#mc-Luke-4"
                        aria-expanded="false" style="width:25.6%; font-size:0.62rem; cursor:pointer; border-right:2px solid var(--bs-body-bg,#fff);"
                        
-                       title="Rank 4: 25.6% of trials — click for an example">
+                       title="Rank 4: 25.6% of trials, click for an example">
                     4
                   </div>
                   
@@ -13197,7 +13197,7 @@
                        role="button" data-bs-toggle="collapse" data-bs-target="#mc-Luke-5"
                        aria-expanded="false" style="width:26.4%; font-size:0.62rem; cursor:pointer; border-right:2px solid var(--bs-body-bg,#fff);"
                        
-                       title="Rank 5: 26.4% of trials — click for an example">
+                       title="Rank 5: 26.4% of trials, click for an example">
                     5
                   </div>
                   
@@ -13208,7 +13208,7 @@
                        role="button" data-bs-toggle="collapse" data-bs-target="#mc-Luke-6"
                        aria-expanded="false" style="width:10.8%; font-size:0.62rem; cursor:pointer; border-right:2px solid var(--bs-body-bg,#fff);"
                        
-                       title="Rank 6: 10.8% of trials — click for an example">
+                       title="Rank 6: 10.8% of trials, click for an example">
                     6
                   </div>
                   
@@ -13219,7 +13219,7 @@
                        role="button" data-bs-toggle="collapse" data-bs-target="#mc-Luke-7"
                        aria-expanded="false" style="width:5.0%; font-size:0.62rem; cursor:pointer; border-right:2px solid var(--bs-body-bg,#fff);"
                        
-                       title="Rank 7: 5.0% of trials — click for an example">
+                       title="Rank 7: 5.0% of trials, click for an example">
                     
                   </div>
                   
@@ -13230,7 +13230,7 @@
                        role="button" data-bs-toggle="collapse" data-bs-target="#mc-Luke-8"
                        aria-expanded="false" style="width:1.3%; font-size:0.62rem; cursor:pointer; border-right:2px solid var(--bs-body-bg,#fff);"
                        
-                       title="Rank 8: 1.3% of trials — click for an example">
+                       title="Rank 8: 1.3% of trials, click for an example">
                     
                   </div>
                   
@@ -13245,7 +13245,7 @@
                 <div class="p-3 bg-body-tertiary">
                   <p class="text-muted small mb-2">
                     One example randomised schedule where <strong>Luke</strong> finished
-                    <strong>rank 1</strong> — record
+                    <strong>rank 1</strong>, record
                     13-0-8
                     (52 pts), 35,532 points for.
                   </p>
@@ -13614,7 +13614,7 @@
                 <div class="p-3 bg-body-tertiary">
                   <p class="text-muted small mb-2">
                     One example randomised schedule where <strong>Luke</strong> finished
-                    <strong>rank 2</strong> — record
+                    <strong>rank 2</strong>, record
                     14-0-7
                     (56 pts), 35,532 points for.
                   </p>
@@ -13983,7 +13983,7 @@
                 <div class="p-3 bg-body-tertiary">
                   <p class="text-muted small mb-2">
                     One example randomised schedule where <strong>Luke</strong> finished
-                    <strong>rank 3</strong> — record
+                    <strong>rank 3</strong>, record
                     12-0-9
                     (48 pts), 35,532 points for.
                   </p>
@@ -14352,7 +14352,7 @@
                 <div class="p-3 bg-body-tertiary">
                   <p class="text-muted small mb-2">
                     One example randomised schedule where <strong>Luke</strong> finished
-                    <strong>rank 4</strong> — record
+                    <strong>rank 4</strong>, record
                     11-0-10
                     (44 pts), 35,532 points for.
                   </p>
@@ -14721,7 +14721,7 @@
                 <div class="p-3 bg-body-tertiary">
                   <p class="text-muted small mb-2">
                     One example randomised schedule where <strong>Luke</strong> finished
-                    <strong>rank 5</strong> — record
+                    <strong>rank 5</strong>, record
                     11-0-10
                     (44 pts), 35,532 points for.
                   </p>
@@ -15090,7 +15090,7 @@
                 <div class="p-3 bg-body-tertiary">
                   <p class="text-muted small mb-2">
                     One example randomised schedule where <strong>Luke</strong> finished
-                    <strong>rank 6</strong> — record
+                    <strong>rank 6</strong>, record
                     9-0-12
                     (36 pts), 35,532 points for.
                   </p>
@@ -15459,7 +15459,7 @@
                 <div class="p-3 bg-body-tertiary">
                   <p class="text-muted small mb-2">
                     One example randomised schedule where <strong>Luke</strong> finished
-                    <strong>rank 7</strong> — record
+                    <strong>rank 7</strong>, record
                     7-0-14
                     (28 pts), 35,532 points for.
                   </p>
@@ -15828,7 +15828,7 @@
                 <div class="p-3 bg-body-tertiary">
                   <p class="text-muted small mb-2">
                     One example randomised schedule where <strong>Luke</strong> finished
-                    <strong>rank 8</strong> — record
+                    <strong>rank 8</strong>, record
                     7-1-13
                     (30 pts), 35,532 points for.
                   </p>
@@ -16217,7 +16217,7 @@
                        role="button" data-bs-toggle="collapse" data-bs-target="#mc-Mark-3"
                        aria-expanded="false" style="width:0.4%; font-size:0.62rem; cursor:pointer; border-right:2px solid var(--bs-body-bg,#fff);"
                        
-                       title="Rank 3: 0.4% of trials — click for an example">
+                       title="Rank 3: 0.4% of trials, click for an example">
                     
                   </div>
                   
@@ -16228,7 +16228,7 @@
                        role="button" data-bs-toggle="collapse" data-bs-target="#mc-Mark-4"
                        aria-expanded="false" style="width:3.5%; font-size:0.62rem; cursor:pointer; border-right:2px solid var(--bs-body-bg,#fff);"
                        
-                       title="Rank 4: 3.5% of trials — click for an example">
+                       title="Rank 4: 3.5% of trials, click for an example">
                     
                   </div>
                   
@@ -16239,7 +16239,7 @@
                        role="button" data-bs-toggle="collapse" data-bs-target="#mc-Mark-5"
                        aria-expanded="false" style="width:13.6%; font-size:0.62rem; cursor:pointer; border-right:2px solid var(--bs-body-bg,#fff);"
                        
-                       title="Rank 5: 13.6% of trials — click for an example">
+                       title="Rank 5: 13.6% of trials, click for an example">
                     5
                   </div>
                   
@@ -16250,7 +16250,7 @@
                        role="button" data-bs-toggle="collapse" data-bs-target="#mc-Mark-6"
                        aria-expanded="false" style="width:35.0%; font-size:0.62rem; cursor:pointer; border-right:2px solid var(--bs-body-bg,#fff);"
                        
-                       title="Rank 6: 35.0% of trials — click for an example">
+                       title="Rank 6: 35.0% of trials, click for an example">
                     6
                   </div>
                   
@@ -16261,7 +16261,7 @@
                        role="button" data-bs-toggle="collapse" data-bs-target="#mc-Mark-7"
                        aria-expanded="false" style="width:29.0%; font-size:0.62rem; cursor:pointer; border-right:2px solid var(--bs-body-bg,#fff);"
                        
-                       title="Rank 7: 29.0% of trials — click for an example">
+                       title="Rank 7: 29.0% of trials, click for an example">
                     7
                   </div>
                   
@@ -16272,7 +16272,7 @@
                        role="button" data-bs-toggle="collapse" data-bs-target="#mc-Mark-8"
                        aria-expanded="false" style="width:18.4%; font-size:0.62rem; cursor:pointer; border-right:2px solid var(--bs-body-bg,#fff);"
                        
-                       title="Rank 8: 18.4% of trials — click for an example">
+                       title="Rank 8: 18.4% of trials, click for an example">
                     8
                   </div>
                   
@@ -16287,7 +16287,7 @@
                 <div class="p-3 bg-body-tertiary">
                   <p class="text-muted small mb-2">
                     One example randomised schedule where <strong>Mark</strong> finished
-                    <strong>rank 1</strong> — record
+                    <strong>rank 1</strong>, record
                     12-0-9
                     (48 pts), 34,591 points for.
                   </p>
@@ -16656,7 +16656,7 @@
                 <div class="p-3 bg-body-tertiary">
                   <p class="text-muted small mb-2">
                     One example randomised schedule where <strong>Mark</strong> finished
-                    <strong>rank 2</strong> — record
+                    <strong>rank 2</strong>, record
                     12-0-9
                     (48 pts), 34,591 points for.
                   </p>
@@ -17025,7 +17025,7 @@
                 <div class="p-3 bg-body-tertiary">
                   <p class="text-muted small mb-2">
                     One example randomised schedule where <strong>Mark</strong> finished
-                    <strong>rank 3</strong> — record
+                    <strong>rank 3</strong>, record
                     12-0-9
                     (48 pts), 34,591 points for.
                   </p>
@@ -17394,7 +17394,7 @@
                 <div class="p-3 bg-body-tertiary">
                   <p class="text-muted small mb-2">
                     One example randomised schedule where <strong>Mark</strong> finished
-                    <strong>rank 4</strong> — record
+                    <strong>rank 4</strong>, record
                     10-0-11
                     (40 pts), 34,591 points for.
                   </p>
@@ -17763,7 +17763,7 @@
                 <div class="p-3 bg-body-tertiary">
                   <p class="text-muted small mb-2">
                     One example randomised schedule where <strong>Mark</strong> finished
-                    <strong>rank 5</strong> — record
+                    <strong>rank 5</strong>, record
                     10-0-11
                     (40 pts), 34,591 points for.
                   </p>
@@ -18132,7 +18132,7 @@
                 <div class="p-3 bg-body-tertiary">
                   <p class="text-muted small mb-2">
                     One example randomised schedule where <strong>Mark</strong> finished
-                    <strong>rank 6</strong> — record
+                    <strong>rank 6</strong>, record
                     8-0-13
                     (32 pts), 34,591 points for.
                   </p>
@@ -18501,7 +18501,7 @@
                 <div class="p-3 bg-body-tertiary">
                   <p class="text-muted small mb-2">
                     One example randomised schedule where <strong>Mark</strong> finished
-                    <strong>rank 7</strong> — record
+                    <strong>rank 7</strong>, record
                     6-0-15
                     (24 pts), 34,591 points for.
                   </p>
@@ -18870,7 +18870,7 @@
                 <div class="p-3 bg-body-tertiary">
                   <p class="text-muted small mb-2">
                     One example randomised schedule where <strong>Mark</strong> finished
-                    <strong>rank 8</strong> — record
+                    <strong>rank 8</strong>, record
                     7-0-14
                     (28 pts), 34,591 points for.
                   </p>
@@ -19257,7 +19257,7 @@
                        role="button" data-bs-toggle="collapse" data-bs-target="#mc-James-2"
                        aria-expanded="false" style="width:0.1%; font-size:0.62rem; cursor:pointer; border-right:2px solid var(--bs-body-bg,#fff);"
                        
-                       title="Rank 2: 0.1% of trials — click for an example">
+                       title="Rank 2: 0.1% of trials, click for an example">
                     
                   </div>
                   
@@ -19268,7 +19268,7 @@
                        role="button" data-bs-toggle="collapse" data-bs-target="#mc-James-3"
                        aria-expanded="false" style="width:0.5%; font-size:0.62rem; cursor:pointer; border-right:2px solid var(--bs-body-bg,#fff);"
                        
-                       title="Rank 3: 0.5% of trials — click for an example">
+                       title="Rank 3: 0.5% of trials, click for an example">
                     
                   </div>
                   
@@ -19279,7 +19279,7 @@
                        role="button" data-bs-toggle="collapse" data-bs-target="#mc-James-4"
                        aria-expanded="false" style="width:2.6%; font-size:0.62rem; cursor:pointer; border-right:2px solid var(--bs-body-bg,#fff);"
                        
-                       title="Rank 4: 2.6% of trials — click for an example">
+                       title="Rank 4: 2.6% of trials, click for an example">
                     
                   </div>
                   
@@ -19290,7 +19290,7 @@
                        role="button" data-bs-toggle="collapse" data-bs-target="#mc-James-5"
                        aria-expanded="false" style="width:8.9%; font-size:0.62rem; cursor:pointer; border-right:2px solid var(--bs-body-bg,#fff);"
                        
-                       title="Rank 5: 8.9% of trials — click for an example">
+                       title="Rank 5: 8.9% of trials, click for an example">
                     5
                   </div>
                   
@@ -19301,7 +19301,7 @@
                        role="button" data-bs-toggle="collapse" data-bs-target="#mc-James-6"
                        aria-expanded="false" style="width:25.2%; font-size:0.62rem; cursor:pointer; border-right:2px solid var(--bs-body-bg,#fff);"
                        
-                       title="Rank 6: 25.2% of trials — click for an example">
+                       title="Rank 6: 25.2% of trials, click for an example">
                     6
                   </div>
                   
@@ -19312,7 +19312,7 @@
                        role="button" data-bs-toggle="collapse" data-bs-target="#mc-James-7"
                        aria-expanded="false" style="width:37.1%; font-size:0.62rem; cursor:pointer; border-right:2px solid var(--bs-body-bg,#fff);"
                        
-                       title="Rank 7: 37.1% of trials — click for an example">
+                       title="Rank 7: 37.1% of trials, click for an example">
                     7
                   </div>
                   
@@ -19323,7 +19323,7 @@
                        role="button" data-bs-toggle="collapse" data-bs-target="#mc-James-8"
                        aria-expanded="false" style="width:25.6%; font-size:0.62rem; cursor:pointer; border-right:2px solid var(--bs-body-bg,#fff);"
                        
-                       title="Rank 8: 25.6% of trials — click for an example">
+                       title="Rank 8: 25.6% of trials, click for an example">
                     8
                   </div>
                   
@@ -19338,7 +19338,7 @@
                 <div class="p-3 bg-body-tertiary">
                   <p class="text-muted small mb-2">
                     One example randomised schedule where <strong>James</strong> finished
-                    <strong>rank 1</strong> — record
+                    <strong>rank 1</strong>, record
                     13-0-8
                     (52 pts), 33,981 points for.
                   </p>
@@ -19707,7 +19707,7 @@
                 <div class="p-3 bg-body-tertiary">
                   <p class="text-muted small mb-2">
                     One example randomised schedule where <strong>James</strong> finished
-                    <strong>rank 2</strong> — record
+                    <strong>rank 2</strong>, record
                     12-0-9
                     (48 pts), 33,981 points for.
                   </p>
@@ -20076,7 +20076,7 @@
                 <div class="p-3 bg-body-tertiary">
                   <p class="text-muted small mb-2">
                     One example randomised schedule where <strong>James</strong> finished
-                    <strong>rank 3</strong> — record
+                    <strong>rank 3</strong>, record
                     12-0-9
                     (48 pts), 33,981 points for.
                   </p>
@@ -20445,7 +20445,7 @@
                 <div class="p-3 bg-body-tertiary">
                   <p class="text-muted small mb-2">
                     One example randomised schedule where <strong>James</strong> finished
-                    <strong>rank 4</strong> — record
+                    <strong>rank 4</strong>, record
                     12-0-9
                     (48 pts), 33,981 points for.
                   </p>
@@ -20814,7 +20814,7 @@
                 <div class="p-3 bg-body-tertiary">
                   <p class="text-muted small mb-2">
                     One example randomised schedule where <strong>James</strong> finished
-                    <strong>rank 5</strong> — record
+                    <strong>rank 5</strong>, record
                     11-0-10
                     (44 pts), 33,981 points for.
                   </p>
@@ -21183,7 +21183,7 @@
                 <div class="p-3 bg-body-tertiary">
                   <p class="text-muted small mb-2">
                     One example randomised schedule where <strong>James</strong> finished
-                    <strong>rank 6</strong> — record
+                    <strong>rank 6</strong>, record
                     10-0-11
                     (40 pts), 33,981 points for.
                   </p>
@@ -21552,7 +21552,7 @@
                 <div class="p-3 bg-body-tertiary">
                   <p class="text-muted small mb-2">
                     One example randomised schedule where <strong>James</strong> finished
-                    <strong>rank 7</strong> — record
+                    <strong>rank 7</strong>, record
                     9-0-12
                     (36 pts), 33,981 points for.
                   </p>
@@ -21921,7 +21921,7 @@
                 <div class="p-3 bg-body-tertiary">
                   <p class="text-muted small mb-2">
                     One example randomised schedule where <strong>James</strong> finished
-                    <strong>rank 8</strong> — record
+                    <strong>rank 8</strong>, record
                     7-0-14
                     (28 pts), 33,981 points for.
                   </p>
@@ -22308,7 +22308,7 @@
                        role="button" data-bs-toggle="collapse" data-bs-target="#mc-Lester-2"
                        aria-expanded="false" style="width:0.2%; font-size:0.62rem; cursor:pointer; border-right:2px solid var(--bs-body-bg,#fff);"
                        
-                       title="Rank 2: 0.2% of trials — click for an example">
+                       title="Rank 2: 0.2% of trials, click for an example">
                     
                   </div>
                   
@@ -22319,7 +22319,7 @@
                        role="button" data-bs-toggle="collapse" data-bs-target="#mc-Lester-3"
                        aria-expanded="false" style="width:0.7%; font-size:0.62rem; cursor:pointer; border-right:2px solid var(--bs-body-bg,#fff);"
                        
-                       title="Rank 3: 0.7% of trials — click for an example">
+                       title="Rank 3: 0.7% of trials, click for an example">
                     
                   </div>
                   
@@ -22330,7 +22330,7 @@
                        role="button" data-bs-toggle="collapse" data-bs-target="#mc-Lester-4"
                        aria-expanded="false" style="width:2.1%; font-size:0.62rem; cursor:pointer; border-right:2px solid var(--bs-body-bg,#fff);"
                        
-                       title="Rank 4: 2.1% of trials — click for an example">
+                       title="Rank 4: 2.1% of trials, click for an example">
                     
                   </div>
                   
@@ -22341,7 +22341,7 @@
                        role="button" data-bs-toggle="collapse" data-bs-target="#mc-Lester-5"
                        aria-expanded="false" style="width:6.3%; font-size:0.62rem; cursor:pointer; border-right:2px solid var(--bs-body-bg,#fff);"
                        
-                       title="Rank 5: 6.3% of trials — click for an example">
+                       title="Rank 5: 6.3% of trials, click for an example">
                     
                   </div>
                   
@@ -22352,7 +22352,7 @@
                        role="button" data-bs-toggle="collapse" data-bs-target="#mc-Lester-6"
                        aria-expanded="false" style="width:15.1%; font-size:0.62rem; cursor:pointer; border-right:2px solid var(--bs-body-bg,#fff);"
                        
-                       title="Rank 6: 15.1% of trials — click for an example">
+                       title="Rank 6: 15.1% of trials, click for an example">
                     6
                   </div>
                   
@@ -22363,7 +22363,7 @@
                        role="button" data-bs-toggle="collapse" data-bs-target="#mc-Lester-7"
                        aria-expanded="false" style="width:23.0%; font-size:0.62rem; cursor:pointer; border-right:2px solid var(--bs-body-bg,#fff);"
                        
-                       title="Rank 7: 23.0% of trials — click for an example">
+                       title="Rank 7: 23.0% of trials, click for an example">
                     7
                   </div>
                   
@@ -22374,7 +22374,7 @@
                        role="button" data-bs-toggle="collapse" data-bs-target="#mc-Lester-8"
                        aria-expanded="false" style="width:52.5%; font-size:0.62rem; cursor:pointer; border-right:2px solid var(--bs-body-bg,#fff);"
                        
-                       title="Rank 8: 52.5% of trials — click for an example">
+                       title="Rank 8: 52.5% of trials, click for an example">
                     8
                   </div>
                   
@@ -22389,7 +22389,7 @@
                 <div class="p-3 bg-body-tertiary">
                   <p class="text-muted small mb-2">
                     One example randomised schedule where <strong>Lester</strong> finished
-                    <strong>rank 1</strong> — record
+                    <strong>rank 1</strong>, record
                     13-0-8
                     (52 pts), 33,665 points for.
                   </p>
@@ -22758,7 +22758,7 @@
                 <div class="p-3 bg-body-tertiary">
                   <p class="text-muted small mb-2">
                     One example randomised schedule where <strong>Lester</strong> finished
-                    <strong>rank 2</strong> — record
+                    <strong>rank 2</strong>, record
                     11-1-9
                     (46 pts), 33,665 points for.
                   </p>
@@ -23127,7 +23127,7 @@
                 <div class="p-3 bg-body-tertiary">
                   <p class="text-muted small mb-2">
                     One example randomised schedule where <strong>Lester</strong> finished
-                    <strong>rank 3</strong> — record
+                    <strong>rank 3</strong>, record
                     12-0-9
                     (48 pts), 33,665 points for.
                   </p>
@@ -23496,7 +23496,7 @@
                 <div class="p-3 bg-body-tertiary">
                   <p class="text-muted small mb-2">
                     One example randomised schedule where <strong>Lester</strong> finished
-                    <strong>rank 4</strong> — record
+                    <strong>rank 4</strong>, record
                     11-0-10
                     (44 pts), 33,665 points for.
                   </p>
@@ -23865,7 +23865,7 @@
                 <div class="p-3 bg-body-tertiary">
                   <p class="text-muted small mb-2">
                     One example randomised schedule where <strong>Lester</strong> finished
-                    <strong>rank 5</strong> — record
+                    <strong>rank 5</strong>, record
                     10-0-11
                     (40 pts), 33,665 points for.
                   </p>
@@ -24234,7 +24234,7 @@
                 <div class="p-3 bg-body-tertiary">
                   <p class="text-muted small mb-2">
                     One example randomised schedule where <strong>Lester</strong> finished
-                    <strong>rank 6</strong> — record
+                    <strong>rank 6</strong>, record
                     10-0-11
                     (40 pts), 33,665 points for.
                   </p>
@@ -24603,7 +24603,7 @@
                 <div class="p-3 bg-body-tertiary">
                   <p class="text-muted small mb-2">
                     One example randomised schedule where <strong>Lester</strong> finished
-                    <strong>rank 7</strong> — record
+                    <strong>rank 7</strong>, record
                     8-0-13
                     (32 pts), 33,665 points for.
                   </p>
@@ -24972,7 +24972,7 @@
                 <div class="p-3 bg-body-tertiary">
                   <p class="text-muted small mb-2">
                     One example randomised schedule where <strong>Lester</strong> finished
-                    <strong>rank 8</strong> — record
+                    <strong>rank 8</strong>, record
                     6-0-15
                     (24 pts), 33,665 points for.
                   </p>
@@ -25342,7 +25342,7 @@
   </div>
   <div class="card-footer text-muted small">
     Each bar segment is the % of 20,000 randomised valid
-    schedules where that coach finished at that rank — hover a segment for the exact %, click it for a
+    schedules where that coach finished at that rank. Hover a segment for the exact %, click it for a
     concrete example round-by-round schedule that produced it. Colour scale matches the Draft Heat Map
     (dark green = rank 1, red = rank 8).
     &nbsp;|&nbsp;
@@ -25354,10 +25354,6 @@
 
 
 </div>
-
-<footer class="text-center text-muted small py-3 mt-5 border-top">
-  ASL Fantasy League Analytics &mdash; 2024 Season
-</footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
@@ -25379,7 +25375,7 @@
     b.id = 'staleBanner';
     b.style.cssText = 'position:fixed;bottom:0;left:0;right:0;background:#0d6efd;color:#fff;' +
       'text-align:center;padding:10px;z-index:9999;cursor:pointer;font-size:14px;';
-    b.textContent = 'A newer version of this page is available — tap to refresh.';
+    b.textContent = 'A newer version of this page is available. Tap to refresh.';
     b.onclick = function () { location.reload(); };
     document.body.appendChild(b);
   }
