@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-bs-theme="light" data-build="1791975300">
+<html lang="en" data-bs-theme="light" data-build="1791976022">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -189,6 +189,25 @@
   </div>
 </div>
 
+
+<div class="modal fade" id="pickDetailModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header py-2">
+        <h6 class="modal-title mb-0" id="pickDetailTitle"></h6>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-0" id="pickDetailBody"></div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .rd-col { position: sticky; left: 0; z-index: 2; background: #fff; }
+  thead .rd-col { background: #212529; z-index: 3; }
+  .pick-cell { cursor: pointer; }
+</style>
+
 </div>
 
 <button id="backToTop" class="btn btn-dark rounded-circle shadow"
@@ -248,8 +267,14 @@
 
 <script>
   (function () {
-    document.querySelectorAll('[data-bs-toggle="popover"]').forEach(function (el) {
-      new bootstrap.Popover(el, { sanitize: false, html: true });
+    const modalEl = document.getElementById('pickDetailModal');
+    const modal = new bootstrap.Modal(modalEl);
+    document.querySelectorAll('.pick-cell[data-peers]').forEach(function (el) {
+      el.addEventListener('click', function () {
+        document.getElementById('pickDetailTitle').textContent = el.dataset.player;
+        document.getElementById('pickDetailBody').innerHTML = el.dataset.peers;
+        modal.show();
+      });
     });
   })();
 </script>
