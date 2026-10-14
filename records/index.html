@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-bs-theme="light" data-build="1791971529">
+<html lang="en" data-bs-theme="light" data-build="1791973477">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,6 +11,8 @@
     .navbar-nav .nav-link { border-left: 3px solid transparent; padding-left: .75rem; }
     .navbar-nav .nav-link.active { border-left-color: var(--bs-primary); background-color: rgba(255,255,255,.06); }
     .nav-section-label { font-size: .68rem; letter-spacing: .06em; color: rgba(255,255,255,.5); padding: .5rem .75rem .15rem; }
+    /* Offset anchor-jump targets so the sticky nav doesn't cover them */
+    [id] { scroll-margin-top: 70px; }
   </style>
 </head>
 <body>
@@ -109,12 +111,24 @@
 
 <div class="container-fluid px-4">
   
-<h2 class="mb-4">ASL Hall of Fame</h2>
+<h2 class="mb-3">ASL Hall of Fame</h2>
+
+
+<div class="d-flex flex-wrap gap-2 mb-4" style="font-size:0.78rem;">
+  <a href="#all-time-records" class="btn btn-sm btn-outline-secondary">All-Time Records</a>
+  <a href="#season-results" class="btn btn-sm btn-outline-secondary">Season Results</a>
+  <a href="#trophy-cabinet" class="btn btn-sm btn-outline-secondary">🏅 Trophy Cabinet</a>
+  <a href="#notable-records" class="btn btn-sm btn-outline-secondary">📊 Notable Records</a>
+  <a href="#championship-drought" class="btn btn-sm btn-outline-secondary">⏳ Drought</a>
+  <a href="#bridesmaid-tally" class="btn btn-sm btn-outline-secondary">🥈 Bridesmaid</a>
+  <a href="#head-to-head" class="btn btn-sm btn-outline-secondary">⚔️ Head-to-Head</a>
+  <a href="#favourite-players" class="btn btn-sm btn-outline-secondary">⭐ Favourites</a>
+</div>
 
 
 <div class="row g-3 mb-4">
   <div class="col-lg-6">
-    <div class="card shadow-sm h-100">
+    <div class="card shadow-sm h-100" id="all-time-records">
       <div class="card-header fw-semibold">All-Time Records</div>
       <div class="card-body p-0">
         <div class="d-flex flex-column">
@@ -269,7 +283,7 @@
   </div>
 
   <div class="col-lg-6">
-    <div class="card shadow-sm h-100">
+    <div class="card shadow-sm h-100" id="season-results">
       <div class="card-header fw-semibold">Season Results</div>
       <div class="card-body p-0">
         
@@ -732,7 +746,7 @@
 
 
 
-<div class="card shadow-sm mb-4">
+<div class="card shadow-sm mb-4" id="trophy-cabinet">
   <div class="card-header fw-semibold d-flex justify-content-between align-items-center flex-wrap gap-2">
     <span>🏅 Trophy Cabinet</span>
     <ul class="nav nav-pills" id="cabinetTabs" role="tablist" style="font-size:0.8rem;">
@@ -758,7 +772,7 @@
             <div class="border rounded p-3 h-100">
               <div class="d-flex justify-content-between align-items-center mb-2">
                 <a href="/asl-hub/coach/Mark" class="text-decoration-none fw-bold fs-5">Mark</a>
-                <span class="badge bg-dark">28</span>
+                <span class="badge bg-dark">30</span>
               </div>
 
               
@@ -863,6 +877,13 @@
 
   <span class="badge rounded-pill fw-normal d-inline-flex align-items-center gap-1 bg-secondary-subtle text-secondary-emphasis border border-secondary-subtle">
     
+      <span>🚑</span>
+    
+    <span>Walking Wounded x2</span>
+  </span>
+
+  <span class="badge rounded-pill fw-normal d-inline-flex align-items-center gap-1 bg-secondary-subtle text-secondary-emphasis border border-secondary-subtle">
+    
       <span>🔄</span>
     
     <span>Lineup Tinkerer x1</span>
@@ -882,7 +903,7 @@
             <div class="border rounded p-3 h-100">
               <div class="d-flex justify-content-between align-items-center mb-2">
                 <a href="/asl-hub/coach/Simon" class="text-decoration-none fw-bold fs-5">Simon</a>
-                <span class="badge bg-dark">28</span>
+                <span class="badge bg-dark">30</span>
               </div>
 
               
@@ -982,6 +1003,13 @@
 
   <span class="badge rounded-pill fw-normal d-inline-flex align-items-center gap-1 bg-secondary-subtle text-secondary-emphasis border border-secondary-subtle">
     
+      <span>🚑</span>
+    
+    <span>Walking Wounded x2</span>
+  </span>
+
+  <span class="badge rounded-pill fw-normal d-inline-flex align-items-center gap-1 bg-secondary-subtle text-secondary-emphasis border border-secondary-subtle">
+    
       <span>🎢</span>
     
     <span>Boom or Bust x1</span>
@@ -1001,7 +1029,7 @@
             <div class="border rounded p-3 h-100">
               <div class="d-flex justify-content-between align-items-center mb-2">
                 <a href="/asl-hub/coach/Luke" class="text-decoration-none fw-bold fs-5">Luke</a>
-                <span class="badge bg-dark">33</span>
+                <span class="badge bg-dark">34</span>
               </div>
 
               
@@ -1113,6 +1141,13 @@
     <span>Worst Draft Pick x1</span>
   </span>
 
+  <span class="badge rounded-pill fw-normal d-inline-flex align-items-center gap-1 bg-secondary-subtle text-secondary-emphasis border border-secondary-subtle">
+    
+      <span>🚑</span>
+    
+    <span>Walking Wounded x1</span>
+  </span>
+
               </div>
               
 
@@ -1127,7 +1162,7 @@
             <div class="border rounded p-3 h-100">
               <div class="d-flex justify-content-between align-items-center mb-2">
                 <a href="/asl-hub/coach/Lester" class="text-decoration-none fw-bold fs-5">Lester</a>
-                <span class="badge bg-dark">23</span>
+                <span class="badge bg-dark">24</span>
               </div>
 
               
@@ -1250,6 +1285,13 @@
 
   <span class="badge rounded-pill fw-normal d-inline-flex align-items-center gap-1 bg-secondary-subtle text-secondary-emphasis border border-secondary-subtle">
     
+      <span>🚑</span>
+    
+    <span>Walking Wounded x1</span>
+  </span>
+
+  <span class="badge rounded-pill fw-normal d-inline-flex align-items-center gap-1 bg-secondary-subtle text-secondary-emphasis border border-secondary-subtle">
+    
       <span>📉</span>
     
     <span>Lowest Scorer x1</span>
@@ -1276,7 +1318,7 @@
             <div class="border rounded p-3 h-100">
               <div class="d-flex justify-content-between align-items-center mb-2">
                 <a href="/asl-hub/coach/Paul" class="text-decoration-none fw-bold fs-5">Paul</a>
-                <span class="badge bg-dark">34</span>
+                <span class="badge bg-dark">35</span>
               </div>
 
               
@@ -1398,6 +1440,13 @@
       <span>😱</span>
     
     <span>Sunday Scaries x2</span>
+  </span>
+
+  <span class="badge rounded-pill fw-normal d-inline-flex align-items-center gap-1 bg-secondary-subtle text-secondary-emphasis border border-secondary-subtle">
+    
+      <span>🚑</span>
+    
+    <span>Walking Wounded x1</span>
   </span>
 
   <span class="badge rounded-pill fw-normal d-inline-flex align-items-center gap-1 bg-secondary-subtle text-secondary-emphasis border border-secondary-subtle">
@@ -1575,7 +1624,7 @@
             <div class="border rounded p-3 h-100">
               <div class="d-flex justify-content-between align-items-center mb-2">
                 <a href="/asl-hub/coach/Anthony" class="text-decoration-none fw-bold fs-5">Anthony</a>
-                <span class="badge bg-dark">20</span>
+                <span class="badge bg-dark">21</span>
               </div>
 
               
@@ -1683,6 +1732,13 @@
       <span>😱</span>
     
     <span>Sunday Scaries x1</span>
+  </span>
+
+  <span class="badge rounded-pill fw-normal d-inline-flex align-items-center gap-1 bg-secondary-subtle text-secondary-emphasis border border-secondary-subtle">
+    
+      <span>🚑</span>
+    
+    <span>Walking Wounded x1</span>
   </span>
 
   <span class="badge rounded-pill fw-normal d-inline-flex align-items-center gap-1 bg-secondary-subtle text-secondary-emphasis border border-secondary-subtle">
@@ -2569,6 +2625,40 @@
                 
               </tr>
               
+              <tr>
+                <td class="fw-semibold d-flex align-items-center gap-1">
+                  
+                    <span>🚑</span>
+                  
+                  <span>Walking Wounded</span>
+                </td>
+                
+                
+                <td class="text-center fw-semibold">2</td>
+                
+                
+                <td class="text-center fw-semibold">2</td>
+                
+                
+                <td class="text-center fw-semibold">1</td>
+                
+                
+                <td class="text-center fw-semibold">1</td>
+                
+                
+                <td class="text-center fw-semibold">1</td>
+                
+                
+                <td class="text-center text-muted">-</td>
+                
+                
+                <td class="text-center fw-semibold">1</td>
+                
+                
+                <td class="text-center text-muted">-</td>
+                
+              </tr>
+              
             </tbody>
           </table>
         </div>
@@ -2585,7 +2675,7 @@
 
 
 
-<div class="card shadow-sm mb-4">
+<div class="card shadow-sm mb-4" id="notable-records">
   <div class="card-header fw-semibold">📊 Notable Records</div>
   <div class="card-body">
     <div class="row g-3">
@@ -2981,7 +3071,7 @@
   
   
   <div class="col-lg-6">
-    <div class="card shadow-sm h-100">
+    <div class="card shadow-sm h-100" id="championship-drought">
       <div class="card-header fw-semibold">⏳ Championship Drought</div>
       <div class="card-body">
         
@@ -3073,7 +3163,7 @@
   
   
   <div class="col-lg-6">
-    <div class="card shadow-sm h-100">
+    <div class="card shadow-sm h-100" id="bridesmaid-tally">
       <div class="card-header fw-semibold">🥈 Bridesmaid Tally</div>
       <div class="card-body">
         
@@ -3150,7 +3240,7 @@
 
 
 
-<div class="card shadow-sm mb-4">
+<div class="card shadow-sm mb-4" id="head-to-head">
   <div class="card-header fw-semibold">⚔️ Head-to-Head</div>
   <div class="card-body p-0">
     <div class="table-responsive">
@@ -3172,50 +3262,71 @@
             
               
                 
-                <td class="text-success fw-semibold">
-                  20-13
+                <td class="p-0">
+                  <a href="/asl-hub/head-to-head/Mark/Simon"
+                     class="d-block p-2 text-decoration-none text-success fw-semibold">
+                    20-13
+                  </a>
                 </td>
               
             
               
                 
-                <td class="text-danger">
-                  12-22
+                <td class="p-0">
+                  <a href="/asl-hub/head-to-head/Mark/Luke"
+                     class="d-block p-2 text-decoration-none text-danger">
+                    12-22
+                  </a>
                 </td>
               
             
               
                 
-                <td class="text-danger">
-                  15-19
+                <td class="p-0">
+                  <a href="/asl-hub/head-to-head/Mark/Lester"
+                     class="d-block p-2 text-decoration-none text-danger">
+                    15-19
+                  </a>
                 </td>
               
             
               
                 
-                <td class="text-danger">
-                  13-21
+                <td class="p-0">
+                  <a href="/asl-hub/head-to-head/Mark/Paul"
+                     class="d-block p-2 text-decoration-none text-danger">
+                    13-21
+                  </a>
                 </td>
               
             
               
                 
-                <td class="text-success fw-semibold">
-                  19-14
+                <td class="p-0">
+                  <a href="/asl-hub/head-to-head/Mark/Jordan"
+                     class="d-block p-2 text-decoration-none text-success fw-semibold">
+                    19-14
+                  </a>
                 </td>
               
             
               
                 
-                <td class="text-danger">
-                  9-23
+                <td class="p-0">
+                  <a href="/asl-hub/head-to-head/Mark/Anthony"
+                     class="d-block p-2 text-decoration-none text-danger">
+                    9-23
+                  </a>
                 </td>
               
             
               
                 
-                <td class="text-success fw-semibold">
-                  19-13
+                <td class="p-0">
+                  <a href="/asl-hub/head-to-head/Mark/James"
+                     class="d-block p-2 text-decoration-none text-success fw-semibold">
+                    19-13
+                  </a>
                 </td>
               
             
@@ -3226,8 +3337,11 @@
             
               
                 
-                <td class="text-danger">
-                  13-20
+                <td class="p-0">
+                  <a href="/asl-hub/head-to-head/Simon/Mark"
+                     class="d-block p-2 text-decoration-none text-danger">
+                    13-20
+                  </a>
                 </td>
               
             
@@ -3237,43 +3351,61 @@
             
               
                 
-                <td class="text-danger">
-                  14-20
+                <td class="p-0">
+                  <a href="/asl-hub/head-to-head/Simon/Luke"
+                     class="d-block p-2 text-decoration-none text-danger">
+                    14-20
+                  </a>
                 </td>
               
             
               
                 
-                <td class="text-success fw-semibold">
-                  21-14
+                <td class="p-0">
+                  <a href="/asl-hub/head-to-head/Simon/Lester"
+                     class="d-block p-2 text-decoration-none text-success fw-semibold">
+                    21-14
+                  </a>
                 </td>
               
             
               
                 
-                <td class="text-danger">
-                  15-17
+                <td class="p-0">
+                  <a href="/asl-hub/head-to-head/Simon/Paul"
+                     class="d-block p-2 text-decoration-none text-danger">
+                    15-17
+                  </a>
                 </td>
               
             
               
                 
-                <td class="text-danger">
-                  15-20
+                <td class="p-0">
+                  <a href="/asl-hub/head-to-head/Simon/Jordan"
+                     class="d-block p-2 text-decoration-none text-danger">
+                    15-20
+                  </a>
                 </td>
               
             
               
                 
-                <td class="text-danger">
-                  10-23
+                <td class="p-0">
+                  <a href="/asl-hub/head-to-head/Simon/Anthony"
+                     class="d-block p-2 text-decoration-none text-danger">
+                    10-23
+                  </a>
                 </td>
               
             
               
                 
-                <td class="text-danger">
-                  12-20
+                <td class="p-0">
+                  <a href="/asl-hub/head-to-head/Simon/James"
+                     class="d-block p-2 text-decoration-none text-danger">
+                    12-20
+                  </a>
                 </td>
               
             
@@ -3284,15 +3416,21 @@
             
               
                 
-                <td class="text-success fw-semibold">
-                  22-12
+                <td class="p-0">
+                  <a href="/asl-hub/head-to-head/Luke/Mark"
+                     class="d-block p-2 text-decoration-none text-success fw-semibold">
+                    22-12
+                  </a>
                 </td>
               
             
               
                 
-                <td class="text-success fw-semibold">
-                  20-14
+                <td class="p-0">
+                  <a href="/asl-hub/head-to-head/Luke/Simon"
+                     class="d-block p-2 text-decoration-none text-success fw-semibold">
+                    20-14
+                  </a>
                 </td>
               
             
@@ -3302,36 +3440,51 @@
             
               
                 
-                <td class="text-danger">
-                  16-17
+                <td class="p-0">
+                  <a href="/asl-hub/head-to-head/Luke/Lester"
+                     class="d-block p-2 text-decoration-none text-danger">
+                    16-17
+                  </a>
                 </td>
               
             
               
                 
-                <td class="text-danger">
-                  18-20
+                <td class="p-0">
+                  <a href="/asl-hub/head-to-head/Luke/Paul"
+                     class="d-block p-2 text-decoration-none text-danger">
+                    18-20
+                  </a>
                 </td>
               
             
               
                 
-                <td class="text-success fw-semibold">
-                  22-10
+                <td class="p-0">
+                  <a href="/asl-hub/head-to-head/Luke/Jordan"
+                     class="d-block p-2 text-decoration-none text-success fw-semibold">
+                    22-10
+                  </a>
                 </td>
               
             
               
                 
-                <td class="text-success fw-semibold">
-                  26-12
+                <td class="p-0">
+                  <a href="/asl-hub/head-to-head/Luke/Anthony"
+                     class="d-block p-2 text-decoration-none text-success fw-semibold">
+                    26-12
+                  </a>
                 </td>
               
             
               
                 
-                <td class="text-success fw-semibold">
-                  22-12
+                <td class="p-0">
+                  <a href="/asl-hub/head-to-head/Luke/James"
+                     class="d-block p-2 text-decoration-none text-success fw-semibold">
+                    22-12
+                  </a>
                 </td>
               
             
@@ -3342,22 +3495,31 @@
             
               
                 
-                <td class="text-success fw-semibold">
-                  19-15
+                <td class="p-0">
+                  <a href="/asl-hub/head-to-head/Lester/Mark"
+                     class="d-block p-2 text-decoration-none text-success fw-semibold">
+                    19-15
+                  </a>
                 </td>
               
             
               
                 
-                <td class="text-danger">
-                  14-21
+                <td class="p-0">
+                  <a href="/asl-hub/head-to-head/Lester/Simon"
+                     class="d-block p-2 text-decoration-none text-danger">
+                    14-21
+                  </a>
                 </td>
               
             
               
                 
-                <td class="text-success fw-semibold">
-                  17-16
+                <td class="p-0">
+                  <a href="/asl-hub/head-to-head/Lester/Luke"
+                     class="d-block p-2 text-decoration-none text-success fw-semibold">
+                    17-16
+                  </a>
                 </td>
               
             
@@ -3367,29 +3529,41 @@
             
               
                 
-                <td class="text-danger">
-                  13-20
+                <td class="p-0">
+                  <a href="/asl-hub/head-to-head/Lester/Paul"
+                     class="d-block p-2 text-decoration-none text-danger">
+                    13-20
+                  </a>
                 </td>
               
             
               
                 
-                <td class="text-success fw-semibold">
-                  17-16
+                <td class="p-0">
+                  <a href="/asl-hub/head-to-head/Lester/Jordan"
+                     class="d-block p-2 text-decoration-none text-success fw-semibold">
+                    17-16
+                  </a>
                 </td>
               
             
               
                 
-                <td class="text-success fw-semibold">
-                  18-14
+                <td class="p-0">
+                  <a href="/asl-hub/head-to-head/Lester/Anthony"
+                     class="d-block p-2 text-decoration-none text-success fw-semibold">
+                    18-14
+                  </a>
                 </td>
               
             
               
                 
-                <td class="text-success fw-semibold">
-                  22-12
+                <td class="p-0">
+                  <a href="/asl-hub/head-to-head/Lester/James"
+                     class="d-block p-2 text-decoration-none text-success fw-semibold">
+                    22-12
+                  </a>
                 </td>
               
             
@@ -3400,29 +3574,41 @@
             
               
                 
-                <td class="text-success fw-semibold">
-                  21-13
+                <td class="p-0">
+                  <a href="/asl-hub/head-to-head/Paul/Mark"
+                     class="d-block p-2 text-decoration-none text-success fw-semibold">
+                    21-13
+                  </a>
                 </td>
               
             
               
                 
-                <td class="text-success fw-semibold">
-                  17-15
+                <td class="p-0">
+                  <a href="/asl-hub/head-to-head/Paul/Simon"
+                     class="d-block p-2 text-decoration-none text-success fw-semibold">
+                    17-15
+                  </a>
                 </td>
               
             
               
                 
-                <td class="text-success fw-semibold">
-                  20-18
+                <td class="p-0">
+                  <a href="/asl-hub/head-to-head/Paul/Luke"
+                     class="d-block p-2 text-decoration-none text-success fw-semibold">
+                    20-18
+                  </a>
                 </td>
               
             
               
                 
-                <td class="text-success fw-semibold">
-                  20-13
+                <td class="p-0">
+                  <a href="/asl-hub/head-to-head/Paul/Lester"
+                     class="d-block p-2 text-decoration-none text-success fw-semibold">
+                    20-13
+                  </a>
                 </td>
               
             
@@ -3432,22 +3618,31 @@
             
               
                 
-                <td class="text-muted">
-                  18-18
+                <td class="p-0">
+                  <a href="/asl-hub/head-to-head/Paul/Jordan"
+                     class="d-block p-2 text-decoration-none text-muted">
+                    18-18
+                  </a>
                 </td>
               
             
               
                 
-                <td class="text-success fw-semibold">
-                  19-14
+                <td class="p-0">
+                  <a href="/asl-hub/head-to-head/Paul/Anthony"
+                     class="d-block p-2 text-decoration-none text-success fw-semibold">
+                    19-14
+                  </a>
                 </td>
               
             
               
                 
-                <td class="text-success fw-semibold">
-                  21-11-1
+                <td class="p-0">
+                  <a href="/asl-hub/head-to-head/Paul/James"
+                     class="d-block p-2 text-decoration-none text-success fw-semibold">
+                    21-11-1
+                  </a>
                 </td>
               
             
@@ -3458,36 +3653,51 @@
             
               
                 
-                <td class="text-danger">
-                  14-19
+                <td class="p-0">
+                  <a href="/asl-hub/head-to-head/Jordan/Mark"
+                     class="d-block p-2 text-decoration-none text-danger">
+                    14-19
+                  </a>
                 </td>
               
             
               
                 
-                <td class="text-success fw-semibold">
-                  20-15
+                <td class="p-0">
+                  <a href="/asl-hub/head-to-head/Jordan/Simon"
+                     class="d-block p-2 text-decoration-none text-success fw-semibold">
+                    20-15
+                  </a>
                 </td>
               
             
               
                 
-                <td class="text-danger">
-                  10-22
+                <td class="p-0">
+                  <a href="/asl-hub/head-to-head/Jordan/Luke"
+                     class="d-block p-2 text-decoration-none text-danger">
+                    10-22
+                  </a>
                 </td>
               
             
               
                 
-                <td class="text-danger">
-                  16-17
+                <td class="p-0">
+                  <a href="/asl-hub/head-to-head/Jordan/Lester"
+                     class="d-block p-2 text-decoration-none text-danger">
+                    16-17
+                  </a>
                 </td>
               
             
               
                 
-                <td class="text-muted">
-                  18-18
+                <td class="p-0">
+                  <a href="/asl-hub/head-to-head/Jordan/Paul"
+                     class="d-block p-2 text-decoration-none text-muted">
+                    18-18
+                  </a>
                 </td>
               
             
@@ -3497,15 +3707,21 @@
             
               
                 
-                <td class="text-danger">
-                  15-17
+                <td class="p-0">
+                  <a href="/asl-hub/head-to-head/Jordan/Anthony"
+                     class="d-block p-2 text-decoration-none text-danger">
+                    15-17
+                  </a>
                 </td>
               
             
               
                 
-                <td class="text-danger">
-                  12-21
+                <td class="p-0">
+                  <a href="/asl-hub/head-to-head/Jordan/James"
+                     class="d-block p-2 text-decoration-none text-danger">
+                    12-21
+                  </a>
                 </td>
               
             
@@ -3516,43 +3732,61 @@
             
               
                 
-                <td class="text-success fw-semibold">
-                  23-9
+                <td class="p-0">
+                  <a href="/asl-hub/head-to-head/Anthony/Mark"
+                     class="d-block p-2 text-decoration-none text-success fw-semibold">
+                    23-9
+                  </a>
                 </td>
               
             
               
                 
-                <td class="text-success fw-semibold">
-                  23-10
+                <td class="p-0">
+                  <a href="/asl-hub/head-to-head/Anthony/Simon"
+                     class="d-block p-2 text-decoration-none text-success fw-semibold">
+                    23-10
+                  </a>
                 </td>
               
             
               
                 
-                <td class="text-danger">
-                  12-26
+                <td class="p-0">
+                  <a href="/asl-hub/head-to-head/Anthony/Luke"
+                     class="d-block p-2 text-decoration-none text-danger">
+                    12-26
+                  </a>
                 </td>
               
             
               
                 
-                <td class="text-danger">
-                  14-18
+                <td class="p-0">
+                  <a href="/asl-hub/head-to-head/Anthony/Lester"
+                     class="d-block p-2 text-decoration-none text-danger">
+                    14-18
+                  </a>
                 </td>
               
             
               
                 
-                <td class="text-danger">
-                  14-19
+                <td class="p-0">
+                  <a href="/asl-hub/head-to-head/Anthony/Paul"
+                     class="d-block p-2 text-decoration-none text-danger">
+                    14-19
+                  </a>
                 </td>
               
             
               
                 
-                <td class="text-success fw-semibold">
-                  17-15
+                <td class="p-0">
+                  <a href="/asl-hub/head-to-head/Anthony/Jordan"
+                     class="d-block p-2 text-decoration-none text-success fw-semibold">
+                    17-15
+                  </a>
                 </td>
               
             
@@ -3562,8 +3796,11 @@
             
               
                 
-                <td class="text-success fw-semibold">
-                  19-14-1
+                <td class="p-0">
+                  <a href="/asl-hub/head-to-head/Anthony/James"
+                     class="d-block p-2 text-decoration-none text-success fw-semibold">
+                    19-14-1
+                  </a>
                 </td>
               
             
@@ -3574,50 +3811,71 @@
             
               
                 
-                <td class="text-danger">
-                  13-19
+                <td class="p-0">
+                  <a href="/asl-hub/head-to-head/James/Mark"
+                     class="d-block p-2 text-decoration-none text-danger">
+                    13-19
+                  </a>
                 </td>
               
             
               
                 
-                <td class="text-success fw-semibold">
-                  20-12
+                <td class="p-0">
+                  <a href="/asl-hub/head-to-head/James/Simon"
+                     class="d-block p-2 text-decoration-none text-success fw-semibold">
+                    20-12
+                  </a>
                 </td>
               
             
               
                 
-                <td class="text-danger">
-                  12-22
+                <td class="p-0">
+                  <a href="/asl-hub/head-to-head/James/Luke"
+                     class="d-block p-2 text-decoration-none text-danger">
+                    12-22
+                  </a>
                 </td>
               
             
               
                 
-                <td class="text-danger">
-                  12-22
+                <td class="p-0">
+                  <a href="/asl-hub/head-to-head/James/Lester"
+                     class="d-block p-2 text-decoration-none text-danger">
+                    12-22
+                  </a>
                 </td>
               
             
               
                 
-                <td class="text-danger">
-                  11-21-1
+                <td class="p-0">
+                  <a href="/asl-hub/head-to-head/James/Paul"
+                     class="d-block p-2 text-decoration-none text-danger">
+                    11-21-1
+                  </a>
                 </td>
               
             
               
                 
-                <td class="text-success fw-semibold">
-                  21-12
+                <td class="p-0">
+                  <a href="/asl-hub/head-to-head/James/Jordan"
+                     class="d-block p-2 text-decoration-none text-success fw-semibold">
+                    21-12
+                  </a>
                 </td>
               
             
               
                 
-                <td class="text-danger">
-                  14-19-1
+                <td class="p-0">
+                  <a href="/asl-hub/head-to-head/James/Anthony"
+                     class="d-block p-2 text-decoration-none text-danger">
+                    14-19-1
+                  </a>
                 </td>
               
             
@@ -3639,7 +3897,7 @@
 
 
 
-<div class="card shadow-sm mb-4">
+<div class="card shadow-sm mb-4" id="favourite-players">
   <div class="card-header fw-semibold">⭐ Favourite Players</div>
   <div class="card-body">
     <div class="row g-3">
@@ -3979,6 +4237,20 @@
 
 
 </div>
+
+<button id="backToTop" class="btn btn-dark rounded-circle shadow"
+        style="position:fixed; bottom:1.25rem; right:1.25rem; width:3rem; height:3rem; display:none; z-index:1030;"
+        aria-label="Back to top" onclick="window.scrollTo({top:0, behavior:'smooth'})">
+  <i class="bi bi-arrow-up"></i>
+</button>
+<script>
+(function () {
+  var btn = document.getElementById('backToTop');
+  window.addEventListener('scroll', function () {
+    btn.style.display = window.scrollY > 500 ? 'block' : 'none';
+  }, { passive: true });
+})();
+</script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>

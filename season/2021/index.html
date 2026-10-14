@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-bs-theme="light" data-build="1791971529">
+<html lang="en" data-bs-theme="light" data-build="1791973477">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,6 +11,8 @@
     .navbar-nav .nav-link { border-left: 3px solid transparent; padding-left: .75rem; }
     .navbar-nav .nav-link.active { border-left-color: var(--bs-primary); background-color: rgba(255,255,255,.06); }
     .nav-section-label { font-size: .68rem; letter-spacing: .06em; color: rgba(255,255,255,.5); padding: .5rem .75rem .15rem; }
+    /* Offset anchor-jump targets so the sticky nav doesn't cover them */
+    [id] { scroll-margin-top: 70px; }
   </style>
 </head>
 <body>
@@ -227,9 +229,26 @@
           
 
           
-
+          <div class="d-flex flex-column gap-2">
+            
+            <div class="ps-2 border-start border-3 border-secondary">
+              <div class="d-flex align-items-center gap-1">
+                
+                  
+                  <span style="font-size:0.85rem; line-height:1;">🚑</span>
+                  
+                
+                <span class="small fw-semibold">Walking Wounded</span>
+              </div>
+              <div class="text-muted" style="font-size:0.72rem;">47 games lost to injury</div>
+              
+              <div class="text-muted" style="font-size:0.68rem;">J.Caldwell, J.Howe, J.Berry</div>
+              
+            </div>
+            
+          </div>
           
-          <div class="text-muted small fst-italic">No awards this season</div>
+
           
         </div>
       </div>
@@ -24555,6 +24574,20 @@
 
 </div>
 
+<button id="backToTop" class="btn btn-dark rounded-circle shadow"
+        style="position:fixed; bottom:1.25rem; right:1.25rem; width:3rem; height:3rem; display:none; z-index:1030;"
+        aria-label="Back to top" onclick="window.scrollTo({top:0, behavior:'smooth'})">
+  <i class="bi bi-arrow-up"></i>
+</button>
+<script>
+(function () {
+  var btn = document.getElementById('backToTop');
+  window.addEventListener('scroll', function () {
+    btn.style.display = window.scrollY > 500 ? 'block' : 'none';
+  }, { passive: true });
+})();
+</script>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
@@ -24832,6 +24865,8 @@ function buildLadderJourney(containerId, plotlyData) {
   container.appendChild(svg);
 }
 </script>
+
+
 
 </body>
 </html>
