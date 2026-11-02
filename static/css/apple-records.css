@@ -1,0 +1,240 @@
+/*
+ * apple-records.css — Hall of Fame, "apple-design" variant.
+ *
+ * Applies the Apple Human Interface / WWDC "fluid interfaces" principles
+ * to a mostly-static stats page: instant press feedback, a defined type
+ * scale with size-specific tracking, translucent chrome that encodes
+ * hierarchy, spring-like (not linear) motion for the few interactive
+ * moments on the page, and full prefers-reduced-motion support.
+ *
+ * Everything here is scoped under body.apple-records so it only affects
+ * this page variant, not the classic /records page.
+ */
+
+body.apple-records {
+  --apple-spring: cubic-bezier(0.22, 1, 0.36, 1);      /* critically-damped settle: response ~0.35s, no overshoot */
+  --apple-spring-bounce: cubic-bezier(0.34, 1.56, 0.64, 1); /* slight overshoot, reserved for momentum-y reveals */
+  --apple-press: 100ms ease-out;
+}
+
+/* ───────────────── Typography scale ─────────────────
+ * Large numerals: tight leading, slight negative tracking (they read too
+ * loose at size). Micro-labels: small positive tracking for legibility.
+ * One rule each, replacing a dozen one-off inline font-size/letter-spacing
+ * values scattered through the classic template. */
+body.apple-records .stat-figure {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+}
+body.apple-records .micro-label {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--bs-secondary-color);
+}
+body.apple-records h2.page-title {
+  font-size: clamp(1.5rem, 1.1rem + 1.5vw, 2.25rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+/* ───────────────── Response: press feedback everywhere ─────────────────
+ * "Respond on pointer-down, not on release." One rule, applied broadly,
+ * is the single highest-leverage change on a page like this — every chip,
+ * tab, table link and card goes from inert to touchable. */
+body.apple-records a,
+body.apple-records button,
+body.apple-records .press {
+  transition: transform var(--apple-press), opacity var(--apple-press);
+}
+body.apple-records a:active,
+body.apple-records button:active,
+body.apple-records .press:active {
+  transform: scale(0.97);
+}
+body.apple-records td a.press.d-block:active { transform: scale(0.96); }
+
+/* ───────────────── Sticky translucent jump-nav ─────────────────
+ * A floating material layer, not an opaque strip — content scrolls under
+ * it. Scroll-edge fade instead of a hard 1px border. Chips get a live
+ * "where am I" state via IntersectionObserver (see apple-records.js). */
+body.apple-records .jump-nav {
+  position: sticky;
+  top: 56px; /* sits just under the main navbar */
+  z-index: 1020;
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  padding: 0.6rem 0.75rem;
+  margin: 0 -0.75rem 1.25rem;
+  border-radius: 0 0 14px 14px;
+}
+body.apple-records .jump-nav::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: -10px;
+  height: 10px;
+  background: linear-gradient(rgba(0, 0, 0, 0.05), transparent);
+  pointer-events: none;
+}
+body.apple-records .jump-nav-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  align-items: center;
+}
+body.apple-records .jump-nav-divider {
+  width: 1px;
+  align-self: stretch;
+  background: rgba(0, 0, 0, 0.1);
+  margin: 0 0.15rem;
+}
+body.apple-records .jump-chip {
+  font-size: 0.78rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: var(--bs-secondary-color);
+  background: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  white-space: nowrap;
+}
+body.apple-records .jump-chip.is-active {
+  background: #0d6efd;
+  border-color: #0d6efd;
+  color: #fff;
+  font-weight: 600;
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  body.apple-records .jump-nav {
+    background: #fff;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border-bottom: 1px solid #dee2e6;
+  }
+}
+
+/* ───────────────── Cards: material weight encodes density ─────────────────
+ * Bigger, denser surfaces (tables, the trophy grid) read as "thicker" —
+ * a touch more shadow than a small stat strip. Still fully opaque: data
+ * tables need full contrast, so translucency stays on the nav chrome only
+ * ("put color on a solid layer, not the translucent foreground"). */
+body.apple-records .card {
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+body.apple-records .card.card-dense {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+}
+body.apple-records .card-header {
+  background: rgba(248, 249, 250, 0.8);
+  font-weight: 650;
+  letter-spacing: -0.005em;
+}
+
+/* ───────────────── Segmented control (By Coach / By Award) ─────────────────
+ * Apple's tab-switch pattern: a single pill slides between positions
+ * instead of two buttons independently swapping color. Position/width are
+ * set inline by JS; the transition here is what makes it glide. */
+body.apple-records .segmented {
+  position: relative;
+  display: inline-flex;
+  background: var(--bs-tertiary-bg);
+  border-radius: 10px;
+  padding: 3px;
+  gap: 2px;
+}
+body.apple-records .segmented-indicator {
+  position: absolute;
+  top: 3px; bottom: 3px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  transition: transform 380ms var(--apple-spring), width 380ms var(--apple-spring);
+  will-change: transform, width;
+}
+body.apple-records .segmented button {
+  position: relative;
+  z-index: 1;
+  background: transparent;
+  border: 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.3rem 0.75rem;
+  border-radius: 8px;
+  color: var(--bs-secondary-color);
+  transition: color 200ms ease;
+}
+body.apple-records .segmented button.active { color: #000; }
+
+/* ───────────────── Disclosure chips (tap to see years) ─────────────────
+ * "Materialize, don't just fade": the revealed content scales + fades in
+ * together rather than a plain height expand, so it reads as a small
+ * surface arriving, not a layout reflow. Built with a grid-rows trick so
+ * no JS height measurement is needed and it still animates smoothly. */
+body.apple-records .disclosure-panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  transform: scale(0.96);
+  transform-origin: top center;
+  transition: grid-template-rows 320ms var(--apple-spring),
+              opacity 220ms var(--apple-spring),
+              transform 320ms var(--apple-spring);
+}
+body.apple-records .disclosure-panel > div { overflow: hidden; }
+body.apple-records .disclosure.is-open .disclosure-panel {
+  grid-template-rows: 1fr;
+  opacity: 1;
+  transform: scale(1);
+}
+body.apple-records .disclosure-trigger[aria-expanded="true"] {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+/* ───────────────── Rank badges, bars ───────────────── */
+body.apple-records .rank-badge {
+  display: inline-flex; align-items: center; justify-content: center;
+  border-radius: 50%; width: 1.5rem; height: 1.5rem;
+  font-size: 0.68rem; font-weight: 700; letter-spacing: 0;
+}
+body.apple-records .bar-track {
+  background: var(--bs-tertiary-bg);
+  border-radius: 999px;
+  height: 1.3rem;
+  overflow: hidden;
+}
+body.apple-records .bar-fill {
+  height: 100%;
+  border-radius: 999px;
+  transform-origin: left center;
+  animation: bar-grow 500ms var(--apple-spring) both;
+}
+@keyframes bar-grow {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+
+/* ───────────────── Reduced motion ─────────────────
+ * Everything above degrades to an instant state change or a short
+ * cross-fade — no slides, no springs, no overshoot, no growing bars. */
+@media (prefers-reduced-motion: reduce) {
+  body.apple-records * {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+  body.apple-records .disclosure-panel {
+    transform: none !important;
+  }
+  body.apple-records a:active,
+  body.apple-records button:active,
+  body.apple-records .press:active {
+    transform: none;
+    opacity: 0.7;
+  }
+}
