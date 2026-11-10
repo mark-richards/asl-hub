@@ -197,19 +197,6 @@ body.apple-records .disclosure-trigger[aria-expanded="true"] {
   background-color: rgba(0, 0, 0, 0.04);
 }
 
-/* ───────────────── By Award table: Highlights/Lowlights dividers ─────────────────
- * The two prominent awards (Dawnbreaker, Spoon) sit above either group,
- * unlabeled, as a headline pair — mirrors the By Coach tab's own
- * hero/highlights/lowlights split. Pure section labels, no per-row tint:
- * the data was already sorted into these two blocks, this just names them. */
-body.apple-records .award-section-row td {
-  padding-top: 0.75rem;
-  padding-bottom: 0.3rem;
-  border-bottom: none;
-  background: transparent;
-}
-body.apple-records tr.award-section-row:first-child td { padding-top: 0.35rem; }
-
 /* ───────────────── Rank badges, bars ───────────────── */
 body.apple-records .rank-badge {
   display: inline-flex; align-items: center; justify-content: center;
